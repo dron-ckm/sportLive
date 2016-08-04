@@ -1,0 +1,117 @@
+// Global Variables
+//
+@import "shared/global_variables.less";
+
+/* Paths ------------------------------------ */
+/* ------------------------------------------ */
+// Twitter Bootstrap files and components
+@alttb_path_bootstrap: "/lib/bootstrap/";
+// Font files, including icon fonts
+@alttb_path_fonts: "/";
+// Image files, such as corporate logos or backgrounds
+@alttb_path_imate: "/";
+
+@import "lib/bootstrap/glyphicons.less";
+/* ------------------------------------------ */
+
+// Basic Reset for pages
+@import "shared/global_reset.less";
+
+// Mixins to be shared across the entire site
+@import "shared/global_mixins.less";
+
+// Fallback Mixins, for inconsistent browser supports, e.g., border-radius
+@import "shared/fallback_mixins.less";
+
+/* ------------------------------------------ */
+
+/* Bootstrap -------------------------------- */
+/* ------------------------------------------ */
+
+// this file replaces the original bootstrap.less in Bootstrap
+@import "bootstrap/bootstrap.less";
+/* ------------------------------------------ */
+
+/* Bootstrap Overrides ---------------------- */
+/* ------------------------------------------ */
+// That is to say, if bootstrap classes must be overridden, create a file with
+// the same name as the the original Bootstrap file containing the class in
+// question. Only add the modified attributes, to promote DRY.
+
+// Core variables
+@import "bootstrap/variables.less";
+
+// Reset
+@import "bootstrap/normalize.less";
+
+// Core CSS
+@import "bootstrap/type.less";
+
+// Components w/ JavaScript
+@import "bootstrap/modals.less";
+@import "bootstrap/popover.less";
+@import "bootstrap/tooltip.less";
+
+// Utility classes
+// no overrides currently
+/* ------------------------------------------ */
+
+/* Global Components ------------------------ */
+/* ------------------------------------------ */
+
+// Custom variables
+@import "shared/custom_variables.less";
+
+// Custom bootstrap styles
+@import "bootstrap/custom.less";
+
+/* ------------------------------------------ */
+
+/* Project-Specific Styling ----------------- */
+/* ------------------------------------------ */
+// The ordering of the projects should not matter - cascading order is
+// irrelevant. If CSS lives inside project folder, it must be self-contained
+// and cannot affect styling globally.
+
+// Fonts
+@import "shared/components/fonts.less";
+
+// Icons
+@import "shared/components/icons.less";
+
+// Carousels
+@import "shared/components/carousels.less";
+
+// Forms
+@import "shared/components/forms.less";
+
+// Global Heder
+@import "shared/components/header.less";
+
+// Global Footer
+@import "shared/components/footer.less";
+
+// Commom styles
+@import "layout/common.less";
+
+// Homepage
+@import "layout/index.less";
+
+// Athlete
+@import "layout/athlete.less";
+@import "layout/channel.less";
+
+// Create highlight
+@import "layout/create-reel.less";
+
+// Feed
+@import "layout/feed.less";
+
+// Search
+@import "layout/search.less";
+
+// Presentation
+@import "layout/presentation.less";
+
+// Prices
+@import "layout/prices-table.less";

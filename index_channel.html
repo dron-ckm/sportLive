@@ -1,0 +1,1371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SportXast</title>
+    
+    <link media="all" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika:400,300,600,700">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.carousel.js"></script>
+	<script type="text/javascript" src="js/scrollspy.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.hasToolTip').tooltip();
+			$('.selectpicker').selectpicker({showIcon: true}); // add class 'selectpicker' to make default select dropdown custom
+
+			// #videoModal show/hide
+
+			var modal = $('#videoModal'),
+				sideSearchBar = $('#sideSearchBar');
+
+			$('.js-video-modal-open').on('click',function(){
+				modal.toggle();
+			});
+
+			modal.find('.video-modal__close').on('click',function(){
+				modal.hide();
+			});
+
+			modal.find('.video-modal__btn-search').on('click', function(){
+				sideSearchBar.show();
+			});
+
+			sideSearchBar.find('.side-search__bg').on('click', function(){
+				sideSearchBar.hide();
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+	<header>
+		<a href="#" class="highlights" data-toggle="modal" data-target="#receiveModal">
+			Click to Receive
+			<b>Team Highlights</b>
+		</a> <!-- .highlights -->
+		<div class="header-holder">
+			<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+		  	<ul class="options">
+		  		<li><a data-toggle="modal" data-target="#signInModal">sign in</a></li>
+		  		<li><a data-toggle="modal" data-target="#signUpModal">create account</a></li>
+		  	</ul> <!-- .options -->
+		  	<ul class="main-nav" id="nav">
+		  		<li class="active"><a href="#">Highlights</a></li>
+		  		<li><a href="#Videos">Videos</a></li>
+		  		<li><a href="#Athletes">Athletes</a></li>
+		  		<li><a href="#Scores">Scores &amp; schedules</a></li>
+		  		<li><a href="#About">About</a></li>
+		  	</ul> <!-- #nav -->
+		</div> <!-- .header-holder -->
+	</header> <!-- header -->
+	<div id="main">
+		<div class="promo">
+			<img src="img/img01.jpg" alt="">
+			<div class="promo-bottom">
+				<a class="promo-highlight"><i class="icon icon-camera"></i>team highlights</a>
+				<div class="promo-info">
+					<div class="club-logo club-logo_size_big">
+						<img src="img/club-logo.jpg" alt="">
+					</div> <!-- .club-logo -->
+					<div class="promo-bottom__text-holder">
+						<h3>Albuquerque SOL</h3>
+						<ul class="team-short-info">
+							<li>
+								<span class="icon-holder">
+									<i class="icon icon-ball"></i>
+								</span> <!-- .icon-holder -->
+								Soccer
+							</li>
+							<li>U-18</li>
+							<li>
+								<span class="icon-holder">
+									<i class="icon icon-place"></i>
+								</span> <!-- .icon-holder -->
+								Los Alamos, NM USA
+							</li>
+							<li>Professional Development League (PDL)</li>
+							<li>
+								<span class="icon-holder">
+									<span class="dress">
+										<i class="icon icon-dress_left_red"></i>
+										<i class="icon icon-dress_right_blue"></i>
+									</span>
+								</span> <!-- .icon-holder -->
+								Red and Blue
+							</li>
+							<li>
+								<span class="dark-text">Head Coach</span>
+								<b>Chris Cartildge</b>
+							</li>
+						</ul> <!-- .team-short-info -->
+					</div>
+				</div> <!-- .promo-info -->
+			</div> <!-- .promo-bottom -->
+		</div><!-- .promo -->
+		<a name="Videos"  id="Videos" class="anchor"></a>
+		<section class="section-main section-main_bg_grey">
+			<div class="section-main__title">
+				<div class="club-logo">
+					<img src="img/club-logo_small.jpg" alt="">
+				</div> <!-- .club-logo -->
+				<h2 class="section-main__title-text"><a></a>Albuquerque sol</h2> <!-- .section-main__title-text -->
+			</div> <!-- .section-main__title -->
+
+			<div class="video-box">
+				<div class="video-box__container">
+					<img src="img/img02.jpg" alt="" class="video-box__img">
+					<span class="video-box__btn-play video-box__btn-play_big"></span> <!-- .video-box__btn-play -->
+					<span class="video-box__count"><i class="icon icon-camera_small"></i>11 clips</span> <!-- .video-box__count -->
+					<div class="video-box__info-holder">
+						<div class="video-box__heading">
+							<span class="club-logo">
+								<img src="img/club-logo_small.jpg" alt="">
+							</span>
+							ABQ SOL  VS 	
+							<span class="club-logo">
+								<img src="img/club-logo2_small.jpg" alt="">
+							</span>
+							Sockers FC
+						</div> <!-- .video-box__heading -->
+						<span class="video-box__date">May 24th, 2015</span> <!-- .video-box__date -->
+						<ul class="tegs">
+							<li class="tegs__item">#FreeKick</li>
+							<li class="tegs__item">#FreeKick</li>
+						</ul> <!-- .tegs -->
+					</div> <!-- .video-box__info-holder -->
+				</div> <!-- .video-box__container -->
+				<div class="video-box__aside">
+					<div class="video-box__aside-box js-video-modal-open">
+						<img src="img/img03.jpg" alt="" width="639" height="357" class="video-box__img">
+						<span class="video-box__count"><i class="icon icon-camera_small"></i>11 clips</span> <!-- .video-box__count -->
+						<span class="video-box__btn-play"></span> <!-- .video-box__btn-play -->
+						<span class="video-box__title">most popular highlights</span> <!-- .video-box__title -->
+						<div class="video-box__info-holder video-box__info-holder_size_small">
+							<div class="video-box__heading video-box__heading_size_small">
+								Game Winning Header
+							</div> <!-- .video-box__heading -->
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div> <!-- .video-box__info-holder -->
+					</div> <!-- .video-box__aside-box -->
+					<div class="video-box__aside-box js-video-modal-open">
+						<img src="img/img03.jpg" alt="" width="639" height="357" class="video-box__img">
+						<span class="video-box__count"><i class="icon icon-camera_small"></i>11 clips</span> <!-- .video-box__count -->
+						<span class="video-box__btn-play"></span> <!-- .video-box__btn-play -->
+						<span class="video-box__title">past highlights</span> <!-- .video-box__title -->
+						<div class="video-box__info-holder video-box__info-holder_size_small">
+							<div class="video-box__heading video-box__heading_size_small">
+								Game Winning Header
+							</div> <!-- .video-box__heading -->
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div> <!-- .video-box__info-holder -->
+					</div> <!-- .video-box__aside-box -->
+				</div> <!-- .video-box__aside -->
+			</div> <!-- .video-box -->
+	
+			<div class="gallery carousel-twitter">
+				<span class="name hasToolTip" data-placement="bottom" title="Add #abqLovesSol to your tweets about the team!">#abqLovesSol <i class="icon icon-info"></i></span>
+				<div class="gholder">
+					<div class="gmask">
+						<div class="slideset">
+							<div class="slide active">
+								<span class="date">26 Sep, 2015</span>
+								<p>Are you coming out for the USA/MEX watch party? This is one you will have to put on the calendar!</p>
+								<span class="author">@soccergirl28</span>
+							</div>
+							<div class="slide">
+								<span class="date">26 Sep, 2015</span>
+								<p>Are you coming out for the USA/MEX watch party? This is one you will have to put on the calendar!</p>
+								<span class="author">@soccergirl28</span>
+							</div>
+							<div class="slide">
+								<span class="date">26 Sep, 2015</span>
+								<p>Are you coming out for the USA/MEX watch party? This is one you will have to put on the calendar!</p>
+								<span class="author">@soccergirl28</span>
+							</div>
+							<div class="slide">
+								<span class="date">26 Sep, 2015</span>
+								<p>Are you coming out for the USA/MEX watch party? This is one you will have to put on the calendar!</p>
+								<span class="author">@soccergirl28</span>
+							</div>
+							<div class="slide">
+								<span class="date">26 Sep, 2015</span>
+								<p>Are you coming out for the USA/MEX watch party? This is one you will have to put on the calendar!</p>
+								<span class="author">@soccergirl28</span>
+							</div>
+							<div class="slide">
+								<span class="date">26 Sep, 2015</span>
+								<p>Are you coming out for the USA/MEX watch party? This is one you will have to put on the calendar!</p>
+								<span class="author">@soccergirl28</span>
+							</div>
+						</div>
+					</div> <!-- .gmask -->
+				</div> <!-- .gholder -->
+				<div class="carousel-pagination carousel-pagination_theme_black"></div> <!-- .pagination -->
+			</div> <!-- .simple-carousel-->
+		</section> <!-- .section-main -->
+
+		<section class="section-main">
+			<div class="section-main__title section-main__title_pb_5">
+				<div class="club-logo">
+					<img src="img/club-logo_small.jpg" alt="">
+				</div> <!-- .club-logo -->
+				<h2 class="section-main__title-text">HIGHLIGHT reels</h2> <!-- .section-main__title-text -->
+			</div> <!-- .section-main__title -->
+			<div class="section-main__holder">
+				<div class="search-videos">
+					<form action="#">
+						<fieldset>
+							<input type="text" placeholder="Search videos" class="input-text-bordered">
+							<input type="submit" value="submit">
+							<span class="icon icon-sort"></span>
+						</fieldset>
+					</form>
+				</div> <!-- .search-videos -->
+				<ul class="highlights-list">
+					<li>
+						<div class="visual">
+							<img src="img/img04.jpg" alt="">
+							<span class="date">May 24th, 2015</span>
+							<span class="icon-play"></span>
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div>
+						<span class="name">Alb Sol v Mexico Club</span>
+					</li>
+					<li>
+						<div class="visual">
+							<img src="img/img04.jpg" alt="">
+							<span class="date">May 24th, 2015</span>
+							<span class="icon-play"></span>
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div>
+						<span class="name">Alb Sol v Mexico Club</span>
+					</li>
+					<li>
+						<div class="visual">
+							<img src="img/img04.jpg" alt="">
+							<span class="date">May 24th, 2015</span>
+							<span class="icon-play"></span>
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div>
+						<span class="name">Alb Sol v Mexico Club</span>
+					</li>
+					<li>
+						<div class="visual">
+							<img src="img/img04.jpg" alt="">
+							<span class="date">May 24th, 2015</span>
+							<span class="icon-play"></span>
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div>
+						<span class="name">Alb Sol v Mexico Club</span>
+					</li>
+					<li>
+						<div class="visual">
+							<img src="img/img04.jpg" alt="">
+							<span class="date">May 24th, 2015</span>
+							<span class="icon-play"></span>
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div>
+						<span class="name">Alb Sol v Mexico Club</span>
+					</li>
+					<li>
+						<div class="visual">
+							<img src="img/img04.jpg" alt="">
+							<span class="date">May 24th, 2015</span>
+							<span class="icon-play"></span>
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div>
+						<span class="name">Alb Sol v Mexico Club</span>
+					</li>
+					<li>
+						<div class="visual">
+							<img src="img/img04.jpg" alt="">
+							<span class="date">May 24th, 2015</span>
+							<span class="icon-play"></span>
+							<ul class="tegs">
+								<li class="tegs__item">#FreeKick</li>
+								<li class="tegs__item">#FreeKick</li>
+							</ul> <!-- .tegs -->
+						</div>
+						<span class="name">Alb Sol v Mexico Club</span>
+					</li>
+					<li>
+						<div class="visual">
+							<button class="btn">click to create highlight reel</button>
+						</div>
+					</li>
+				</ul> <!-- .highlights-list -->
+				<div class="more">
+					<a href="#">Load more videos &gt;</a>
+				</div>
+			</div> <!-- .section-main__holder -->
+		</section> <!-- .section-main -->
+
+		<section class="section-main section-main_bg_grey">
+			<div class="section-main__title section-main__title_pb_5">
+				<div class="club-logo">
+					<img src="img/club-logo_small.jpg" alt="">
+				</div> <!-- .club-logo -->
+				<h2 class="section-main__title-text">Photo Gallery</h2> <!-- .section-main__title-text -->
+			</div> <!-- .section-main__title -->
+
+			<div class="section-main__holder">
+				<div class="section-main__row">
+					<div class="add-photo">
+						<a href="#">ADD YOUR PHOTOS OF ALBUQUERQUE SOL <span class="icon icon-add"></span></a>
+					</div>
+				</div> <!-- .section-main__row -->
+			</div> <!-- .section-main__holder -->
+
+
+			<div class="gallery simple-carousel">
+				<div class="gholder">
+					<a class="btn-prev" href="#">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					</a>
+					<a class="btn-next" href="#">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					</a>
+					<div class="gmask">
+						<div class="slideset">
+							<div class="slide active">
+								<img src="img/img05.jpg" alt="">
+								<span class="name">2015 ABQ Sol</span>
+								<span class="type"><i class="icon icon-photo"></i></span>
+							</div>
+							<div class="slide">
+								<img src="img/img06.jpg" alt="">
+								<span class="name">2015 ABQ Sol</span>
+								<span class="type"><i class="icon icon-photo"></i></span>
+							</div>
+							<div class="slide">
+								<img src="img/img07.jpg" alt="">
+								<span class="name">2015 ABQ Sol</span>
+								<span class="type"><i class="icon icon-photo"></i></span>
+							</div>
+							<div class="slide">
+								<img src="img/img05.jpg" alt="">
+								<span class="name">2015 ABQ Sol</span>
+								<span class="type"><i class="icon icon-photo"></i></span>
+							</div>
+							<div class="slide">
+								<img src="img/img06.jpg" alt="">
+								<span class="name">2015 ABQ Sol</span>
+								<span class="type"><i class="icon icon-photo"></i></span>
+							</div>
+							<div class="slide">
+								<img src="img/img07.jpg" alt="">
+								<span class="name">2015 ABQ Sol</span>
+								<span class="type"><i class="icon icon-photo"></i></span>
+							</div>
+						</div>
+					</div> <!-- .gmask -->
+				</div> <!-- .gholder -->
+			</div> <!-- .simple-carousel-->
+		</section> <!-- .section-main -->
+		
+		<a name="Athletes"  id="Athletes" class="anchor"></a>
+		<section class="section-main section-main_bg_grey">
+			<div class="section-main__title">
+				<div class="club-logo">
+					<img src="img/club-logo_small.jpg" alt="">
+				</div> <!-- .club-logo -->
+				<h2 class="section-main__title-text">PLAYER ROSTER</h2> <!-- .section-main__title-text -->
+			</div> <!-- .section-main__title -->
+
+			<div class="section-main__holder">
+				<ul class="players-list">
+					<li>
+						<div class="players-list__visual">
+							<img src="img/player01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="players-list__visual">
+							<img src="img/player01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="players-list__visual">
+							<img src="img/player01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="players-list__visual">
+							<img src="img/player01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="players-list__visual">
+							<img src="img/player01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="players-list__visual">
+							<img src="img/player01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="players-list__visual">
+							<img src="img/player01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li class="type_coach">
+						<div class="players-list__visual">
+							<img src="img/coach01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+					<li class="type_coach">
+						<div class="players-list__visual">
+							<img src="img/coach01.jpg" alt="" width="205" height="206">
+						</div>
+						<div class="players-list__holder">
+							<div class="players-list__info-holder">
+								<span class="players-list__name">Ben Barkoff</span>
+								<span class="players-list__place"><span class="players-list__number">#15</span>Wide Midfield</span>
+							</div>
+							<div class="players-list__info-years">
+								<span class="players-list__yo"><b>20</b> y.o.</span>
+								<span class="players-list__grad"><b>2015</b> grad yr.</span>
+							</div>
+						</div>
+					</li>
+				</ul> <!-- .players-list -->
+			</div> <!-- .section-main__holder -->
+		</section> <!-- .section-main -->
+
+		<section class="subscribe-line">
+			<div class="subscribe-line__holder">
+				<button class="btn btn_white btn_iconed" data-toggle="modal" data-target="#receiveModal">
+					<span class="icon-holder">
+						<i class="icon icon-paper-plane_green"></i>
+					</span>
+					<span class="text-holder">
+						Click to Receive
+						<b class="block">Team Highlights</b>
+					</span>
+				</button>
+				<div class="subscribe-line__text-frame">
+					<h4 class="subscribe-line__headline"><i>Never miss a thing!</i></h4>
+					<p class="subscribe-line__text">Get updates about Albuquerque Sol.</p>
+				</div> <!-- .subscribe-line__text-frame -->
+			</div> <!-- .subscribe-line_-holder -->
+		</section> <!-- .subscribe-line -->
+		
+
+		<a name="Scores"  id="Scores" class="anchor"></a>
+		<section class="section-main section-main_bg_grey">
+			<div class="section-main__title">
+				<div class="club-logo">
+					<img src="img/club-logo_small.jpg" alt="">
+				</div> <!-- .club-logo -->
+				<h2 class="section-main__title-text">scores &amp; Schedule</h2> <!-- .section-main__title-text -->
+			</div> <!-- .section-main__title -->
+			<div class="section-main__frame">
+				<div class="section-main__row h-mb-10">
+					<div class="add-photo">
+						<a href="#">View all &gt;</a>
+					</div> <!-- .add-photo -->
+					<h3 class="uppercase">Latest games</h3>
+				</div> <!-- .section-main__row -->
+				<div class="games-schedule">
+						<div class="games-schedule__holder">
+						<div class="games-schedule__game">
+							<span class="games-schedule__date">
+								IN PROGRESS
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+							<div class="game-preview">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+									</div> <!-- .game-preview__title -->
+									<span class="game-preview__score">1 - <b>3</b></span> <!-- .game-preview__score -->
+									<div class="game-preview__visual-info">
+										<span class="game-preview__visual-info-count"><i class="icon icon-camera_vsmall"></i> 11 clips</span> <!-- .game-preview__info-count -->
+										<ul class="tegs tegs_size_small">
+											<li class="tegs__item">#RollieHeader</li>
+											<li class="tegs__item">#Notinourhouse</li>
+										</ul> <!-- .tegs -->
+									</div> <!-- .game-preview__info -->
+									<img src="img/img08.jpg" alt="" width="366" height="208">
+								</div> <!-- .game-preview__visual -->
+								<div class="game-preview__info">
+									<span class="game-preview__icon-holder">
+										<i class="icon icon-add"></i>
+										<i class="icon icon-photo_green"></i>
+									</span> <!-- .game-preview__icon-holder -->
+									<span class="game-preview__icon-holder">
+										<i class="icon icon-add"></i>
+										<i class="icon icon-camera_small_green"></i>
+									</span> <!-- .game-preview__icon-holder -->
+									<i class="game-preview__add-text">Add your media</i>
+								</div><!-- .game-preview__info -->
+							</div> <!-- .game-preview -->
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<span class="games-schedule__date">
+								JUL 5th
+								<span class="games-schedule__date-point"></span> <!-- .games-schedule__date-point -->
+							</span>
+							<div class="game-preview">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+									</div> <!-- .game-preview__title -->
+									<span class="game-preview__score"><b>4</b> - 3</span> <!-- .game-preview__score -->
+									<div class="game-preview__visual-info">
+										<span class="game-preview__visual-info-count"><i class="icon icon-camera_vsmall"></i> 11 clips</span> <!-- .game-preview__info-count -->
+										<ul class="tegs tegs_size_small">
+											<li class="tegs__item">#RollieHeader</li>
+											<li class="tegs__item">#Notinourhouse</li>
+										</ul> <!-- .tegs -->
+									</div> <!-- .game-preview__info -->
+									<img src="img/img08.jpg" alt="" width="366" height="208">
+								</div> <!-- .game-preview__visual -->
+								<div class="game-preview__info">
+									<span class="game-preview__icon-holder">
+										<i class="icon icon-add"></i>
+										<i class="icon icon-photo_green"></i>
+									</span> <!-- .game-preview__icon-holder -->
+									<span class="game-preview__icon-holder">
+										<i class="icon icon-add"></i>
+										<i class="icon icon-camera_small_green"></i>
+									</span> <!-- .game-preview__icon-holder -->
+									<i class="game-preview__add-text">Add your media</i>
+								</div><!-- .game-preview__info -->
+							</div> <!-- .game-preview -->
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<span class="games-schedule__date">
+								IN PROGRESS
+								<span class="games-schedule__date-point"></span> <!-- .games-schedule__date-point -->
+							</span>
+							<div class="game-preview">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small club-logo_type_no-logo">CR</div>
+											CO REAL
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+									</div> <!-- .game-preview__title -->
+									<span class="game-preview__score">1 - <b>3</b></span> <!-- .game-preview__score -->
+									<div class="game-preview__visual-info">
+										<span class="game-preview__visual-info-count"><i class="icon icon-camera_vsmall"></i> 11 clips</span> <!-- .game-preview__info-count -->
+										<ul class="tegs tegs_size_small">
+											<li class="tegs__item">#RollieHeader</li>
+											<li class="tegs__item">#Notinourhouse</li>
+										</ul> <!-- .tegs -->
+									</div> <!-- .game-preview__info -->
+									<img src="img/img09.jpg" alt="" width="366" height="208">
+								</div> <!-- .game-preview__visual -->
+								<div class="game-preview__info">
+									<span class="game-preview__icon-holder">
+										<i class="icon icon-add"></i>
+										<i class="icon icon-photo_green"></i>
+									</span> <!-- .game-preview__icon-holder -->
+									<span class="game-preview__icon-holder">
+										<i class="icon icon-add"></i>
+										<i class="icon icon-camera_small_green"></i>
+									</span> <!-- .game-preview__icon-holder -->
+									<i class="game-preview__add-text">Add your media</i>
+								</div><!-- .game-preview__info -->
+							</div> <!-- .game-preview -->
+						</div> <!-- .games-schedule__game -->
+					</div>
+				</div> <!-- .games-schedule -->
+				<h3 class="uppercase h-mb-20">Games schedule</h3>
+				<ul class="schedule-list">
+					<li>
+						<span class="date active">JUL 5th <span class="line"></span></span>
+						<div class="holder">
+							<div class="frame">
+								<div class="name cell">
+									<div class="club-logo club-logo_size_small club-logo_type_no-logo">CR</div>
+									<span>CO REAL</span>
+								</div> <!-- .name -->
+								<div class="score cell">
+									<span>-</span>
+								</div> <!-- .score -->
+								<div class="option cell">
+									<button class="btn btn-xs transparent">Add</button>
+								</div> <!-- .option -->
+								<span class="place cell">
+									<i class="icon icon-place_transparent"></i>
+									LVHS Main Stadium
+								</span> <!-- .place -->
+								<span class="time cell">
+									<i class="icon icon-clock_small"></i>
+									7.15 PM
+								</span>
+								<span class="reminder cell">
+									<a href="#" class="transparent"><i class="icon icon-reminder"></i> Remind</a>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="date active">JUL 5th <span class="line"></span></span>
+						<div class="holder">
+							<div class="frame">
+								<div class="name cell">
+									<div class="club-logo club-logo_size_small">
+										<img src="img/club-logo_small.jpg" alt="">
+									</div>
+									<span>CO REAL</span>
+								</div> <!-- .name -->
+								<div class="score cell">
+									<span>2 - <b>3</b></span>
+								</div> <!-- .score -->
+								<div class="option cell">
+									<button class="btn btn-xs transparent">Add</button>
+								</div> <!-- .option -->
+								<span class="place cell">
+									<i class="icon icon-place_transparent"></i>
+									LVHS Main Stadium
+								</span> <!-- .place -->
+								<span class="time cell">
+									<i class="icon icon-clock_small"></i>
+									7.15 PM
+								</span>
+								<span class="reminder cell">
+									<a href="#" class="transparent"><i class="icon icon-reminder"></i> Remind</a>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="done">
+						<span class="date active">JUL 5th <span class="line"></span></span>
+						<div class="holder">
+							<div class="frame">
+								<div class="name cell">
+									<div class="club-logo club-logo_size_small club-logo_type_no-logo club-logo_color_green club-logo_color_white">CR</div>
+									<span>CO REAL</span>
+								</div> <!-- .name -->
+								<div class="score cell">
+									<span>2 - <b>3</b></span>
+								</div> <!-- .score -->
+								<div class="option cell">
+									<button class="btn btn-xs transparent">Add</button>
+								</div> <!-- .option -->
+								<span class="place cell">
+									<i class="icon icon-place_transparent"></i>
+									LVHS Main Stadium
+								</span> <!-- .place -->
+								<span class="time cell">
+									<i class="icon icon-clock_small"></i>
+									7.15 PM
+								</span>
+								<span class="reminder cell">
+									<a href="#" class="transparent"><i class="icon icon-reminder"></i> Remind</a>
+								</span>
+							</div>
+						</div>
+					</li>
+				</ul> <!-- .schedule-list -->
+				<div class="more">
+					<a href="#">View more scheduled games &#709;</a>
+				</div> <!-- .more -->
+			</div> <!-- .section-main__frame  -->
+		</section> <!-- .section-main -->
+
+		<a name="About"  id="About" class="anchor"></a>
+		<section class="section-main">
+			<div class="section-main__title">
+				<div class="club-logo">
+					<img src="img/club-logo_small.jpg" alt="">
+				</div> <!-- .club-logo -->
+				<h2 class="section-main__title-text">scores &amp; Schedule</h2> <!-- .section-main__title-text -->
+			</div> <!-- .section-main__title -->
+			<div class="section-main__frame">
+				<div class="about-box">
+					<div class="about-box__visual">
+						<div class="about-box__visual-item">
+							<img src="img/coach01.jpg" alt="" width="205" height="206">
+							<div class="about-box__visual-info">
+								<span class="about-box__name">Chris Cartildge</span>
+								<span class="about-box__status">Chris Cartildge</span>
+							</div>
+						</div> <!-- about-box__visual-item -->
+						<div class="about-box__visual-item">
+							<img src="img/coach01.jpg" alt="" width="205" height="206">
+							<div class="about-box__visual-info">
+								<span class="about-box__name">Chris Cartildge</span>
+								<span class="about-box__status">Chris Cartildge</span>
+							</div>
+						</div> <!-- about-box__visual-item -->
+					</div> <!-- .about-box__visual -->
+					<div class="about-box__holder">
+						<p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor massa eu vulputate gravida. Quisque eros nunc, condimentum eget tortor et, ornare consectetur erat. Aliquam volutpat erat quam.</i></p>
+						<ul class="contact-list">
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook_green"></i>
+									Visit our Facebook page
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter_green"></i>
+									Visit our Twitter page
+								</a>
+							</li>
+							<li>
+								<a href="mailto:info@domain.com">
+									<i class="icon icon-mail_green"></i>
+									info@domain.com
+								</a>
+							</li>
+						</ul> <!-- .contact-list -->
+					</div> <!-- .about-box__holder -->
+				</div> <!-- .about-box -->
+			</div> <!-- .section-main__frame -->
+		</section> <!-- .section-main -->
+
+	</div> <!-- #main -->
+	<footer>
+		<p class="copy">&copy; SportXast, LLC.</p>
+		<ul class="footer-nav">
+			<li><a href="#">terms of use</a></li>
+			<li><a href="#">privacy policy</a></li>
+			<li><a href="#">send feedback</a></li>
+		</ul> <!-- .footer-nav -->
+		<ul class="social">
+			<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+			<li><a href="#"><i class="icon icon-linked"></i></a></li>
+			<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+		</ul> <!-- .social -->
+	</footer> <!-- footer -->
+
+
+	<div class="modal fade" id="receiveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Never miss updates <br> about albuquerque sol</h4>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="updates-form">
+	        	<form action="#">
+	        		<fieldset>
+	        			<i class="hint-text">You can stay in touch with Albuquerque SOL by text messages or email messages.</i>
+	        			<div class="updates-form__form-holder">
+	        				<div class="form-row">
+	        					<button class="btn btn-sm">Receive texts</button>
+	        					<div class="form-group">
+	        						<div class="form-group-holder">
+	        							<span class="form-group-icon-holder">
+	        								<i class="icon icon-phone"></i>
+	        							</span>
+								    	<input type="email" class="form-control form-control_type_with-icon" placeholder="+4.0771.012.342">
+								    </div>
+								</div>
+	        				</div> <!-- .form-row -->
+	        				<div class="form-row">
+	        					<button class="btn btn-sm">receive emails</button>
+	        					<div class="form-group">
+	        						<div class="form-group-holder">
+	        							<span class="form-group-icon-holder">
+	        								<i class="icon icon-mail2"></i>
+	        							</span>
+								    	<input type="email" class="form-control form-control_type_with-icon" placeholder="example@mail.com">
+								    </div>
+								</div>
+	        				</div> <!-- .form-row -->
+	        			</div> <!-- .updates-form__form-holder -->
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+
+	<div class="modal fade modal_theme_white" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content" style="display: none;">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <span class="modal-logo"></span>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-in-form ">
+	        	<form action="#">
+	        		<fieldset>
+	        			<div class="sign-in-form__holder">
+	        				<div class="h-mb-20">
+		        				<div class="form-group">
+		        					<label>Your email </label>
+	        						<div class="form-group-holder">
+								    	<input type="email" class="form-control" placeholder="jane@example.com">
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+		        					<label>Type in your password</label>
+	        						<div class="form-group-holder">
+								    	<input type="password" class="form-control" placeholder="password">
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+									<label>Troube remembering your password?</label>
+								</div>
+								<div class="form-group align-center">
+									<label>Don’t want to remember passwords?</label>
+								</div>
+								<button class="btn btn-centered"><i class="icon icon-magic"></i> get a magic link</button>
+							</div>
+	        			</div>
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	      <div class="modal-footer align-center">
+	      	<button class="btn btn_lgrey pull-left"><i class="icon icon-arrow-left_green"></i> back</button>
+	      	<button class="btn btn_width_240">log in <i class="icon icon-arrow-right"></i></button>
+	      </div>
+	    </div> <!-- .modal-content -->
+
+	    <div class="modal-content" style="display: none;">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <span class="modal-logo modal-logo_size_big"></span>
+	        <strong class="modal-slogan">Highlights made simple</strong>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-in-form ">
+	        	<form action="#">
+	        		<fieldset>
+	        			<div class="sign-in-form__holder">
+	        				<div class="h-mb-20">
+		        				<div class="form-group">
+	        						<button class="btn btn_facebook btn_width_100">Log in with Facebook <i class="icon icon-facebook_white"></i></button>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+	        						<button class="btn btn_google btn_width_100">Log in with Google <i class="icon icon-google"></i></button>
+								</div> <!-- .form-group -->
+								<div class="form-group align-center">
+		        					<label>or</label>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+									<button class="btn btn_lgrey btn_width_100">Use email address</button>
+								</div>
+								<div class="form-group align-center">
+									<label>Don’t have an account? <a href="#">Create and account</a></label>
+								</div>
+							</div>
+	        			</div>
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	    </div> <!-- .modal-content -->
+
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <span class="modal-logo"></span>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-in-form ">
+	        	<form action="#">
+	        		<fieldset>
+	        			<div class="sign-in-form__holder">
+	        				<div class="h-mb-20">
+		        				<div class="form-group">
+		        					<label>Enter your email and we will send a recovery link right away!</label>
+	        						<div class="form-group-holder">
+								    	<input type="email" class="form-control" placeholder="jane@example.com">
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+									<button class="btn btn-centered">recover password</button>
+								</div>
+								<div class="form-group">
+									<div class="align-center">
+		        						<i class="icon icon-check-mark_big"></i>
+		        					</div>
+								</div>
+								<div class="form-group">
+		        					<p class="sign-in-form__green-text">Check your inbox for the recovery link we sent you.</p>
+								</div> <!-- .form-group -->
+								
+							</div>
+	        			</div>
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	      <div class="modal-footer align-center">
+	      	<button class="btn btn_lgrey pull-left"><i class="icon icon-arrow-left_green"></i> back</button>
+	      </div>
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+
+	<div class="modal fade modal_theme_white" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	  	<div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <span class="modal-img-preview"></span>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-in-form ">
+	        	<form action="#">
+	        		<fieldset>
+	        			<div class="sign-in-form__holder">
+	        				<div class="h-mb-20">
+		        				<div class="form-group h-mb-10">
+		        					<label>Your First Name (required)</label>
+							    	<input type="text" class="form-control" placeholder="First Name">
+								</div> <!-- .form-group -->
+								<div class="form-group h-mb-10">
+		        					<label>Your Last Name (required)</label>
+							    	<input type="text" class="form-control" placeholder="Last Name">
+								</div> <!-- .form-group -->
+								<div class="form-group h-mb-10">
+		        					<label>Location (required)</label>
+		        					<div class="form-control-holder form-control-holder_type_location">
+		        						<input type="text" class="form-control" placeholder="City, State, Country">
+		        					</div>
+								</div> <!-- .form-group -->
+								<div class="form-group h-mb-10">
+		        					<label>Team Name</label>
+							    	<input type="text" class="form-control" placeholder="Team you play for">
+								</div> <!-- .form-group -->
+								<div class="form-group h-mb-10">
+		        					<label>School Name</label>
+							    	<input type="text" class="form-control" placeholder="School you go to">
+								</div> <!-- .form-group -->
+							</div>
+	        			</div>
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	      <div class="modal-footer align-center">
+	      	<button class="btn btn_lgrey pull-left"><i class="icon icon-arrow-left_green"></i> back</button>
+	      	<button class="btn btn_width_240">next <i class="icon icon-arrow-right"></i></button>
+	      </div>
+	    </div> <!-- .modal-content -->
+	    <div class="modal-content" style="display: none;">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <span class="modal-logo"></span>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body" style="display: none;">
+	        <div class="sign-in-form ">
+	        	<form action="#">
+	        		<fieldset>
+	        			<div class="sign-in-form__holder">
+	        				<div class="h-mb-20">
+		        				<div class="form-group has-error">
+		        					<label>Your email. You will use this to log into your account</label>
+							    	<input type="email" class="form-control" placeholder="jane@example.com">
+							    	<span class="error-text"><i class="icon icon-close_red"></i> Email example: me@email.com</span>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+		        					<label>Type in your password</label>
+							    	<input type="password" class="form-control" placeholder="password">
+								</div> <!-- .form-group -->
+								<div class="form-group">
+		        					<label>Confirm password</label>
+							    	<input type="password" class="form-control" placeholder="password">
+								</div> <!-- .form-group -->
+							</div>
+	        			</div>
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	      <div class="modal-body">
+	      	<ul class="user-type-list">
+	      		<li>
+	      			<i class="icon icon-athlete_big_grey"></i>
+	      			<span class="name">Athlete</span>
+	      		</li>
+	      		<li>
+	      			<i class="icon icon-fan_big_grey"></i>
+	      			<span class="name">fan</span>
+	      		</li>
+	      		<li>
+	      			<i class="icon icon-team_big_grey"></i>
+	      			<span class="name">Team</span>
+	      		</li>
+	      		<li>
+	      			<i class="icon icon-coach_big_grey"></i>
+	      			<span class="name">coach</span>
+	      		</li>
+	      	</ul>
+	      </div>
+	      <div class="modal-footer align-center">
+	      	<button class="btn btn_lgrey pull-left"><i class="icon icon-arrow-left_green"></i> back</button>
+	      	<button class="btn btn_width_240">next <i class="icon icon-arrow-right"></i></button>
+	      </div>
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+
+	<div class="video-modal" id="videoModal">
+		<div class="video-modal__aside">
+			<div class="video-modal__aside-title">
+				<a class="video-modal__btn-search">
+					<i class="icon icon-search_white"></i>
+				</a>
+				<h5>RECENT HIGHLIGHTS</h5>
+			</div> <!-- .video-modal__aside-title -->
+			<ul class="video-list">
+				<li class="active">
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+			</ul>
+		</div> <!-- .video-modal__aside -->
+		<div class="video-modal__holder">
+			<img src="img/img11.jpg" alt="">
+			<div class="video-modal__holder-overlay">
+				<span class="video-modal__close">&times;</span>
+				<div class="video-modal__holder-bottom">
+					<div class="player-panel">
+						<div class="player-panel__info">
+							<h5>Extreme goal!</h5>
+							<span class="player-panel__date">May 24th, 2015</span>		
+							<ul class="tegs tegs_size_meduim h-mb-20">
+								<li class="tegs__item">#awesome pass</li>
+								<li class="tegs__item">#catch</li>
+							</ul> <!-- .tegs -->
+							<div class="player-panel__info-line">
+								<ul class="user-list pull-right">
+									<li>
+										<span class="user-list__visual">
+											<img src="img/pic01.jpg" alt="">
+										</span> <!-- .user-list__visual -->
+									</li>
+									<li>
+										<span class="user-list__visual">
+											<img src="img/pic01.jpg" alt="">
+										</span> <!-- .user-list__visual -->
+									</li>
+									<li>
+										<span class="user-list__visual">
+											<img src="img/pic01.jpg" alt="">
+										</span> <!-- .user-list__visual -->
+									</li>
+								</ul> <!-- .user-list -->
+								<div class="player-panel__teams">
+									<span class="club-logo club-logo_size_medium">
+										<img src="img/club-logo_small.jpg" alt="">
+									</span>
+									<span class="h-mr-20">
+										ABQ SOL
+									</span>
+									<span class="h-mr-20">
+										VS
+									</span>
+									<span class="club-logo club-logo_size_medium">
+										<img src="img/club-logo2_small.jpg" alt="">
+									</span>
+									Sockers FC
+								</div> <!-- .player-panel__teams -->
+							</div> <!-- .player-panel__info-line -->
+						</div> <!-- .player-panel__info -->
+						<div class="player-panel__timeline">
+							<span class="player-panel__current-time" style="width: 66%;"></span>
+						</div> <!-- .player-panel__timeline -->
+						<div class="player-panel__buttons-holder">
+							<span class="icon icon-share player-panel__btn-options"></span>
+							<span class="icon icon-favorite player-panel__btn-options"></span>
+							<span class="player-panel__btn-options">Autoplay <a>ON</a></span>
+							<span class="icon-play_vsmall icon player-panel__btn-play"></span>
+						</div> <!-- .player-panel__buttons-holder -->
+					</div> <!-- .player-panel -->
+				</div> <!-- .video-modal__holder-bottom -->
+			</div>
+		</div> <!-- .video-modal__aside -->
+	</div> <!-- .video-modal -->
+
+	<div id="sideSearchBar" class="side-search">
+		<div class="side-search__bg"></div>
+		<div class="side-search__holder">
+			<div class="side-search__form">
+				<form action="#">
+					<fieldset>
+						<button><i class="icon icon-search"></i></button>
+						<div class="side-search__form-input">
+							<input type="text">
+						</div> <!-- .side-search__form-input -->
+					</fieldset>
+				</form>
+			</div> <!-- .side-search__form -->
+			<ul class="side-search__results">
+				<li class="side-search__results-item">
+					<h5>Athletes</h5>
+					<ul class="user-list user-list_type_vertical">
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+					</ul>
+				</li> <!-- .side-search__results-item -->
+				<li class="side-search__results-item">
+					<h5>Teams</h5>
+					<ul class="user-list user-list_type_vertical">
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+					</ul>
+				</li> <!-- .side-search__results-item -->
+				<li class="side-search__results-item">
+					<h5>Tags</h5>
+					<ul class="tegs">
+						<li class="tegs__item">#catch</li>
+					</ul> <!-- .tegs -->
+				</li> <!-- .side-search__results-item -->
+			</ul> <!-- .side-search__results -->
+		</div> <!-- .side-search__holder -->
+	</div> <!-- .side-search -->
+
+</body>
+</html>

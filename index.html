@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SportXast</title>
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon-96x96.png"/>
+    
+    <link media="all" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika:400,300,600,700">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.carousel.js"></script>
+	<script type="text/javascript" src="js/scrollspy.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+</head>
+<body class="presentation">
+	<header class="theme_black">
+		<div class="header-holder">
+			<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+			<div class="mobile-menu">
+				<i class="icon icon-menu_mobile js-mobile-menu"></i>
+				<ul class="mobile-menu__drop js-mobile-drop myTabs">
+					<li class="active"><a href="#overview">Overview</a></li>
+			  		<li><a href="#app">App</a></li>
+			  		<li><a href="#athlete">athlete channel</a></li>
+			  		<li><a href="#team">team channel</a></li>
+			  		<li><a href="#reels">highlight reels</a></li>
+			  		<li><a class="btn header-btn-download" href="https://itunes.apple.com/us/app/sportxast-record-stream-sports/id738768889">download</a></li>
+				</ul>
+			</div>
+			<ul class="options hide-when-logged options_theme_white options_type_no-border">
+		  		<li><a href="prices.html">Pricing</a></li>
+		  		<li class="active"><a href="#contact-us" class="scrollTo">Create an Account</a></li>
+		  		<li><a href="#contact-us" class="scrollTo">Log In</a></li>
+		  	</ul> <!-- .options -->
+			<ul class="main-nav myTabs" id="nav">
+		  		<li class="active"><a href="#overview">Overview</a></li>
+		  		<li><a href="#app">App</a></li>
+		  		<li><a href="#athlete">athlete channel</a></li>
+		  		<li><a href="#team">team channel</a></li>
+		  		<li><a href="#reels">highlight reels</a></li>
+		  	</ul> <!-- #nav -->
+		  	<a class="btn header-btn-download"  href="https://itunes.apple.com/us/app/sportxast-record-stream-sports/id738768889">download</a>
+		  	
+		  	<ul class="athlette-settings show-when-logged">
+				<li><a href="#"><i class="icon icon-search_vbig"></i></a></li>
+				<li><a href="#"><i class="icon icon-bell"></i><span class="count">55</span></a></li>
+				<li>
+					<a href="#"><span class="athlette-settings__avatar"><img src="img/player01.jpg" alt=""></span></a>
+					<div class="athlete-settings__dropdown">
+						<ul class="athlete-settings__athlete-types">
+							<li class="active">
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball_small"></i> soccer</span>
+								</div>
+							</li>
+							<li>
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball2_small"></i> Basketball</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="athlete-settings__settings-list">
+							<li class="active"><a href="#">edit profile</a></li>
+							<li><a href="#">settings</a></li>
+							<li><a href="#">log out</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div> <!-- .header-holder -->
+	</header> <!-- .header -->
+
+	<div id="main">
+		<div class="tab-pane active">
+			<div class="carousel" id="overview">
+			    <!-- Wrapper for slides -->
+				<div class="carousel-inner">
+				    <div class="item">
+				        <!-- <img src="img/presentation/1.jpg" alt="..."> -->
+				        <div class="carousel-caption">
+						    <div class="carousel-caption-holder">
+						      	<strong class="slider-logo"><a href="#"></a></strong>
+						      	<strong class="slogan">Highlights Made Simple</strong>
+						      	<p>Capture, share and organize video highlights from your mobile device in real-time. No need to edit.</p>
+						      	<a href="#app" class="btn btn-lg scrollTo"> Find Out How</a>
+					      	</div>
+				        </div>
+				    </div>
+				    <div class="item">
+				      	<!-- <img src="img/presentation/2.jpg" alt="..."> -->
+				      	<div class="carousel-caption">
+					      	<div class="carousel-caption-holder">
+						      	<strong class="slider-logo"><a href="#"></a></strong>
+						      	<strong class="slogan">Highlights Made Simple</strong>
+						      	<p>Capture, share and organize video highlights from your mobile device in real-time. No need to edit.</p>
+						      	<a href="#app" class="btn btn-lg scrollTo"> Find Out How</a>
+					      	</div>
+				      	</div>
+				    </div>
+				    <div class="item">
+				      	<!-- <img src="img/presentation/3.jpg" alt="..."> -->
+				      	<div class="carousel-caption">
+					      	<div class="carousel-caption-holder">
+						      	<strong class="slider-logo"><a href="#"></a></strong>
+						      	<strong class="slogan">Highlights Made Simple</strong>
+						      	<p>Capture, share and organize video highlights from your mobile device in real-time. No need to edit.</p>
+						      	<a href="#app" class="btn btn-lg scrollTo"> Find Out How</a>
+					      	</div>
+				      	</div>
+				    </div>
+				    <div class="item">
+				      	<!-- <img src="img/presentation/4.jpg" alt="..."> -->
+				      	<div class="carousel-caption">
+					      	<div class="carousel-caption-holder">
+						      	<strong class="slider-logo"><a href="#"></a></strong>
+						      	<strong class="slogan">Highlights Made Simple</strong>
+						      	<p>Capture, share and organize video highlights from your mobile device in real-time. No need to edit.</p>
+						      	<a href="#app" class="btn btn-lg scrollTo"> Find Out How</a>
+					      	</div>
+				      	</div>
+				    </div>
+				</div>
+				<a href="#app" class="scrollTo icon-mouse-scroll-down btn-down"></a>
+			</div> <!-- .carousel -->
+			<section class="main-section" id="app">
+				<a name="app" class="athlete">&nbsp;</a>
+				<div class="visual">
+					<img src="img/presentation/img_present_02.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Never Miss A Highlight</h2>
+						<ul class="circled-list">
+							<li>When you see a great play tap the <span class="icon-play"></span> and the previous :08 seconds of action are recorded </li>
+							<li>Share highlights  in real-time from the sidelines. </li>
+							<li>Start capturing and sharing highlights  for FREE now!</li>
+						</ul>
+						<a href="https://itunes.apple.com/us/app/sportxast-record-stream-sports/id738768889" class="btn-app-store"></a>
+					</div>
+				</div>
+			</section> <!-- .main-seaction -->
+			<section class="main-section main-section_theme_grey" id="athlete">
+				<a name="team" class="athlete">&nbsp;</a>
+				<div class="visual visual_align_right visual_valign_bottom">
+					<img src="img/presentation/img_present_05.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Be Discovered</h2>
+						<p>Get an Athlete Channel to show college coaches you have what it takes to play at the next level!</p>
+						<ul class="circled-list">
+							<li>Create unlimited highlight reels</li>
+							<li>Tagged highlights go straight to your channel from the app</li>
+							<li>All for one <a href="prices.html">low price</a>!</li>
+						</ul>
+						<a class="btn btn-lg" href="prices.html">Get started</a>
+						
+					</div>
+				</div>
+			</section> <!-- .main-seaction -->
+			<section class="main-section" id="team">
+				<a name="team" class="anchor">&nbsp;</a>
+				<div class="visual">
+					<img src="img/presentation/img_present_04.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Showcase Your Team</h2>
+						<p>Get a Team Channel to showcase your team and players</p>
+						<ul class="circled-list">
+							<li>Create unlimited highlight reels.</li>
+							<li>Tagged highlights go straight to your channel from the app</li>
+							<li>All for one <a href="prices.html">low price</a>!</li>
+						</ul>
+						<a class="btn btn-lg" href="prices.html">Get started</a>
+					</div>
+				</div>
+			</section> <!-- .main-seaction -->
+			<section class="main-section main-section_theme_grey" id="reels">
+				<a name="reels" class="anchor">&nbsp;</a>
+				<div class="visual visual_align_right">
+					<img src="img/presentation/img_present_03.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Making Highlight Reels is Simple!</h2>
+						<p>Create Highlight Reels with our quick and easy Highlight Reel Tool</p>
+						<ul class="circled-list">
+							<li>Insert clips taken with the app</li>
+							<li>Upload video from other sources</li>							
+							<li>Available on all Athlete and Team Channels</li>
+						</ul>
+						<a class="btn btn-lg" href="prices.html">Get started</a>
+					</div>
+				</div>
+			</section> <!-- .main-seaction -->
+			<section class="price-section" id="contact-us">
+				<div class="price-section__holder">
+					<div class="presentation-contact-form">
+						<form action="#" id="contactForm" action="javascript:void(null);">
+							<fieldset>
+								<div class="presentation-contact-form__text-holder">
+									<h4>Participate in a FREE trial</h4>
+									<p><i>SportXast is looking for teams and athletes to participate in a FREE trial of our new Athlete and Team Channels.  </i></p>
+									<p><i>Just send us your info and we will contact you.</i></p>
+								</div>
+								<div class="presentation-contact-form__holder">
+									<div class="presentation-contact-form__column">
+										<div class="form-group">
+										    <label>First name</label>
+										    <input type="text" class="form-control" name="firstName" id="firstName">
+										</div>
+										<div class="form-group">
+										    <label>Email</label>
+										    <input type="text" class="form-control" name="email" id="email">
+										</div>
+										<div class="form-group">
+										    <label>Message</label>
+										    <textarea class="form-control" name="message" id="message"></textarea>
+										</div>
+									</div>
+									<div class="presentation-contact-form__column">
+										<div class="form-group">
+										    <label>Last name</label>
+										    <input type="text" class="form-control" name="lastName" id="lastName">
+										</div>
+										<div class="form-group">
+										    <label>Reason for contacting</label>
+										    <select class="selectpicker" id="reason" name="reason">
+										    	<option value="team">Team Channel</option>
+										    	<option value="athlete">Athlete Channel</option>
+										    </select>
+										</div>
+										<div class="form-group">
+										    <label>&nbsp;</label>
+										    <input type="submit" class="btn btn-sm btn_width_100 js-contact-submit" value="send" />
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div> <!-- .presentation-contact-form -->
+				</div>
+			</section>
+			<footer>
+				<p class="copy">&copy; SportXast, LLC.</p>
+				<ul class="footer-nav">
+					<li><a href="terms.html">terms of use</a></li>
+					<li><a href="privacy.html">privacy policy</a></li>
+					<li><a href="mailto:Contact@sportxast.com" class="js-contact-us">Contact Us</a></li>
+				</ul> <!-- .footer-nav -->
+				<ul class="social">
+					<li><a href="https://www.facebook.com/SportXast/?fref=ts"><i class="icon icon-facebook"></i></a></li>
+					<li><a href="https://www.linkedin.com/company/3003976?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A3003976%2Cidx%3A2-1-4%2CtarId%3A1464278683631%2Ctas%3Asportxast"><i class="icon icon-linked"></i></a></li>
+					<li><a href="https://twitter.com/SportXast"><i class="icon icon-twitter"></i></a></li>
+				</ul> <!-- .social -->
+			</footer>
+		</div>
+		<!-- 
+		<div class="tab-pane">
+			<section class="main-section">
+				<div class="visual visual_align_right">
+					<img src="img/presentation/img_present_21.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Download the app to start capturing and sharing highlights for FREE</h2>
+						<p>Get it on iOS</p>
+						<a href="#" class="btn-app-store"></a>
+					</div>
+				</div>
+				<a href="#scrollTo" class="scrollTo icon-mouse-scroll-down_grey btn-down"></a>
+			</section> .main-seaction
+			<section class="main-section main-section_theme_grey">
+				<div class="visual">
+					<img src="img/presentation/img_present_22.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Video Clips from the App go Straight to your Highlight Channel +tag</h2>
+						<p>Tag a player or a team's name in the highlight and video clip goes straight to their Athlete or Team Channel.</p>
+					</div>
+				</div>
+				<a href="#scrollTo" class="scrollTo icon-mouse-scroll-down_grey btn-down"></a>
+			</section> .main-seaction
+			<section class="main-section">
+				<div class="visual visual_align_right visual_valign_bottom">
+					<img src="img/presentation/img_present_23.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Share</h2>
+						<p>You can share your highlights in real-time on social media, text or email. Simply tap the <i class="icon icon-share2"></i> button.</p>
+						<p>
+							<span class="inline-block ">Get it on iOS</span>
+							<a href="#" class="btn-app-store inline-block"></a>
+						</p>
+						
+					</div>
+				</div>
+				<a href="#scrollTo" class="scrollTo icon-mouse-scroll-down_grey btn-down"></a>
+			</section> .main-seaction
+			<footer>
+				<p class="copy">&copy; SportXast, LLC.</p>
+				<ul class="footer-nav">
+					<li><a href="#">terms of use</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">send feedback</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul> .footer-nav
+				<ul class="social">
+					<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon icon-linked"></i></a></li>
+					<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+				</ul> .social
+			</footer>
+		</div>
+		<div class="tab-pane">
+			<section class="main-section">
+				<div class="visual visual_align_right visual_valign_bottom">
+					<img src="img/presentation/img_present_05.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Be Discovered!</h2>
+						<p>Get an Athlete Channel to show college coaches you have what it takes to play at the next level!</p>
+						<ul class="circled-list">
+							<li>Create unlimited highlight reels.</li>
+							<li>Tagged highlights go straight to your channel from the app</li>
+							<li>All for one <a href="prices.html">low price</a>!</li>
+						</ul>
+					</div>
+				</div>
+				<a href="#scrollTo" class="scrollTo icon-mouse-scroll-down_grey btn-down"></a>
+			</section> .main-seaction
+			<section class="main-section main-section_theme_grey">
+				<div class="visual">
+					<img src="img/presentation/img_present_31.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Show off your skills with unlimited Highlight Reels</h2>
+						<p>Create them yourself. It’s simple with our Highlight Reel Tool!</p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="main-section">
+				<div class="visual visual_align_right">
+					<img src="img/presentation/img_present_32.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Invite college coaches, friends and family to follow you.</h2>
+						<p>We notify them when you have new Highlights on your channel so they won’t miss a thing!</p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="price-section">
+				<div class="price-section__holder">
+					<div class="price-section__column">
+						<span class="price-section__price-text">Do it all for <span>$149.00 per year</span></span>
+						<p>That’s it, we won’t hit you with storage fees or other random charges!</p>
+					</div>
+					<div class="price-section__column">
+						<a class="btn btn-lg" href="prices.html">Get started</a>
+					</div>
+				</div>
+			</section> .price-section
+			<footer>
+				<p class="copy">&copy; SportXast, LLC.</p>
+				<ul class="footer-nav">
+					<li><a href="#">terms of use</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">send feedback</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul> .footer-nav
+				<ul class="social">
+					<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon icon-linked"></i></a></li>
+					<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+				</ul> .social
+			</footer>
+		</div>
+		<div class="tab-pane">
+			<section class="main-section">
+				<div class="visual visual_align_right">
+					<img src="img/presentation/img_present_04.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Showcase Your Team</h2>
+						<p>Get a Team Channel to showcase your team and players</p>
+						<ul class="circled-list">
+							<li>Create unlimited highlight reels.</li>
+							<li>Tagged highlights go straight to your channel from the app</li>
+							<li>All for one <a href="prices.html">low price</a>!</li>
+						</ul>
+						<a class="btn btn-lg" href="prices.html">Get started</a>
+					</div>
+				</div>
+				<a href="#scrollTo" class="scrollTo icon-mouse-scroll-down_grey btn-down"></a>
+			</section> .main-seaction
+			<section class="main-section main-section_theme_grey">
+				<div class="visual">
+					<img src="img/presentation/img_present_31.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Show off your skills with unlimited Highlight Reels</h2>
+						<p>Create them yourself. It’s simple with our Highlight Reel Tool!</p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="main-section">
+				<div class="visual visual_align_right">
+					<img src="img/presentation/img_present_41.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Recognize your sponsors by adding their logo to your Highlight Reels </h2>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="main-section main-section_theme_grey">
+				<div class="visual">
+					<img src="img/presentation/img_present_42.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Invite family, friends and fans to follow the team. </h2>
+						<p>We notify them when there are new highlights on your team’s channel so they won’t miss a thing! </p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="price-section">
+				<div class="price-section__holder">
+					<div class="price-section__column">
+						<span class="price-section__price-text">Do it all for <span>$299.00 per year</span></span>
+						<p>That’s it, we won’t hit you with storage fees or other random charges!</p>
+					</div>
+					<div class="price-section__column">
+						<a class="btn btn-lg" href="prices.html">Get started</a>
+					</div>
+				</div>
+			</section> .price-section
+			<footer>
+				<p class="copy">&copy; SportXast, LLC.</p>
+				<ul class="footer-nav">
+					<li><a href="#">terms of use</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">send feedback</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul> .footer-nav
+				<ul class="social">
+					<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon icon-linked"></i></a></li>
+					<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+				</ul> .social
+			</footer>
+		</div>
+		<div class="tab-pane">
+			<section class="main-section">
+				<div class="visual visual_align_right visual_valign_bottom">
+					<img src="img/presentation/img_present_51.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Get noticed!</h2>
+					</div>
+				</div>
+				<a href="#scrollTo" class="scrollTo icon-mouse-scroll-down_grey btn-down"></a>
+			</section> .main-seaction
+			<section class="main-section main-section_theme_grey">
+				<div class="visual visual_align_right">
+					<img src="img/presentation/img_present_52.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Upload your own videos</h2>
+						<p>Have video of your own that you want to include? No problem, upload it to the Highlight Tool, trim out the part you want to use and drop into your Highlight Reel. </p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="main-section">
+				<div class="visual">
+					<img src="img/presentation/img_present_41.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Titles and sponsor logos</h2>
+						<p>You can add a customizable title slide to complete your Reel. You can aslo add team or sponsor logos to your videos so if it gets shared, you and your team still get credit.</p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="main-section main-section_theme_grey">
+				<div class="visual visual_align_right visual_valign_bottom">
+					<img src="img/presentation/img_present_53.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Notify followers</h2>
+						<p>Want to share your Highlight Reel? That’s simple too. When you save it to your channel, a notification is instantly sent to your followers! You can also share it on social media. </p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="main-section">
+				<div class="visual">
+					<img src="img/presentation/img_present_54.png" alt="">
+				</div>
+				<div class="text-holder">
+					<div class="text-frame">
+						<h2>Spotlight</h2>
+						<p>All eyes on you! Stand out in your highlight reel with the Spotlight.</p>
+					</div>
+				</div>
+			</section> .main-seaction
+			<section class="price-section price-section_theme_two-colors">
+				<div class="price-section__holder">
+					<div class="price-section__column text-center">
+						<p>Some text here as well, one line</p>
+						<a class="btn btn-lg" href="prices.html">Team channel</a>
+					</div>
+					<div class="price-section__column text-center">
+						<p>Some text here as well, one line</p>
+						<a class="btn btn-lg" href="prices.html">athlete channel</a>
+					</div>
+				</div>
+			</section> .price-section
+			<footer>
+				<p class="copy">&copy; SportXast, LLC.</p>
+				<ul class="footer-nav">
+					<li><a href="#">terms of use</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">send feedback</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul> .footer-nav
+				<ul class="social">
+					<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon icon-linked"></i></a></li>
+					<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+				</ul> .social
+			</footer>
+		</div> -->
+		
+	</div> <!-- #main -->
+
+	<div class="modal fade modal_theme_white" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+	  <div class="modal-dialog" role="document" style="top: 90px;">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	        <div class="thanks-box">
+	        	<h4>Thank you!</h4>
+	        	<p>We	will	be	in	touch	with	you	soon.	In	the	meantime,	<a href="https://itunes.apple.com/us/app/sportxast-record-stream-sports/id738768889">download</a>	 the	free	SportXast app	to	start	capturing	highlights	 today!</p>
+	        	<div class="text-center">
+	        		<button class="btn">Ok</button>
+	        	</div>
+	        </div>
+	      </div> <!-- .modal-body -->
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div>
+	<div class="modal-backdrop fade in" style="display: none;"></div>
+
+		
+
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		var items = $('.carousel').find('.item'),
+			itemsCount = $('.carousel .item').length,
+			randomNum = Math.floor(Math.random()*(itemsCount));
+		$(items[randomNum]).addClass('active');
+
+		/*$('.myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})*/
+		
+		$(document).ready(function(){
+			$('.scrollTo').on('click',function (e) {
+			    e.preventDefault();
+
+			    var target = this.hash;
+			    var $target = $(target);
+			    var headerHeight = $('header').height();
+
+			    $('html, body').stop().animate({
+			        'scrollTop': $target.offset().top - headerHeight + 5
+			    }, 900, 'swing', function () {
+			        window.location.hash = target;
+			    });
+			});
+
+			$('.js-contact-submit').click(function submitForm (e) {
+		 	  	var msg   = $('#contactForm').serialize();
+		        $.ajax(
+		        {
+			        type: 'POST',
+			        url: 'http://dev.sportxast.com/phone/apiV2/mainsitecontact',
+			        data: msg,
+			        success: function(data) {
+			        	// show popup here
+		        	},
+			        error:  function(error){
+				        console.log('Error: ' + error);
+			        }
+	        	});
+	        	$('#thanksModal').show().addClass('in');
+	        	$('#thanksModal').next().show();
+				e.preventDefault();
+	        });
+	        $('#thanksModal').find('.btn').click(function(){
+	        	$('#thanksModal').hide();
+	        	$('#thanksModal').next().hide();
+	        });
+		});
+	</script>
+</body>
+</html>

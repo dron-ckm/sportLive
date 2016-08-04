@@ -1,0 +1,106 @@
+// Global Variables
+//
+// This file creates the global variables across all the alttb products.
+// Bootstrap Variables will be drawing from this file.
+// The reason why we are creating a separate file for alttb variables vs Bootstrap
+// variables is because this file presents custom variables, and is in a
+// consolidated location.
+/* Colors ----------------------------------- */
+/* ------------------------------------------ */
+// base color for text: charcoal
+@alttb_color_text:        #323a45;
+// base color for icons, links: green
+@alttb_color_links:       #7fd000;
+// base color for menu items, insets: dark blue
+@alttb_color_figures:     #323a45;
+// base color for supplemental items, icons, footer: green
+@alttb_color_supplement:  #323a45;
+// base color for stars, highlights: yellow
+@alttb_color_highlight:   #ff8302;
+// base background is white
+@alttb_color_base:        #FFF;
+
+// Find where they exist in the code and replace with the new set of greyscales.
+// *****************************
+// Grey Palette: disabled
+@alttb_grey_disabled:     #ebebeb;
+// Grey Palette: active
+@alttb_grey_active:       #999;
+// Grey Palette: buttons
+@alttb_grey_button:       #666;
+// Grey Palette: borders
+@alttb_grey_border:       #CCC;
+// *****************************
+
+// New Greyscale definitions
+
+// Dark Grey: used mainly for strong borders
+@alttb_grey_dark: #7f8a93;
+
+// Medium Dark Grey: annotated text (e.g. captions)
+@alttb_grey_medium_dark: #808a93;
+
+// Medium Grey: navigational icons, borders on disabled buttons
+@alttb_grey_medium: #ebebeb;
+
+// Medium Light Grey: color of horizontal rules, table lines, dividers
+@alttb_grey_medium_light: #D7D8D8;
+
+// Light Grey: background color for well text and disabled buttons,
+// hover color if the initial background color is white
+@alttb_grey_light: #F3F3F3;
+
+// Extra Light Grey is used only on bullseye for now
+@alttb_grey_extra_light: #f8f8f8;
+/* ------------------------------------------ */
+
+/* Paths ------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+/* iOS Media Queries ------------------------ */
+/* ------------------------------------------ */
+// usage example:
+// @media @ipad {}
+//
+// use prefix alttb_mq
+
+// All iPads in portrait & landscape
+@alttb_mq_ipad:                   ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+// All iPads in landscape
+@alttb_mq_ipad_landscape:         ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)";
+// All iPads in portrait
+@alttb_mq_ipad_portrait:          ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)";
+
+// ipad Mini, iPad 1 & 2 in portrait & landscape
+@alttb_mq_ipad_early:             ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1)";
+/*ipad Mini, iPad 1 & 2 in landscape*/
+@alttb_mq_ipad_early_landscape:   ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)";
+/*ipad Mini, iPad 1 & 2 in portrait*/
+@alttb_mq_ipad_early_portrait:    ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1)";
+
+// Retina iPad (includes Mini Retina) in portrait & landscape
+@alttb_mq_ipad_retina:            ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2)";
+// Retina iPad in landscape
+@alttb_mq_ipad_retina_landscape:  ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2)";
+// Retina iPad in portrait
+@alttb_mq_ipad_retina_portrait:   ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)";
+
+// iPhone 2G, 3G, 4, 4S Media Queries
+@alttb_mq_iphone_early:           ~"only screen and (min-device-width : 320px) and (max-device-width : 480px)";
+// iPhone 2G-4S in landscape
+@alttb_mq_iphone_early_landscape: ~"only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape)";
+// iPhone 2G-4S in portrait
+@alttb_mq_iphone_early_portrait:  ~"only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait)";
+
+// iPhone 5 (includes 5C) in portrait & landscape
+@alttb_mq_iphone_5:               ~"only screen and (min-device-width : 320px) and (max-device-width : 568px)";
+// iPhone 5 in landscape
+@alttb_mq_iphone_5_landscape:     ~"only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape)";
+// iPhone 5 in portrait
+@alttb_mq_iphone_5_portrait:      ~"only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait)";
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+

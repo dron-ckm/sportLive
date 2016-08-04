@@ -1,0 +1,211 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.form-control,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none !important;
+  -webkit-box-shadow: 0 0 0 0 rgba(217, 217, 217, 0) !important;
+  box-shadow: 0 0 0 0 rgba(217, 217, 217, 0) !important;
+}
+/* bootstrap button */
+.btn-lg {
+  height: 5rem;
+  font-size: 2.2rem;
+  min-width: 15rem;
+  border: 0;
+}
+.btn-lg.btn-transparent {
+  background: none;
+  border: 2px solid;
+}
+.btn-lg.btn-green {
+  color: #6aad00;
+}
+.btn-lg.btn-orange {
+  color: #ff8400;
+}
+.btn-lg.btn-white {
+  color: #fff;
+}
+.btn-lg.btn-dark-green {
+  color: #2a4610;
+}
+.navbar-default .navbar-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 9.3rem;
+  background: #fff;
+  z-index: 10;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #7fd000;
+}
+.navbar {
+  min-height: 0;
+  margin-bottom: 0;
+}
+.social-nav_shape_square a {
+  width: 4.8rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+}
+.social-nav span {
+  display: inline-block;
+  font-size: 2.2rem;
+  margin-right: 2rem;
+  color: #535b61;
+}
+.social-nav span:first-child {
+  margin-left: 0;
+}
+.social-nav a.text:hover {
+  text-decoration: none;
+  cursor: auto;
+}
+nav.social-nav_type_with-text {
+  max-width: 240px;
+  margin: 0 auto;
+}
+nav.social-nav_type_with-text a {
+  width: 240px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 0 1rem;
+  text-align: left;
+}
+nav.social-nav_type_with-text a .fa {
+  width: 2rem;
+  margin: 0 0.2rem 0 1.5rem;
+}
+nav.social-nav_type_with-text a:hover {
+  text-decoration: none;
+}
+.security-icons_size_big {
+  text-align: justify;
+}
+.security-icons_size_big:after {
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+  content: '';
+  display: inline-block;
+}
+.security-icons_size_big a {
+  display: inline-block;
+  height: 21.2rem;
+  line-height: 18.2rem;
+  background: #f0f0f0;
+  width: 24%;
+  padding: 1.5rem;
+  margin: 0 0 2rem !important;
+  text-align: center;
+  max-width: 280px;
+}
+.security-icons_size_big a img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tooltip {
+  color: #737373;
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 30rem;
+}
+.tooltip .tooltip-arrow {
+  display: none;
+}
+.tooltip .tooltip-inner {
+  padding: 1rem;
+  line-height: 1.3em;
+  max-width: 30rem;
+  color: #737373;
+  border: 1px solid #b0bbc3;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.tooltip .tooltip-inner:after,
+.tooltip .tooltip-inner:before {
+  margin-top: -6px;
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.tooltip .tooltip-inner:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 16px;
+  margin-left: -16px;
+}
+.tooltip .tooltip-inner:before {
+  border-color: rgba(197, 205, 211, 0);
+  border-top-color: #c5cdd3;
+  border-width: 17px;
+  margin-left: -17px;
+}
+.collapse-title {
+  display: block;
+  padding: 1rem 5.5rem 0 2rem;
+  background: #f8f9f9 url(../img/arrow-up.png) 95% 50% no-repeat;
+  font-size: 2rem;
+  color: #ff8400;
+}
+.collapse-title:focus {
+  color: #ff8400 !important;
+}
+.collapse-title.collapsed {
+  color: #535b61;
+  background: #ffffff url(../img/arrow-down.png) 95% 50% no-repeat;
+}
+.collapse-title:hover {
+  color: #ff8400;
+  text-decoration: none;
+}
+.collapse-title:focus {
+  text-decoration: none;
+  color: #535b61;
+  outline: none;
+  outline-offset: 0;
+}
+.collapsing + .collapse-title,
+.collapse + .collapse-title {
+  margin-top: 1rem;
+}
+.collapsing .well,
+.collapse .well {
+  font-size: 1.6rem;
+  color: #808a93;
+  line-height: 1.3em;
+  background-color: #f8f9f9;
+  padding: 1rem 3rem;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+}
+@media only screen and (max-width: 900px) {
+  .security-icons_size_big a {
+    height: 17rem;
+    line-height: 14rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .security-icons_size_big a {
+    height: 10rem;
+    line-height: 7rem;
+  }
+}

@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SportXast</title>
+    
+    <link media="all" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika:400,300,600,700">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<header style="position: relative;">
+		<a href="#" class="highlights" data-toggle="modal" data-target="#receiveModal">
+			Click to Receive
+			<b>Team Highlights</b>
+		</a> <!-- .highlights -->
+		<div class="header-holder">
+			<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+		  	<ul class="options">
+		  		<li><a data-toggle="modal" data-target="#signInModal">sign in</a></li>
+		  		<li><a data-toggle="modal" data-target="#signUpModal">create account</a></li>
+		  		<li class="pl-10"><a href="#"><i class="icon icon-search_big_grey"></i></a></li>
+		  	</ul> <!-- .options -->
+		  	<ul class="main-nav" id="nav">
+		  		<li class="active"><a href="#">Highlights</a></li>
+		  		<li><a href="#Videos">Videos</a></li>
+		  		<li><a href="#Athletes">Athletes</a></li>
+		  		<li><a href="#Scores">Scores &amp; schedules</a></li>
+		  		<li><a href="#About">About</a></li>
+		  	</ul> <!-- #nav -->
+		</div> <!-- .header-holder -->
+	</header> <!-- header -->
+	<div class="loged_in">
+		<header class="theme_black" style="position: relative;">
+			<div class="header-holder">
+				<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+				<div class="mobile-menu">
+					<i class="icon icon-menu_mobile js-mobile-menu"></i>
+					<ul class="mobile-menu__drop">
+						<li><a href="#">my feed</a></li>
+						<li><a href="#">following</a></li>
+						<li><a href="#">followed</a></li>
+						<li><a href="#">WHO’S VIEWED MY PROFILE</a></li>
+						<li><a href="#">settings</a></li>
+						<li><a href="#">log out</a></li>
+					</ul>
+				</div>
+				<ul class="main-nav" id="nav">
+			  		<li><a href="#">my feed <span class="main-nav__count">44</span></a></li>
+			  		<li><a href="#">create a highlight reel</a></li>
+			  	</ul> <!-- #nav -->
+			  	<ul class="options hide-when-logged">
+			  		<li><a data-toggle="modal" data-target="#signInModal">sign in</a></li>
+			  		<li><a data-toggle="modal" data-target="#signUpModal">create account</a></li>
+			  	</ul> <!-- .options -->
+			  	<ul class="athlette-settings show-when-logged">
+					<li><a href="#"><i class="icon icon-search_vbig"></i></a></li>
+					<li><a href="#"><i class="icon icon-bell"></i><span class="count">55</span></a></li>
+					<li>
+						<a href="#"><span class="athlette-settings__avatar"><img src="img/player01.jpg" alt=""></span></a>
+						<div class="athlete-settings__dropdown">
+							<ul class="athlete-settings__athlete-types">
+								<li class="active">
+									<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+									<div class="athlete-settings__athlete-types-holder">
+										<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball_small"></i> soccer</span>
+									</div>
+								</li>
+								<li>
+									<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+									<div class="athlete-settings__athlete-types-holder">
+										<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball2_small"></i> Basketball</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="athlete-settings__settings-list">
+								<li class="active"><a href="#">edit profile</a></li>
+								<li><a href="#">settings</a></li>
+								<li><a href="#">log out</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div> <!-- .header-holder -->
+		</header>
+	</div>
+	<header class="theme_black" style="position: relative;">
+		<div class="header-holder">
+			<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+			<div class="mobile-menu">
+				<i class="icon icon-menu_mobile js-mobile-menu"></i>
+				<ul class="mobile-menu__drop">
+					<li><a href="#">my feed</a></li>
+					<li><a href="#">following</a></li>
+					<li><a href="#">followed</a></li>
+					<li><a href="#">WHO’S VIEWED MY PROFILE</a></li>
+					<li><a href="#">settings</a></li>
+					<li><a href="#">log out</a></li>
+				</ul>
+			</div>
+			<ul class="options hide-when-logged options_theme_white options_type_no-border">
+		  		<li><a data-toggle="modal" data-target="#signInModal">sign in</a></li>
+		  		<li class="active"><a data-toggle="modal" data-target="#signUpModal">create account</a></li>
+		  	</ul> <!-- .options -->
+			<ul class="main-nav main-nav_type_centered" id="nav">
+		  		<li><a href="#">tour </a></li>
+		  		<li><a href="#">app</a></li>
+		  		<li><a href="#">teams</a></li>
+		  		<li><a href="#">events</a></li>
+		  		<li><a href="#">contact us</a></li>
+		  	</ul> <!-- #nav -->
+		  	
+		  	<ul class="athlette-settings show-when-logged">
+				<li><a href="#"><i class="icon icon-search_vbig"></i></a></li>
+				<li><a href="#"><i class="icon icon-bell"></i><span class="count">55</span></a></li>
+				<li>
+					<a href="#"><span class="athlette-settings__avatar"><img src="img/player01.jpg" alt=""></span></a>
+					<div class="athlete-settings__dropdown">
+						<ul class="athlete-settings__athlete-types">
+							<li class="active">
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball_small"></i> soccer</span>
+								</div>
+							</li>
+							<li>
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball2_small"></i> Basketball</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="athlete-settings__settings-list">
+							<li class="active"><a href="#">edit profile</a></li>
+							<li><a href="#">settings</a></li>
+							<li><a href="#">log out</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div> <!-- .header-holder -->
+	</header>
+	<div class="loged_in">
+		<header class="theme_black" style="position: relative;">
+			<div class="header-holder">
+				<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+				<div class="mobile-menu">
+					<i class="icon icon-menu_mobile js-mobile-menu"></i>
+					<ul class="mobile-menu__drop">
+						<li><a href="#">my feed</a></li>
+						<li><a href="#">following</a></li>
+						<li><a href="#">followed</a></li>
+						<li><a href="#">WHO’S VIEWED MY PROFILE</a></li>
+						<li><a href="#">settings</a></li>
+						<li><a href="#">log out</a></li>
+					</ul>
+				</div>
+				<ul class="main-nav">
+			  		<li><a href="#">my feed</a></li>
+			  		<li><a href="#">create a highlight reel</a></li>
+			  	</ul> <!-- #nav -->
+			  	<ul class="options hide-when-logged">
+			  		<li><a data-toggle="modal" data-target="#signInModal">sign in</a></li>
+			  		<li><a data-toggle="modal" data-target="#signUpModal">create account</a></li>
+			  	</ul> <!-- .options -->
+			  	<ul class="athlette-settings show-when-logged">
+					<li>
+						<div class="header-search">
+							<form action="#">
+								<fieldset>
+									<a href="#"><i class="icon icon-search_vbig"></i></a>
+									<div class="header-search__holder">
+										<input type="text">
+										<span class="header-search__close icon-close">x</span>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</li>
+					<li>
+						<a href="#"><i class="icon icon-settings_white"></i></a>
+						<div class="athlete-settings__dropdown athlete-settings__dropdown_type_settings">
+							<ul class="athlete-settings__settings-list">
+								<li><a href="#">Edit profile</a></li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Log out</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#"><span class="athlette-settings__avatar"><img src="img/player01.jpg" alt=""></span></a>
+						<div class="athlete-settings__dropdown">
+							<ul class="athlete-settings__athlete-types">
+								<li class="active">
+									<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+									<div class="athlete-settings__athlete-types-holder">
+										<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball_small"></i> soccer</span>
+									</div>
+								</li>
+								<li>
+									<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+									<div class="athlete-settings__athlete-types-holder">
+										<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball2_small"></i> Basketball</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div> <!-- .header-holder -->
+		</header>
+	</div>
+	<header class="athlete-header" style="position: relative;">
+		<div class="athlete-header__name-holder">
+			<h2 class="athlete-header__name">Katie Macdonald</h2>
+			<span class="athlete-header__status">2016 - striker</span>
+		</div>
+		<ul class="main-nav">
+			<li><a href="#">feed</a></li>
+			<li><a href="#">my Highlights</a></li>
+			<li><a href="#">About me</a></li>
+			<li><a href="#">schedule</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Create a Highlight Reel</a></li>
+		</ul>
+		<div class="header-holder">
+			<ul class="athlette-settings">
+				<li><a href="#"><i class="icon icon-search_vbig"></i></a></li>
+				<li><a href="#"><i class="icon icon-bell"></i><span class="count">55</span></a></li>
+				<li><a href="#"><i class="icon icon-settings"></i></a></li>
+			</ul>
+		</div>
+	</header>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

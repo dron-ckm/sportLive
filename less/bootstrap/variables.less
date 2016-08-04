@@ -1,0 +1,251 @@
+/* Variables (Bootstrap) -------------------- */
+// This file modifies the variables set in Boostrap variables.less
+/* ------------------------------------------ */
+
+
+// Global values
+// --------------------------------------------------
+
+// Brand colors
+// -------------------------
+
+@brand-primary:         @alttb_color_links;
+@brand-success:         @alttb_color_supplement;
+@brand-warning:         @alttb_color_highlight;
+
+// Scaffolding
+// -------------------------
+
+@text-color:            @alttb_color_text;
+
+// Links
+// -------------------------
+
+@link-color:            @alttb_color_links;
+@link-hover-color:      @alttb_color_links;
+
+// Typography
+// -------------------------
+// Bootstrap's treatment of font sizing is a fundamentally flawed approach as it
+// relies on pixel sizing. Dump all of it. Reset everything.
+
+@font-family-sans-serif:  Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-helvetica:   "Helvetica Neue", Helvetica, Arial;
+
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          1rem;
+@font-size-large:         1.6rem;
+@font-size-small:         .75rem;
+
+@font-size-h1:            4*@font-size-base;
+@font-size-h2:            3*@font-size-base;
+@font-size-h3:            2.5*@font-size-base;
+@font-size-h4:            2*@font-size-base;
+@font-size-h5:            @font-size-base;
+@font-size-h6:            .75*@font-size-base;
+
+@line-height-base:        1;
+// the original logic for this line in variables.less indicates lack of
+// understanding of visual presentation of typography.
+@line-height-computed:    floor(@font-size-base * @line-height-base);
+
+@headings-font-family:    @font-family-base;
+@headings-font-weight:    400;
+@headings-line-height:    1;
+@headings-color:          inherit;
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+// Tables
+// -------------------------
+
+@table-cell-padding:                 1em;
+@table-border-color:                 @alttb_grey_medium_light;
+
+// Buttons
+// -------------------------
+
+// Forms
+// -------------------------
+
+// Dropdowns
+// -------------------------
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+// Resolutions: 768, 960
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// landscape tablets, smallest desktops
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+// Resolutions: 1024, 1152
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+// Resolutions: 1280
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+@grid-columns:              12;
+// Padding, to be divided by two and applied to the left and right of all columns
+@grid-gutter-width:         3rem;
+// Point at which the navbar stops collapsing
+@grid-float-breakpoint:     @screen-sm-min;
+
+
+// Navbar
+// -------------------------
+
+// Main header
+@main-header-height:              12.9rem;
+// Basics of a navbar
+@navbar-height:                    6.4rem;
+@navbar-default-color:             @alttb_color_links;
+@navbar-default-bg:                @alttb_color_base;
+
+@nav-link-hover-bg:                @alttb_color_base;
+
+// Navs
+// -------------------------
+
+@nav-link-hover-bg:                         @alttb_grey_light;
+
+// Pagination
+// -------------------------
+
+@pagination-hover-bg:                  @alttb_grey_light;
+
+// Pager
+// -------------------------
+
+// @pager-border-radius:                  15px;
+@pager-disabled-color:                 @alttb_grey_medium;
+
+// Jumbotron
+// -------------------------
+
+@jumbotron-padding:              0;
+
+// Form states and alerts
+// -------------------------
+
+// Tooltips
+// -------------------------
+
+@tooltip-bg:                #FFF;
+@tooltip-color:             #7fd000;
+
+// Popovers
+// -------------------------
+
+// Labels
+// -------------------------
+
+// Modals
+// -------------------------
+
+// Alerts
+// -------------------------
+
+// Progress bars
+// -------------------------
+@progress-bg:                 @alttb_color_base;
+@progress-bar-color:          @alttb_color_text;
+@progress-bar-bg:             @alttb_color_supplement;
+
+// List group
+// -------------------------
+
+// Panels
+// -------------------------
+
+// Thumbnails
+// -------------------------
+
+// Wells
+// -------------------------
+
+// Badges
+// -------------------------
+
+// Breadcrumbs
+// -------------------------
+
+// Carousel
+// ------------------------
+
+// Close
+// ------------------------
+
+// Code
+// ------------------------
+
+// Type
+// ------------------------
+
+// this is color for annotated text
+@headings-small-color:        @alttb_grey_medium_dark;
+
+// Miscellaneous
+// -------------------------
+
+// Hr border color
+@hr-border:                   @alttb_grey_medium_light;
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+// 12 columns of 64 pixels each makes 768
+@container-tablet:              (76.8em);
+@container-sm:                  @container-tablet;
+
+// Medium screen / desktop
+// 12 columns of 80 pixels each makes 960
+@container-desktop:             (96rem);
+@container-md:                  @container-desktop;
+
+// Large screen / wide desktop
+// 12 columns of 96 pixels each makes 1152
+@container-large-desktop:       (115.2rem);
+@container-lg:                  @container-large-desktop;
+

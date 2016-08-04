@@ -1,0 +1,29 @@
+/* Global Mixins ---------------------------- */
+// This file adds mixin classes that can be shared across all projects
+//
+// A mixin that will be used globally will have the preface, ".mixin_"
+//
+// Variables that will be used internally for just this file will have the
+// prefix, "@internal_"
+//
+// Variabes that can be used externally will have the prefix, "@variable_"
+/* ------------------------------------------ */
+
+.placeholder (@color; @font-style) {
+	&::-webkit-input-placeholder {
+		color: @color;
+		font-style: @font-style;
+	}
+    &::-moz-placeholder {
+    	color: @color;
+		font-style: @font-style;
+    }
+    &:-moz-placeholder {
+        color: @color;
+		font-style: @font-style;
+    }
+    &:-ms-input-placeholder {
+    	color: @color;
+		font-style: @font-style;
+    }
+}

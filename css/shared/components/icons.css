@@ -1,0 +1,1020 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover !important;
+}
+.icon-facebook {
+  background: url(../img/icons/icon-facebook.png) 0 0 no-repeat;
+  width: 11px;
+  height: 19px;
+}
+.icon-linked {
+  background: url(../img/icons/icon-linked.png) 0 0 no-repeat;
+  width: 19px;
+  height: 17px;
+}
+.icon-twitter {
+  background: url(../img/icons/icon-twitter.png) 0 0 no-repeat;
+  width: 21px;
+  height: 17px;
+}
+.icon-camera {
+  background: url(../img/icons/icon-camera.png) 0 0 no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.icon-camera_green {
+  background: url(../img/icons/icon-camera_green.png) 0 0 no-repeat;
+  width: 35px;
+  height: 35px;
+}
+.icon-camera_small_green {
+  background: url(../img/icons/icon-camera_small_green.png) 0 0 no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.icon-camera_vsmall {
+  background: url(../img/icons/icon-camera_vsmall.png) 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.icon-ball {
+  background: url(../img/icons/icon-ball.png) 0 0 no-repeat;
+  width: 18px;
+  height: 19px;
+}
+.icon-place {
+  background: url(../img/icons/icon-place.png) 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+}
+.icon-dress_left_red {
+  background: url(../img/icons/icon-dress_left_red.png) 0 0 no-repeat;
+  width: 11px;
+  height: 20px;
+}
+.icon-dress_right_blue {
+  background: url(../img/icons/icon-dress_right_blue.png) 0 0 no-repeat;
+  width: 11px;
+  height: 20px;
+}
+.icon-camera_small {
+  background: url(../img/icons/icon-camera_small.png) 0 0 no-repeat;
+  width: 23px;
+  height: 23px;
+}
+.icon-play_big {
+  background: url(../img/icons/icon-play_big.png) 0 0 no-repeat;
+  width: 115px;
+  height: 158px;
+}
+.icon-play_medium {
+  background: url(../img/icons/icon-play_medium.png) 0 0 no-repeat;
+  width: 61px;
+  height: 81px;
+}
+.icon-play {
+  background: url(../img/icons/icon-play.png) 0 0 no-repeat;
+  width: 47px;
+  height: 65px;
+}
+.icon-info {
+  background: url(../img/icons/icon-info.png) 0 0 no-repeat;
+  width: 23px;
+  height: 23px;
+}
+.icon-search {
+  background: url(../img/icons/icon-search.png) 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.icon-sort {
+  background: url(../img/icons/icon-sort.png) 0 0 no-repeat;
+  width: 21px;
+  height: 16px;
+}
+.icon-add {
+  background: url(../img/icons/icon-add.png) 0 0 no-repeat;
+  width: 21px;
+  height: 21px;
+}
+.icon-photo {
+  background: url(../img/icons/icon-photo.png) 0 0 no-repeat;
+  width: 15px;
+  height: 12px;
+}
+.icon-photo_green {
+  background: url(../img/icons/icon-photo_green.png) 0 0 no-repeat;
+  width: 21px;
+  height: 17px;
+}
+.icon-paper-plane {
+  background: url(../img/icons/icon-paper-plane.png) 0 0 no-repeat;
+  width: 27px;
+  height: 24px;
+}
+.icon-paper-plane_green {
+  background: url(../img/icons/icon-paper-plane_green.png) 0 0 no-repeat;
+  width: 27px;
+  height: 24px;
+}
+.icon-place_transparent {
+  background: url(../img/icons/icon-place_transparent.png) 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.icon-clock_small_green {
+  background: url(../img/icons/icon-clock_small_green.png) 0 0 no-repeat;
+  width: 14px;
+  height: 14px;
+}
+.icon-reminder {
+  background: url(../img/icons/icon-reminder.png) 0 0 no-repeat;
+  width: 18px;
+  height: 19px;
+}
+.icon-facebook_green {
+  background: url(../img/icons/icon-facebook_green.png) 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.icon-twitter_green {
+  background: url(../img/icons/icon-twitter_green.png) 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.icon-mail_green {
+  background: url(../img/icons/icon-mail_green.png) 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.icon-phone {
+  background: url(../img/icons/icon-phone.png) 0 0 no-repeat;
+  width: 12px;
+  height: 21px;
+}
+.icon-mail2 {
+  background: url(../img/icons/icon-mail2.png) 0 0 no-repeat;
+  width: 21px;
+  height: 17px;
+}
+.icon-athlete {
+  background: url(../img/icons/icon-athlete.png) 0 0 no-repeat;
+  width: 67px;
+  height: 67px;
+}
+.icon-athlete_big {
+  background: url(../img/icons/icon-athlete_big.png) 0 0 no-repeat;
+  width: 119px;
+  height: 114px;
+}
+.icon-athlete_big_grey {
+  background: url(../img/icons/icon-athlete_big_grey.png) 0 0 no-repeat;
+  width: 119px;
+  height: 114px;
+}
+.icon-coach_big {
+  background: url(../img/icons/icon-coach_big.png) 0 0 no-repeat;
+  width: 118px;
+  height: 115px;
+}
+.icon-coach_big_grey {
+  background: url(../img/icons/icon-coach_big_grey.png) 0 0 no-repeat;
+  width: 118px;
+  height: 115px;
+}
+.icon-ball_medium {
+  background: url(../img/icons/icon-ball_medium.png) 0 0 no-repeat;
+  width: 21px;
+  height: 21px;
+}
+.icon-team_big_grey {
+  background: url(../img/icons/icon-team_big_grey.png) 0 0 no-repeat;
+  width: 119px;
+  height: 114px;
+}
+.icon-fan_big {
+  background: url(../img/icons/icon-fan_big.png) 0 0 no-repeat;
+  width: 118px;
+  height: 114px;
+}
+.icon-pointer2_grey {
+  background: url(../img/icons/icon-pointer2_grey.png) 0 0 no-repeat;
+  width: 13px;
+  height: 18px;
+}
+.icon-team_big {
+  background: url(../img/icons/icon-team_big.png) 0 0 no-repeat;
+  width: 119px;
+  height: 114px;
+}
+.icon-fan_big_grey {
+  background: url(../img/icons/icon-fan_big_grey.png) 0 0 no-repeat;
+  width: 118px;
+  height: 114px;
+}
+.icon-ball_big {
+  background: url(../img/icons/icon-ball_big.png) 0 0 no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.icon-search_white {
+  background: url(../img/icons/icon-search_white.png) 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+}
+.icon-play_small {
+  background: url(../img/icons/icon-play_small.png) 0 0 no-repeat;
+  width: 26px;
+  height: 38px;
+}
+.icon-play_vsmall {
+  background: url(../img/icons/icon-play_vsmall.png) 0 0 no-repeat;
+  width: 16px;
+  height: 22px;
+}
+.icon-play_smallest {
+  background: url(../img/icons/icon-play_smallest.png) 0 0 no-repeat;
+  width: 12px;
+  height: 17px;
+}
+.icon-share {
+  background: url(../img/icons/icon-share.png) 0 0 no-repeat;
+  width: 20px;
+  height: 22px;
+}
+.icon-favorite {
+  background: url(../img/icons/icon-favorite.png) 0 0 no-repeat;
+  width: 23px;
+  height: 21px;
+}
+.icon-search_big {
+  background: url(../img/icons/icon-search_big.png) 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+}
+.icon-bell {
+  background: url(../img/icons/icon-bell.png) 0 0 no-repeat;
+  width: 24px;
+  height: 27px;
+}
+.icon-settings {
+  background: url(../img/icons/icon-settings.png) 0 0 no-repeat;
+  width: 29px;
+  height: 29px;
+}
+.icon-public {
+  background: url(../img/icons/icon-public.png) 0 0 no-repeat;
+  width: 24px;
+  height: 25px;
+}
+.icon-friends {
+  background: url(../img/icons/icon-friends.png) 0 0 no-repeat;
+  width: 16px;
+  height: 21px;
+}
+.icon-lock {
+  background: url(../img/icons/icon-lock.png) 0 0 no-repeat;
+  width: 12px;
+  height: 17px;
+}
+.icon-close {
+  background: url(../img/icons/icon-close.png) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+}
+.icon-checked {
+  background: url(../img/icons/icon-checked.png) 0 0 no-repeat;
+  width: 24px;
+  height: 16px;
+}
+.icon-pointer_small {
+  background: url(../img/icons/icon-pointer_small.png) 0 0 no-repeat;
+  width: 12px;
+  height: 15px;
+}
+.icon-pointer_big {
+  background: url(../img/icons/icon-pointer_big.png) 0 0 no-repeat;
+  width: 19px;
+  height: 26px;
+}
+.icon-mail {
+  background: url(../img/icons/icon-mail.png) 0 0 no-repeat;
+  width: 22px;
+  height: 15px;
+}
+.icon-ball2 {
+  background: url(../img/icons/icon-ball2.png) 0 0 no-repeat;
+  width: 36px;
+  height: 36px;
+}
+.icon-clock {
+  background: url(../img/icons/icon-clock.png) 0 0 no-repeat;
+  width: 21px;
+  height: 21px;
+}
+.icon-arrow-left {
+  background: url(../img/icons/icon-arrow-left.png);
+  width: 15px;
+  height: 16px;
+}
+.icon-ball_grey {
+  background: url(../img/icons/icon-ball_grey.png) 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+}
+.icon-pointer_small_grey {
+  background: url(../img/icons/icon-pointer_small_grey.png) 0 0 no-repeat;
+  width: 11px;
+  height: 16px;
+}
+.icon-arrow-up {
+  background: url(../img/icons/icon-arrow-up.png) 0 0 no-repeat;
+  width: 17px;
+  height: 10px;
+}
+.icon-arrow-down {
+  background: url(../img/icons/icon-arrow-down.png) 0 0 no-repeat;
+  width: 17px;
+  height: 10px;
+}
+.icon-reviews {
+  background: url(../img/icons/icon-reviews.png) 0 0 no-repeat;
+  width: 25px;
+  height: 16px;
+}
+.icon-comments {
+  background: url(../img/icons/icon-comments.png) 0 0 no-repeat;
+  width: 20px;
+  height: 18px;
+}
+.icon-shares {
+  background: url(../img/icons/icon-shares.png) 0 0 no-repeat;
+  width: 19px;
+  height: 18px;
+}
+.icon-bucket {
+  background: url(../img/icons/icon-bucket.png) 0 0 no-repeat;
+  width: 16px;
+  height: 20px;
+}
+.icon-edit {
+  background: url(../img/icons/icon-edit.png) 0 0 no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.icon-edit_grey {
+  background: url(../img/icons/icon-edit_grey.png) 0 0 no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.icon-ball_vbig_grey {
+  background: url(../img/icons/icon-ball_vbig_grey.png) 0 0 no-repeat;
+  width: 126px;
+  height: 125px;
+}
+.icon-pencil {
+  background: url(../img/icons/icon-pencil.png) 0 0 no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.icon-ball_small {
+  background: url(../img/icons/icon-ball_small.png) 0 0 no-repeat;
+  width: 13px;
+  height: 13px;
+}
+.icon-ball2_small {
+  background: url(../img/icons/icon-ball2_small.png) 0 0 no-repeat;
+  width: 14px;
+  height: 14px;
+}
+.icon-phone2 {
+  background: url(../img/icons/icon-phone2.png) 0 0 no-repeat;
+  width: 34px;
+  height: 34px;
+}
+.icon-mail3 {
+  background: url(../img/icons/icon-mail3.png) 0 0 no-repeat;
+  width: 46px;
+  height: 32px;
+}
+.icon-ball3 {
+  background: url(../img/icons/icon-ball3.png) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+}
+.icon-drag-dots {
+  background: url(../img/icons/icon-drag-dots.png) 0 0 no-repeat;
+  width: 5px;
+  height: 21px;
+}
+.icon-drag-dots_green {
+  background: url(../img/icons/icon-drag-dots_green.png) 0 0 no-repeat;
+  width: 4px;
+  height: 20px;
+}
+.icon-ball_52 {
+  background: url(../img/icons/icon-ball_52.png) 0 0 no-repeat;
+  width: 52px;
+  height: 52px;
+}
+.icon-ball2_52_grey {
+  background: url(../img/icons/icon-ball2_52_grey.png) 0 0 no-repeat;
+  width: 52px;
+  height: 52px;
+}
+.icon-checked2 {
+  background: url(../img/icons/icon-checked2.png) 0 0 no-repeat;
+  width: 17px;
+  height: 15px;
+}
+.icon-watermark {
+  background: url(../img/icons/icon-watermark.png) 0 0 no-repeat;
+  width: 23px;
+  height: 22px;
+}
+.icon-watermark_green {
+  background: url(../img/icons/icon-watermark_green.png) 0 0 no-repeat;
+  width: 23px;
+  height: 22px;
+}
+.icon-info2 {
+  background: url(../img/icons/icon-info2.png) 0 0 no-repeat;
+  width: 10px;
+  height: 24px;
+}
+.icon-info2_green {
+  background: url(../img/icons/icon-info2_green.png) 0 0 no-repeat;
+  width: 10px;
+  height: 24px;
+}
+.icon-audio {
+  background: url(../img/icons/icon-audio.png) 0 0 no-repeat;
+  width: 19px;
+  height: 21px;
+}
+.icon-audio_green {
+  background: url(../img/icons/icon-audio_green.png) 0 0 no-repeat;
+  width: 19px;
+  height: 21px;
+}
+.icon-add_smaller {
+  background: url(../img/icons/icon-add_smaller.png) 0 0 no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.icon-expand {
+  background: url(../img/icons/icon-expand.png) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+}
+.icon-pencil_small {
+  background: url(../img/icons/icon-pencil_small.png) 0 0 no-repeat;
+  width: 13px;
+  height: 13px;
+}
+.icon-play_smallest_grey {
+  background: url(../img/icons/icon-play_smallest_grey.png) 0 0 no-repeat;
+  width: 11px;
+  height: 15px;
+}
+.icon-play_smallest_black {
+  background: url(../img/icons/icon-play_smallest_black.png) 0 0 no-repeat;
+  width: 11px;
+  height: 15px;
+}
+.icon-scissors {
+  background: url(../img/icons/icon-scissors.png) 0 0 no-repeat;
+  width: 26px;
+  height: 23px;
+}
+.icon-scissors_green {
+  background: url(../img/icons/icon-scissors_green.png) 0 0 no-repeat;
+  width: 26px;
+  height: 23px;
+}
+.icon-text {
+  background: url(../img/icons/icon-text.png) 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+}
+.icon-text_green {
+  background: url(../img/icons/icon-text_green.png) 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+}
+.icon-duplicate {
+  background: url(../img/icons/icon-duplicate.png) 0 0 no-repeat;
+  width: 23px;
+  height: 23px;
+}
+.icon-bucket_green {
+  background: url(../img/icons/icon-bucket_green.png) 0 0 no-repeat;
+  width: 18px;
+  height: 23px;
+}
+.icon-close_green {
+  background: url(../img/icons/icon-close_green.png) 0 0 no-repeat;
+  width: 14px;
+  height: 14px;
+}
+.icon-volume {
+  background: url(../img/icons/icon-volume.png) 0 0 no-repeat;
+  width: 169px;
+  height: 19px;
+}
+.icon-expand2 {
+  background: url(../img/icons/icon-expand2.png) 0 0 no-repeat;
+  width: 21px;
+  height: 18px;
+}
+.icon-video-prev {
+  background: url(../img/icons/icon-video-prev.png) 0 0 no-repeat;
+  width: 32px;
+  height: 28px;
+}
+.icon-video-next {
+  background: url(../img/icons/icon-video-next.png) 0 0 no-repeat;
+  width: 32px;
+  height: 28px;
+}
+.icon-video-pause {
+  background: url(../img/icons/icon-video-pause.png) 0 0 no-repeat;
+  width: 20px;
+  height: 28px;
+}
+.icon-tshirt {
+  background: url(../img/icons/icon-tshirt.png) 0 0 no-repeat;
+  width: 24px;
+  height: 19px;
+}
+.icon-tshirt_green {
+  background: url(../img/icons/icon-tshirt_green.png) 0 0 no-repeat;
+  width: 24px;
+  height: 19px;
+}
+.icon-circle {
+  background: url(../img/icons/icon-circle.png) 0 0 no-repeat;
+  width: 102px;
+  height: 102px;
+}
+.icon-cirlce_small_grey {
+  background: url(../img/icons/icon-cirlce_small_grey.png) 0 0 no-repeat;
+  width: 53px;
+  height: 53px;
+}
+.icon-cirlce_small_green {
+  background: url(../img/icons/icon-cirlce_small_green.png) 0 0 no-repeat;
+  width: 53px;
+  height: 53px;
+}
+.icon-running_green {
+  background: url(../img/icons/icon-running_green.png) 0 0 no-repeat;
+  width: 60px;
+  height: 58px;
+}
+.icon-running {
+  background: url(../img/icons/icon-running.png) 0 0 no-repeat;
+  width: 60px;
+  height: 58px;
+}
+.icon-dot-arrow {
+  background: url(../img/icons/icon-dot-arrow.png) 0 0 no-repeat;
+  width: 52px;
+  height: 29px;
+}
+.icon-dot-arrow_green {
+  background: url(../img/icons/icon-dot-arrow_green.png) 0 0 no-repeat;
+  width: 52px;
+  height: 29px;
+}
+.icon-simple-arrow_green {
+  background: url(../img/icons/icon-simple-arrow_green.png) 0 0 no-repeat;
+  width: 50px;
+  height: 27px;
+}
+.icon-simple-arrow {
+  background: url(../img/icons/icon-simple-arrow.png) 0 0 no-repeat;
+  width: 50px;
+  height: 27px;
+}
+.icon-none_green {
+  background: url(../img/icons/icon-none_green.png) 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.icon-none {
+  background: url(../img/icons/icon-none.png) 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.icon-volume-down {
+  background: url(../img/icons/icon-volume-down.png) 0 0 no-repeat;
+  width: 20px;
+  height: 19px;
+}
+.icon-shares_medium {
+  background: url(../img/icons/icon-shares_medium.png) 0 0 no-repeat;
+  width: 29px;
+  height: 28px;
+}
+.icon-clock_grey {
+  background: url(../img/icons/icon-clock_grey.png) 0 0 no-repeat;
+  width: 23px;
+  height: 23px;
+}
+.icon-pointer_big_grey {
+  background: url(../img/icons/icon-pointer_big_grey.png) 0 0 no-repeat;
+  width: 19px;
+  height: 26px;
+}
+.icon-ball_big_grey {
+  background: url(../img/icons/icon-ball_big_grey.png) 0 0 no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.icon-pencil_small_white {
+  background: url(../img/icons/icon-pencil_small_white.png) 0 0 no-repeat;
+  width: 13px;
+  height: 13px;
+}
+.icon-tshirt_small {
+  background: url(../img/icons/icon-tshirt_small.png) 0 0 no-repeat;
+  width: 21px;
+  height: 19px;
+}
+.icon-like {
+  background: url(../img/icons/icon-like.png) 0 0 no-repeat;
+  width: 16px;
+  height: 18px;
+}
+.icon-tag {
+  background: url(../img/icons/icon-tag.png) 0 0 no-repeat;
+  width: 35px;
+  height: 21px;
+}
+.icon-close_red {
+  background: url(../img/icons/icon-close_red.png) 0 0 no-repeat;
+  width: 13px;
+  height: 13px;
+}
+.icon-clock_small {
+  background: url(../img/icons/icon-clock_small.png) 0 0 no-repeat;
+  width: 14px;
+  height: 14px;
+}
+.icon-heart {
+  background: url(../img/icons/icon-heart.png) 0 0 no-repeat;
+  width: 18px;
+  height: 16px;
+}
+.icon-play_big2 {
+  background: url(../img/icons/icon-play_big2.png) 0 0 no-repeat;
+  width: 84px;
+  height: 112px;
+}
+.icon-pointer_grey {
+  background: url(../img/icons/icon-pointer_grey.png) 0 0 no-repeat;
+  width: 14px;
+  height: 18px;
+}
+.icon-drag-dots_white {
+  background: url(../img/icons/icon-drag-dots_white.png) 0 0 no-repeat;
+  width: 4px;
+  height: 18px;
+}
+.icon-expand3 {
+  background: url(../img/icons/icon-expand3.png) 0 0 no-repeat;
+  width: 18px;
+  height: 19px;
+}
+.icon-search_dark {
+  background: url(../img/icons/icon-search_dark.png) 0 0 no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.icon-close_grey {
+  background: url(../img/icons/icon-close_grey.png) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+}
+.icon-edit_white {
+  background: url(../img/icons/icon-edit_white.png) 0 0 no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.icon-photo_medium {
+  background: url(../img/icons/icon-photo_medium.png) 0 0 no-repeat;
+  width: 36px;
+  height: 29px;
+}
+.icon-user {
+  background: url(../img/icons/icon-user.png) 0 0 no-repeat;
+  width: 24px;
+  height: 29px;
+}
+.icon-user_dark {
+  background: url(../img/icons/icon-user_dark.png) 0 0 no-repeat;
+  width: 24px;
+  height: 29px;
+}
+.icon-award {
+  background: url(../img/icons/icon-award.png) 0 0 no-repeat;
+  width: 28px;
+  height: 33px;
+}
+.icon-award_dark {
+  background: url(../img/icons/icon-award_dark.png) 0 0 no-repeat;
+  width: 28px;
+  height: 33px;
+}
+.icon-academic_dark {
+  background: url(../img/icons/icon-academic_dark.png) 0 0 no-repeat;
+  width: 45px;
+  height: 27px;
+}
+.icon-academic {
+  background: url(../img/icons/icon-academic.png) 0 0 no-repeat;
+  width: 45px;
+  height: 27px;
+}
+.icon-phone2_small {
+  background: url(../img/icons/icon-phone2_small.png) 0 0 no-repeat;
+  width: 20px;
+  height: 19px;
+}
+.icon-mail_medium_green {
+  background: url(../img/icons/icon-mail_medium_green.png) 0 0 no-repeat;
+  width: 27px;
+  height: 19px;
+}
+.icon-facebook_small_green {
+  background: url(../img/icons/icon-facebook_small_green.png) 0 0 no-repeat;
+  width: 24px;
+  height: 23px;
+}
+.icon-insta_small_green {
+  background: url(../img/icons/icon-insta_small_green.png) 0 0 no-repeat;
+  width: 24px;
+  height: 23px;
+}
+.icon-twitter_small_green {
+  background: url(../img/icons/icon-twitter_small_green.png) 0 0 no-repeat;
+  width: 24px;
+  height: 23px;
+}
+.icon-mail_dark {
+  background: url(../img/icons/icon-mail_dark.png) 0 0 no-repeat;
+  width: 22px;
+  height: 15px;
+}
+.icon-pointer_green {
+  background: url(../img/icons/icon-pointer_green.png) 0 0 no-repeat;
+  width: 13px;
+  height: 18px;
+}
+.icon-search_vbig {
+  background: url(../img/icons/icon-search_vbig.png) 0 0 no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.icon-settings_white {
+  background: url(../img/icons/icon-settings_white.png) 0 0 no-repeat;
+  width: 29px;
+  height: 29px;
+}
+.icon-follow {
+  background: url(../img/icons/icon-follow.png) 0 0 no-repeat;
+  width: 35px;
+  height: 27px;
+}
+.icon-expand_grey {
+  background: url(../img/icons/icon-expand_grey.png) 0 0 no-repeat;
+  width: 18px;
+  height: 19px;
+}
+.icon-drag-dots_smaller {
+  background: url(../img/icons/icon-drag-dots_smaller.png) 0 0 no-repeat;
+  width: 4px;
+  height: 18px;
+}
+.icon-facebook_blue {
+  background: url(../img/icons/icon-facebook_blue.png) 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.icon-twitter_blue {
+  background: url(../img/icons/icon-twitter_blue.png) 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.icon-search_small_white {
+  background: url(../img/icons/icon-search_small_white.png) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+}
+.icon-close_white {
+  background: url(../img/icons/icon-close_white.png) 0 0 no-repeat;
+  width: 13px;
+  height: 13px;
+}
+.icon-pointer2_big_grey {
+  background: url(../img/icons/icon-pointer2_big_grey.png) 0 0 no-repeat;
+  width: 17px;
+  height: 24px;
+}
+.icon-ball_big_grey2 {
+  background: url(../img/icons/icon-ball_big_grey2.png) 0 0 no-repeat;
+  width: 19px;
+  height: 20px;
+}
+.icon-pointer2_small_green {
+  background: url(../img/icons/icon-pointer2_small_green.png) 0 0 no-repeat;
+  width: 10px;
+  height: 13px;
+}
+.icon-user-add_green {
+  background: url(../img/icons/icon-user-add_green.png) 0 0 no-repeat;
+  width: 33px;
+  height: 21px;
+}
+.icon-user-add_white {
+  background: url(../img/icons/icon-user-add_white.png) 0 0 no-repeat;
+  width: 33px;
+  height: 21px;
+}
+.icon-user-remove_white {
+  background: url(../img/icons/icon-user-remove_white.png) 0 0 no-repeat;
+  width: 34px;
+  height: 22px;
+}
+.icon-user-remove_grey {
+  background: url(../img/icons/icon-user-remove_grey.png) 0 0 no-repeat;
+  width: 34px;
+  height: 22px;
+}
+.icon-search_big_grey {
+  background: url(../img/icons/icon-search_big_grey.png) 0 0 no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.icon-arrow-down_big {
+  background: url(../img/icons/icon-arrow-down_big.png) 0 0 no-repeat;
+  width: 47px;
+  height: 43px;
+}
+.icon-checkmark {
+  background: url(../img/icons/icon-check-mark.png) 0 0 no-repeat;
+  width: 26px;
+  height: 20px;
+}
+.icon-add_biggest {
+  background: url(../img/icons/icon-add_biggest.png) 0 0 no-repeat;
+  width: 165px;
+  height: 165px;
+}
+.icon-info2_black {
+  background: url(../img/icons/icon-info2_black.png) 0 0 no-repeat;
+  width: 10px;
+  height: 24px;
+}
+.icon-watermark_black {
+  background: url(../img/icons/icon-watermark_black.png) 0 0 no-repeat;
+  width: 23px;
+  height: 22px;
+}
+.icon-audio_black {
+  background: url(../img/icons/icon-audio_black.png) 0 0 no-repeat;
+  width: 19px;
+  height: 21px;
+}
+.icon-arrow-right {
+  background: url(../img/icons/icon-arrow-right.png) 0 0 no-repeat;
+  width: 14px;
+  height: 17px;
+}
+.icon-pause {
+  background: url(../img/icons/icon-pause.png) 0 0 no-repeat;
+  width: 23px;
+  height: 31px;
+}
+.icon-play_grey {
+  background: url(../img/icons/icon-play_grey.png) 0 0 no-repeat;
+  width: 23px;
+  height: 30px;
+}
+.icon-upload {
+  background: url(../img/icons/icon-upload.png) 0 0 no-repeat;
+  width: 20px;
+  height: 21px;
+}
+.icon-star {
+  background: url(../img/icons/icon-star.png) 0 0 no-repeat;
+  width: 23px;
+  height: 22px;
+}
+.icon-star_green {
+  background: url(../img/icons/icon-star_green.png) 0 0 no-repeat;
+  width: 23px;
+  height: 22px;
+}
+.icon-play-clips {
+  background: url(../img/icons/icon-play-clips.png) 0 0 no-repeat;
+  width: 20px;
+  height: 24px;
+}
+.icon-play-clips_green {
+  background: url(../img/icons/icon-play-clips_green.png) 0 0 no-repeat;
+  width: 20px;
+  height: 24px;
+}
+.icon-upload_green {
+  background: url(../img/icons/icon-upload_green.png) 0 0 no-repeat;
+  width: 20px;
+  height: 21px;
+}
+.icon-star-filled {
+  background: url(../img/icons/icon-star-filled.png) 0 0 no-repeat;
+  width: 34px;
+  height: 34px;
+}
+.icon-star-filled2 {
+  background: url(../img/icons/icon-star-filled2.png) 0 0 no-repeat;
+  width: 34px;
+  height: 34px;
+}
+.icon-added {
+  background: url(../img/icons/icon-added.png) 0 0 no-repeat;
+  width: 45px;
+  height: 45px;
+}
+.icon-added2 {
+  background: url(../img/icons/icon-added2.png) 0 0 no-repeat;
+  width: 43px;
+  height: 43px;
+}
+.icon-magic {
+  background: url(../img/icons/icon-magic.png) 0 0 no-repeat;
+  width: 28px;
+  height: 28px;
+}
+.icon-arrow-left_green {
+  background: url(../img/icons/icon-arrow-left_green.png) 0 0 no-repeat;
+  width: 15px;
+  height: 17px;
+}
+.icon-facebook_white {
+  background: url(../img/icons/icon-facebook_white.png) 0 0 no-repeat;
+  width: 30px;
+  height: 29px;
+}
+.icon-google {
+  background: url(../img/icons/icon-google.png) 0 0 no-repeat;
+  width: 33px;
+  height: 33px;
+}
+.icon-check-mark_big {
+  background: url(../img/icons/icon-check-mark_big.png) 0 0 no-repeat;
+  width: 44px;
+  height: 32px;
+}
+.icon-menu_mobile {
+  background: url(../img/icons/icon-menu_mobile.png) 0 0 no-repeat;
+  width: 13px;
+  height: 12px;
+}
+.icon-menu-close_mobile {
+  background: url(../img/icons/icon-menu-close_mobile.png) 0 0 no-repeat;
+  width: 21px;
+  height: 22px;
+}
+@media screen and (max-width: 768px) {
+  .icon-ball_big_grey {
+    width: 12px;
+    height: 12px;
+  }
+  .icon-clock_grey {
+    width: 12px;
+    height: 12px;
+  }
+  .icon-pointer_big_grey {
+    width: 10px;
+    height: 13px;
+  }
+  .icon-shares_medium {
+    width: 15px;
+    height: 14px;
+  }
+  .icon-shares {
+    width: 15px;
+    height: 14px;
+  }
+  .icon-edit {
+    width: 13px;
+    height: 13px;
+  }
+  .icon-settings_white {
+    width: 15px;
+    height: 15px;
+  }
+}

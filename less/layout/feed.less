@@ -1,0 +1,406 @@
+.request-box {
+	.request-box__title {
+		border-bottom: 1px solid @section_color;
+		padding: 1.4rem;
+		overflow: hidden;
+	}
+
+	.request-box__title-holder {
+		padding-top: .8rem;
+		overflow: hidden;
+	}
+
+	.request-box__name {
+		text-transform: uppercase;
+		display: block;
+		color:  @dark_grey;
+		.regular;
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+	}
+
+	.request-box__description {
+		display: block;
+		font-size: 1.8rem;
+		color: @light_grey;
+	}
+
+	.request-box__holder {
+		padding: 1.4rem;
+		
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+
+	.request-box__accept,
+	.request-box__delete {
+		.bold;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		color: @link_color;
+		margin-left: 4rem;
+		cursor: pointer;
+		float: left;
+
+		.icon {margin-left: 1rem;}
+	}
+	.request-box__delete {
+		color: #e3495f;
+		margin-right: 4rem;
+		float: right;
+	}
+} // .request-box
+
+.upcoming-schedule {
+	.upcoming-schedule__title {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 1.9rem;
+
+		h4 {margin-bottom: 0;}
+	}
+
+	.upcoming-schedule__date {
+		font-style: italic;
+		float: right;
+		padding-right: 4.5rem;
+		color: #606e78;
+		font-size: 1.8rem;
+		line-height: 1em;
+		margin-left: 1rem;
+	}
+
+	.upcoming-schedule__holder {
+		background: #fff;
+		padding: 2rem;
+		margin-bottom: .7rem;
+	}
+
+	.upcoming-schedule__holder + .upcoming-schedule__title {
+		padding-top: 1.5rem;
+	}
+
+	.upcoming-schedule__name {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		.regular;
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+
+	.upcoming-schedule__frame {
+		font-size: 1.6rem;
+		color: #606e78;
+	}
+
+	.clubs-title__name {
+		.bold;
+		font-size: 1.6rem;
+		color: @dark_grey;
+	}
+} // .upcoming-schedule
+
+.activity-box {
+	background: #fff;
+	margin-bottom: 20px;
+
+	.activity-box__header {
+		border-bottom: 1px solid #f6f7f8;
+		overflow: hidden;
+		padding: 1rem 2.5rem;
+	}
+
+	.activity-box__action {
+		display: inline-block;
+		vertical-align: middle;
+		color: #bbc4c8;
+	}
+
+	.activity-box__action-name {
+		display: inline-block;
+		vertical-align: middle;
+		color: #6b6d6f;
+	}
+
+	.activity-box__time {
+		font-size: 1.8rem;
+		line-height: 5rem;
+		color: #606e78;
+	}
+
+	.activity-box__action-holder {
+		margin-left: 15px;
+	}
+
+	.activity-box__footer {
+		border-top: 1px solid #f6f7f8;
+		overflow: hidden;
+		padding: 1.1rem 2.5rem;
+		line-height: 2.8rem;
+		
+		&.activity-box__footer_type_no-border {
+			border: 0;
+		}
+	}
+
+	.activity-box__footer-link {
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		.bold;
+	}
+
+	.activity-box__visual {
+		position: relative;
+
+		img {
+			display: block !important;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.activity-box__visual-score {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -0.5em;
+		font-size: 13.7rem;
+		line-height: 1em;
+		color: #fff;
+		width: 100%;
+		text-align: center;
+		.light;
+
+		b {
+			.bold;
+			font-weight: normal;
+		}
+	}
+
+	.activity-box__visual-clips {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		color: #fff;
+		font-size: 1.7rem;
+		.regular;
+
+		&:before {
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			pointer-events: none;
+			border-color: rgba(255, 255, 255, 0);
+			border-left-color: #fff;
+			border-width: 9px;
+			display: inline-block;
+			vertical-align: middle;
+			opacity: 0.7;
+		}
+	}
+
+	.activity-box__visual-holder {
+		position: absolute;
+		bottom: 3.5rem;
+		left: 2rem;
+		right: 2rem;
+		color: #fff;
+	}
+
+	.activity-box__visual-name {
+		display: block;
+		font-size: 3.4rem;
+		.bold;
+		text-transform: uppercase;
+		line-height: normal;
+		margin-bottom: 1rem;
+	}
+
+	.activity-box__visual-date {
+		font-size: 1.8rem;
+		opacity: 0.8;
+		display: block;
+		line-height: normal;
+	}
+
+	.activity-box__visual-play {
+		.icon-play_big2;
+		position: absolute;
+		left: 50%;
+		top: 45%;
+		margin: -56px 0 0 -42px;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	.activity-box__body {
+		padding: 2rem;
+	}
+
+	.activity-box__body-title {
+		display: block;
+		.regular;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+} // .activity-box
+
+@media screen and (max-width: 768px) {
+	.activity-box {
+		.activity-box__header {
+			padding: 12px 10px;
+		}
+		.club-logo {
+			width: 26px;
+			height: 26px;
+			float: left;
+			margin-right: 5px;
+
+			& + span {
+				display: block;
+				font-size: 11px;
+				overflow: hidden;
+				line-height: 13px;
+			}
+		}
+
+		.activity-box__visual-clips {
+			top: 10px;
+			left: 10px;
+			font-size: 13px;
+		}
+
+		.activity-box__visual-holder {
+			margin-bottom: 0;
+			bottom: -31px;
+			left: 10px;
+			right: auto;
+			width: 80%;
+
+			.clubs-title {
+				margin-bottom: 0 !important;
+			}
+
+			.tegs {
+				display: none;
+			}
+
+			.club-logo {
+				width: 20px;
+				height: 20px;
+			}
+			
+			.clubs-title__vs,
+			.clubs-title__name {
+				font-size: 10px;
+				color: #525d64;
+				padding-left: 2px;
+			}
+
+			.clubs-title__vs {
+				padding: 0 7px;
+			}
+		}
+
+		.activity-box__visual-score {
+			font-size: 67px;
+		}
+
+		.activity-box__time {
+			font-size: 10px;
+			line-height: normal;
+			color: #889299;
+		}
+
+		.activity-box__action-holder {
+			display: block;
+			font-size: 11px;
+			line-height: 13px;
+			overflow: hidden;
+			margin-left: 0;
+		}
+
+		.activity-box__visual-play {
+			width: 28px;
+			height: 38px;
+			background-size: cover;
+			margin-top: -19px;
+			margin-left: -14px;
+			top: 50%;
+		}
+
+		.activity-box__body {
+			padding: 10px;
+
+			.clubs-title {
+				margin-bottom: 10px !important;
+			}
+
+			.clubs-title__name {
+				padding-left: 2px;
+				font-size: 11px;
+			}
+
+			.clubs-title__vs {
+				padding: 0 7px;
+				font-size: 10px;
+			}
+		}
+
+		.activity-box__body-title {
+			font-size: 14px;
+			.regular;
+			margin-bottom: 10px;
+		}
+
+		.activity-box__footer {
+			padding: 8px 10px;
+			line-height: 19px;
+
+			&.hide-for-mobile {
+				display: none;
+			}
+
+			.inline-list {
+				margin-right: -5px !important;
+				li {
+					margin: 0 0 0 7px;
+
+					i {
+						margin-right: 3px;
+					}
+				}
+			}
+		}
+
+		.activity-box__visual-name {
+			display: none;
+		}
+
+		.activity-box__footer-link {
+			font-size: 12px;
+		}
+
+		.team-short-info.team-short-info_type_block li {
+			float: left;
+			font-size: 10px;
+			padding: 0;
+			max-width: 49%;
+
+			&:first-child  {
+				float: right;
+			}
+
+			.icon-holder {
+				margin-right: 4px;
+				width: 13px;
+			}
+		}
+	} // .activity-box
+}

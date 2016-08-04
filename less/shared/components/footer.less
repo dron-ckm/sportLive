@@ -1,0 +1,95 @@
+/* Global Footer ---------------------------- */
+// This file creates the footer at the bottom of every page.
+/* ------------------------------------------ */
+footer {
+	background: #111;
+	padding: 2.3rem 12rem;
+	line-height: 3.7rem;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+	.bold;
+	position: relative;
+
+	.copy {
+		opacity: 0.3;
+		float: right;
+		margin: 0;
+	} // .copy
+
+	.footer-nav {
+		float: left;
+		list-style: none;
+
+		li {
+			float: left;
+			margin-right: 3.1rem;
+
+			a {
+				opacity: 0.3;
+				color: #fff;
+			}
+		}
+	} // .footer-nav
+
+	.social {
+		list-style: none;
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			padding: 0 1.3rem;
+			opacity: 0.3;
+
+			a {
+				display: block;
+				width: 3.5rem;
+				height: 3.5rem;
+				line-height: 3.1rem;
+				color: #fff;
+				border: 1px solid;
+				border-radius: 3.5rem;
+				text-align: center;
+			}
+		}
+	} // .social
+} // footer
+
+@media screen and (max-width: 1024px) {
+	footer {
+		padding: 58px 10px 10px;
+		font-size: 8px;
+		line-height: normal;
+
+		.copy {
+			text-align: center;
+			float: none;
+			font-size: 13px;
+			margin-bottom: 7px;
+		}
+
+		.social {
+			position: absolute;
+			top: 13px;
+			width: 100%;
+			left: 0;
+			text-align: center;
+		}
+
+		.footer-nav {
+			text-align: center;
+			width: 100%;
+			float: none;
+
+			li {
+				border-left: none;
+				display: inline-block;
+				font-size: 12px;
+				margin: 0 6px;
+				float: none;
+			}
+		}
+	}
+}

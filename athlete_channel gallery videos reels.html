@@ -1,0 +1,1086 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SportXast</title>
+    
+    <link media="all" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika:400,300,600,700">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.carousel.js"></script>
+	<script type="text/javascript" src="js/scrollspy.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+</head>
+<body>
+	<header class="theme_black">
+		<div class="header-holder">
+			<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+			<div class="mobile-menu">
+				<i class="icon icon-menu_mobile js-mobile-menu"></i>
+				<ul class="mobile-menu__drop">
+					<li><a href="#">my feed</a></li>
+					<li><a href="#">following</a></li>
+					<li><a href="#">followed</a></li>
+					<li><a href="#">WHO’S VIEWED MY PROFILE</a></li>
+					<li><a href="#">settings</a></li>
+					<li><a href="#">log out</a></li>
+				</ul>
+			</div>
+		  	<ul class="options">
+		  		<li><a data-toggle="modal" data-target="#signInModal">sign in</a></li>
+		  		<li><a data-toggle="modal" data-target="#signUpModal">create account</a></li>
+		  	</ul> <!-- .options -->
+		</div> <!-- .header-holder -->
+	</header> <!-- header -->
+	<div id="main">
+		<div class="athlete-headline">
+			<div class="athlete-page athlete-page_type_without-overflow">
+				<div class="athlete-page__sidebar">
+					<div class="athlete-headline__preview">
+						<div class="athlete-headline__logo-preview">
+							<img src="img/team-logo.gif" alt="" width="203" height="210">
+						</div>
+						<span class="athlete-headline__preview-name">Catie McDonald</span>
+						<span class="athlete-headline__preview-status">striker</span>
+					</div>
+				</div>
+				<div class="athlete-page__content">
+					<div class="athlete-page__content-holder">
+						<ul class="main-nav main-nav_type_no-left-padding main-nav_height_76" id="nav">
+					  		<li class="active"><a href="#Reels">Highlight reels</a></li>
+					  		<li><a href="#Clips">Game clips <span class="main-nav__count">55</span></a></li>
+					  		<li><a href="#About">About</a></li>
+					  		<li><a href="#Events">Events</a></li>
+					  	</ul>
+						<div class="athlete-search">
+							<div class="athlete-search__holder">
+								<input type="text">
+								<button class="btn-search"></button>
+								<span class="athlete-search__close icon-close_grey"></span>
+							</div>
+							<span class="athlete-search__icon icon-search_dark js-athlete-search"></span>
+						</div> <!-- .athlete-search -->
+					</div>
+				</div>
+			</div> <!-- .athlete-page -->
+		</div> <!-- .athlete-headline -->
+
+		<div class="games-header">
+			<div class="athlete-page">
+				<div class="section-main">
+					<div class="athlete-page__content-holder">
+						<div class="section-main__title section-main__title-text_ph_10">
+							<a href="#" class="section-main__back"><i class="icon icon-arrow-left"></i> back to game clips</a>
+						</div>
+						<div class="games-header__line">
+							<div class="games-header__logos">
+								<span class="games-header__logos-holder">
+									<span class="club-logo club-logo_size_lge">
+										<img src="img/club-logo_medium.jpg" alt="">
+									</span>
+									<span>ABQ SOL</span>
+								</span>
+								<span class="games-header__vs-text">VS</span>
+								<span class="games-header__logos-holder">
+									<span class="club-logo club-logo_size_lge">
+										<img src="img/club-logo2_medium.jpg" alt="">
+									</span>
+									<span>Sockers FC</span>
+								</span>
+							</div> <!-- .games-header__logos -->
+							<button class="btn btn-sm h-mr-20">play all <i class="icon icon-play_smallest"></i></button>
+							<i class="icon icon-edit cursor-pointer"></i>
+							<span class="games-header__score pull-right"><b>4</b> - 3</span>
+						</div> <!-- .games-header__line -->
+						<div class="team-short-info-holder">
+							<ul class="team-short-info team-short-info_type_inline team-short-info_color_grey">
+								<li>
+									<span class="icon-holder">
+										<i class="icon icon-ball_big_grey"></i>
+									</span> <!-- .icon-holder -->
+									Feb 3      
+								</li>
+								<li>
+									<span class="icon-holder">
+										<i class="icon icon-clock_grey"></i>
+									</span> <!-- .icon-holder -->
+									19:15     
+								</li>
+							</ul>
+							<ul class="team-short-info team-short-info_type_inline team-short-info_color_grey">
+								<li>
+									<span class="icon-holder">
+										<i class="icon icon-pointer_big_grey"></i>
+									</span> <!-- .icon-holder -->
+									<a href="#">The Hallmark Hall</a>
+								</li>
+							</ul>
+							<ul class="team-short-info team-short-info_type_inline team-short-info_color_grey">
+								<li>
+									<span class="icon-holder">
+										<i class="icon icon-shares_medium"></i>
+									</span> <!-- .icon-holder -->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- .games-header -->
+
+		<div class="athlete-page athlete-page_theme_grey">
+			<div class="athlete-page__content athlete-page__content_type_with-pv-35">
+				<section class="section-main section-main_bg_grey">
+					<div class="athlete-page__content-holder">
+						<div class="games-schedule games-schedule_type_without-timeline h-mb-0">
+							<span class="games-schedule__year">2015</span> <!-- .games-schedule__year -->
+							<div class="games-schedule__game">
+								<div class="game-preview">
+									<div class="game-preview__visual">
+										<div class="game-preview__img-holder">
+											<a class="game-preview__btn-play"><i class="icon icon-play_medium"></i></a>
+											<a class="game-preview__file-name cursor-pointer">10052.mp4 <i class="icon icon-pencil_small_white"></i></a>
+											<img src="img/img14.jpg" alt="" width="389" height="223">
+										</div>
+									</div> <!-- .game-preview__visual -->
+									<div class="game-preview__info">
+										<div class="item-activity-info">
+											<span class="item-activity-info__avatar">
+												<img src="img/avatar.jpg" alt="" width="38" height="38">
+											</span>
+
+											<ul class="item-activity-info__list pull-right cursor-pointer">
+												<li>
+													<i class="icon icon-like"></i>
+												</li>
+												<li>
+													<i class="icon icon-comments"></i>
+												</li>
+												<li>
+													<i class="icon icon-tag"></i>
+												</li>
+												<li>
+													<i class="icon icon-tshirt_small"></i>
+													3
+												</li>
+												<li>
+													<i class="icon icon-shares"></i>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div> <!-- .game-preview -->
+								<span class="games-schedule__date">
+									<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+								</span>
+							</div> <!-- .games-schedule__game -->
+
+							<div class="games-schedule__game">
+								<div class="game-preview">
+									<div class="game-preview__visual">
+										<div class="game-preview__img-holder">
+											<a class="game-preview__btn-play"><i class="icon icon-play_medium"></i></a>
+											<span class="game-preview__file-name">10052.mp4</span>
+											<img src="img/img14.jpg" alt="" width="389" height="223">
+										</div>
+									</div> <!-- .game-preview__visual -->
+									<div class="game-preview__info">
+										<div class="item-activity-info">
+											<span class="item-activity-info__avatar">
+												<img src="img/avatar.jpg" alt="" width="38" height="38">
+											</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-up"></i> 1</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-down"></i> 1</span>
+
+											<ul class="item-activity-info__list pull-right">
+												<li>
+													<i class="icon icon-reviews"></i>
+													111
+												</li>
+												<li>
+													<i class="icon icon-comments"></i>
+													24
+												</li>
+												<li>
+													<i class="icon icon-shares"></i>
+													33
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div> <!-- .game-preview -->
+								<span class="games-schedule__date">
+									<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+								</span>
+							</div> <!-- .games-schedule__game -->
+
+							<div class="games-schedule__game">
+								<div class="game-preview">
+									<div class="game-preview__visual">
+										<div class="game-preview__img-holder">
+											<a class="game-preview__btn-play"><i class="icon icon-play_medium"></i></a>
+											<span class="game-preview__file-name">10052.mp4</span>
+											<img src="img/img14.jpg" alt="" width="389" height="223">
+										</div>
+									</div> <!-- .game-preview__visual -->
+									<div class="game-preview__info">
+										<div class="item-activity-info">
+											<span class="item-activity-info__avatar">
+												<img src="img/avatar.jpg" alt="" width="38" height="38">
+											</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-up"></i> 1</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-down"></i> 1</span>
+
+											<ul class="item-activity-info__list pull-right">
+												<li>
+													<i class="icon icon-reviews"></i>
+													111
+												</li>
+												<li>
+													<i class="icon icon-comments"></i>
+													24
+												</li>
+												<li>
+													<i class="icon icon-shares"></i>
+													33
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div> <!-- .game-preview -->
+								<span class="games-schedule__date">
+									<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+								</span>
+							</div> <!-- .games-schedule__game -->
+
+							<div class="games-schedule__game">
+								<div class="game-preview">
+									<div class="game-preview__visual">
+										<div class="game-preview__img-holder">
+											<a class="game-preview__btn-play"><i class="icon icon-play_medium"></i></a>
+											<span class="game-preview__file-name">10052.mp4</span>
+											<img src="img/img14.jpg" alt="" width="389" height="223">
+										</div>
+									</div> <!-- .game-preview__visual -->
+									<div class="game-preview__info">
+										<div class="item-activity-info">
+											<span class="item-activity-info__avatar">
+												<img src="img/avatar.jpg" alt="" width="38" height="38">
+											</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-up"></i> 1</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-down"></i> 1</span>
+
+											<ul class="item-activity-info__list pull-right">
+												<li>
+													<i class="icon icon-reviews"></i>
+													111
+												</li>
+												<li>
+													<i class="icon icon-comments"></i>
+													24
+												</li>
+												<li>
+													<i class="icon icon-shares"></i>
+													33
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div> <!-- .game-preview -->
+								<span class="games-schedule__date">
+									<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+								</span>
+							</div> <!-- .games-schedule__game -->
+
+							<div class="games-schedule__game">
+								<div class="game-preview">
+									<div class="game-preview__visual">
+										<div class="game-preview__img-holder">
+											<a class="game-preview__btn-play"><i class="icon icon-play_medium"></i></a>
+											<span class="game-preview__file-name">10052.mp4</span>
+											<img src="img/img14.jpg" alt="" width="389" height="223">
+										</div>
+									</div> <!-- .game-preview__visual -->
+									<div class="game-preview__info">
+										<div class="item-activity-info">
+											<span class="item-activity-info__avatar">
+												<img src="img/avatar.jpg" alt="" width="38" height="38">
+											</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-up"></i> 1</span>
+											<span class="item-activity-info__rating"><i class="icon icon-arrow-down"></i> 1</span>
+
+											<ul class="item-activity-info__list pull-right">
+												<li>
+													<i class="icon icon-reviews"></i>
+													111
+												</li>
+												<li>
+													<i class="icon icon-comments"></i>
+													24
+												</li>
+												<li>
+													<i class="icon icon-shares"></i>
+													33
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div> <!-- .game-preview -->
+								<span class="games-schedule__date">
+									<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+								</span>
+							</div> <!-- .games-schedule__game -->
+							
+							<div class="games-schedule__game games-schedule__game_type_empty">
+								<img src="img/img14.jpg" alt="" width="389" height="223">
+							</div>
+							<div class="games-schedule__game games-schedule__game_type_empty">
+								<img src="img/img14.jpg" alt="" width="389" height="223">
+							</div>
+							<div class="games-schedule__game games-schedule__game_type_empty">
+								<img src="img/img14.jpg" alt="" width="389" height="223">
+							</div>
+						</div> <!-- .games-schedule  -->
+
+						<div class="section-main__title section-main__title-text_ph_10">
+							<a href="#" class="section-main__back"><i class="icon icon-arrow-left"></i> back to catie’s page</a>
+							<div class="dropdown pull-right">
+							  <button id="dLabel" class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Sort by recent
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dLabel">
+							    <li class="active-item"><a href="#">recent</a></li>
+							    <li><a href="#">popular</a></li>
+							  </ul>
+							</div>
+						</div> <!-- .section-main__title -->
+					</div> <!-- athlete-page__content-holder -->
+
+					<div class="games-schedule games-schedule_type_without-timeline h-mb-0">
+						<span class="games-schedule__year">2015</span> <!-- .games-schedule__year -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<span class="game-preview__score">1 - <b>3</b></span>
+										<img src="img/img08.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball_grey"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<span class="game-preview__score">1 - <b>3</b></span>
+										<img src="img/img08.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball_grey"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<img src="img/img09.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball_grey"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<img src="img/img09.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball_grey"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<img src="img/img09.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball_grey"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<img src="img/img09.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game games-schedule__game_type_empty"><img src="img/img08.jpg" alt="" width="366" height="208"></div>
+						<div class="games-schedule__game games-schedule__game_type_empty"><img src="img/img08.jpg" alt="" width="366" height="208"></div>
+						<div class="games-schedule__game games-schedule__game_type_empty"><img src="img/img08.jpg" alt="" width="366" height="208"></div>
+					</div>
+
+					<div class="athlete-page__content-holder">
+						<div class="section-main__title section-main__title-text_ph_10">
+							<h2 class="section-main__title-text">2015</h2>
+						</div> <!-- .section-main__title -->
+					</div> <!-- athlete-page__content-holder -->
+					<div class="games-schedule games-schedule_type_without-timeline h-mb-0">
+						<span class="games-schedule__year">2015</span> <!-- .games-schedule__year -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball_grey"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<span class="game-preview__score">1 - <b>3</b></span>
+										<img src="img/img08.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<span class="game-preview__score">1 - <b>3</b></span>
+										<img src="img/img08.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<img src="img/img09.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game">
+							<div class="game-preview game-preview_type_text-on-top">
+								<div class="game-preview__visual">
+									<div class="game-preview__title">
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo_small.jpg" alt="">
+											</div>
+											ABQ SOL
+										</span> <!-- .game-preview__team -->
+										<span class="game-preview__team">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+											SOCkERS fc
+										</span> <!-- .game-preview__team -->
+										<span>vs</span>
+
+										<ul class="team-short-info team-short-info_type_inline team-short-info_size_small">
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-ball"></i>
+												</span> <!-- .icon-holder -->
+												Feb 3      
+											</li>
+											<li>
+												<span class="icon-holder">
+													<i class="icon icon-pointer_small_grey"></i>
+												</span> <!-- .icon-holder -->
+												The Hallmark Hall
+											</li>
+										</ul>
+									</div> <!-- .game-preview__title -->
+									<div class="game-preview__img-holder">
+										<img src="img/img09.jpg" alt="" width="366" height="208">
+										<div class="game-preview__visual-info">
+											<span class="game-preview__visual-info-count">11 clips</span> <!-- .game-preview__info-count -->
+										</div> <!-- .game-preview__info -->
+										<a href="#" class="game-preview__view-link">view 25 clips</a>
+									</div>
+								</div> <!-- .game-preview__visual -->
+							</div> <!-- .game-preview -->
+							<span class="games-schedule__date">
+								<span class="games-schedule__date-point games-schedule__date-point_type_active"></span> <!-- .games-schedule__date-point -->
+							</span>
+						</div> <!-- .games-schedule__game -->
+						<div class="games-schedule__game games-schedule__game_type_empty"></div>
+						<div class="games-schedule__game games-schedule__game_type_empty"></div>
+						<div class="games-schedule__game games-schedule__game_type_empty"></div>
+					</div>
+				</section> <!-- .section-main -->
+			</div> <!-- athlete-page__content -->
+		</div> <!-- .athlete-page -->
+	</div> <!-- #main -->
+	<footer>
+		<p class="copy">&copy; SportXast, LLC.</p>
+		<ul class="footer-nav">
+			<li><a href="#">terms of use</a></li>
+			<li><a href="#">privacy policy</a></li>
+			<li><a href="#">send feedback</a></li>
+		</ul> <!-- .footer-nav -->
+		<ul class="social">
+			<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+			<li><a href="#"><i class="icon icon-linked"></i></a></li>
+			<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+		</ul> <!-- .social -->
+	</footer> <!-- footer -->
+
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <i class="icon icon-athlete h-mb-10"></i>
+	        <h4 class="modal-title" id="myModalLabel">Hi again!</h4>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-in-form ">
+	        	<form action="#">
+	        		<fieldset>
+	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci</p>
+
+	        			<div class="sign-in-form__holder">
+	        				<div class="h-mb-20">
+		        				<div class="form-group">
+		        					<label>enter your EMAIL</label>
+	        						<div class="form-group-holder">
+								    	<input type="email" class="form-control" placeholder="jane@example.com">
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+		        					<label>your PASSWORD</label>
+	        						<div class="form-group-holder">
+								    	<input type="password" class="form-control" placeholder="password">
+								    </div>
+								</div> <!-- .form-group -->
+							</div>
+							<button class="btn btn_width_100">sign in</button>
+	        			</div>
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+
+	<div class="modal fade modal_size_medium" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">I am:</h4>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-up-form">
+	        	<form action="#">
+	        		<fieldset>
+	        			<div class="sign-up-form__step1">
+		        			<ul class="user-type-list">
+		        				<li class="active">
+		        					<span class="name">AN Athlete</span>
+		        					<div class="user-type-list__icon-holder">
+		        						<i class="icon icon-athlete_big_grey"></i>
+		        					</div>
+		        					<p>Description of the athlete account</p>
+		        				</li>
+		        				<li>
+		        					<span class="name">A Parent</span>
+		        					<div class="user-type-list__icon-holder">
+		        						<i class="icon icon-parent_big_grey"></i>
+		        					</div>
+		        					<p>Description of the athlete account</p>
+		        				</li>
+		        				<li>
+		        					<span class="name">A Coach</span>
+		        					<div class="user-type-list__icon-holder">
+		        						<i class="icon icon-coach_big_grey"></i>
+		        					</div>
+		        					<p>Description of the athlete account</p>
+		        				</li>
+		        			</ul> <!-- .user-type-list -->
+							<button class="btn btn-centered js-btn-continue">CONTINUE</button>
+						</div> <!-- .sign-up-form__step1 -->
+						<div class="sign-up-form__step2" style="display: none;">
+							<div class="sign-up-form__holder">
+								<div class="h-mb-20">
+			        				<div class="form-group">
+			        					<label>Name</label>
+		        						<div class="form-group-holder">
+									    	<input type="text" class="form-control" placeholder="Jane Doe">
+									    </div>
+									</div> <!-- .form-group -->
+									<div class="form-group">
+			        					<label>Email</label>
+		        						<div class="form-group-holder">
+									    	<input type="email" class="form-control" placeholder="jane@example.com">
+									    </div>
+									</div> <!-- .form-group -->
+									<div class="form-group">
+			        					<label>PASSWORD</label>
+		        						<div class="form-group-holder">
+									    	<input type="password" class="form-control" placeholder="8 characters or more">
+									    </div>
+									</div> <!-- .form-group -->
+									<div class="form-group">
+			        					<label>CONFIRM PASSWORD</label>
+		        						<div class="form-group-holder">
+									    	<input type="password" class="form-control" placeholder="retype your password">
+									    </div>
+									</div> <!-- .form-group -->
+								</div>
+								<button class="btn btn_width_100 js-btn-continue">CONTINUE</button>
+							</div>
+						</div><!-- .sign-up-form__step2 -->
+						<div class="sign-up-form__step3" style="display: none;">
+	        					
+	        				<div class="form-row">
+	        					<div class="form-group">
+	        						<label>gender</label>
+									<div class="form-group-holder">
+								    	<select class="selectpicker" title="Gender">
+								            <option>1</option>
+								            <option>2</option>
+								            <option>3</option>
+								        </select>
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="sign-up-form__cell">
+									<div class="form-group">
+		        						<label>Profile picture</label>
+										<div class="form-group-holder">
+									    	<span class="btn-file">
+									    		<span class="btn btn-sm btn-file__text">choose file</span>
+									    		<span class="btn-file__filename">No file chosen</span>
+								                <input type="file">
+								            </span>
+									    </div>
+									</div> <!-- .form-group -->
+								</div> <!-- .sign-up-form__cell -->
+							</div> <!-- .form-row -->
+
+							<div class="form-row">
+	        					<div class="form-group">
+	        						<label>Sport</label>
+									<div class="form-group-holder">
+								    	<select class="selectpicker">
+								            <option data-icon="icon icon-ball_medium">Soccer</option>
+								            <option data-icon="icon icon-ball_medium">Soccer</option>
+								            <option data-icon="icon icon-ball_medium">Soccer</option>
+								        </select>
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="sign-up-form__cell">
+									<div class="form-group">
+		        						<label>Profile picture</label>
+										<div class="form-group-holder">
+									    	<span class="btn-file btn-file_type_loading">
+									    		<span class="btn btn-sm btn-file__text">choose file</span>
+									    		<span class="btn-file__filename">video.mpeg</span>
+								                <input type="file">
+								            </span>
+									    </div>
+									</div> <!-- .form-group -->
+								</div> <!-- .sign-up-form__cell -->
+							</div> <!-- .form-row -->
+
+							<div class="form-row">
+	        					<div class="form-group">
+	        						<label>School</label>
+									<div class="form-group-holder">
+								    	<div class="form-group-holder">
+									    	<input type="text" class="form-control" placeholder="School">
+									    </div>
+								    </div>
+								</div> <!-- .form-group -->
+							</div> <!-- .form-row -->
+
+							<label>class</label>
+							<div class="form-row h-mb-20">
+	        					<div class="form-group">
+									<div class="form-group-holder">
+								    	<div class="form-group-holder">
+									    	<input type="text" class="form-control" placeholder="2016">
+									    </div>
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="sign-up-form__cell">
+									<p>By signing up you agree with our</p>
+									<p><a href="#">Terms and Conditions.</a></p>
+								</div>
+							</div> <!-- .form-row -->
+
+							<div class="sign-up-form__holder">
+								<button class="btn btn_width_100 js-btn-continue">CONTINUE <i class="glyphicon glyphicon-ok"></i></button>
+							</div>
+							
+						</div> <!-- .sign-up-form__step3 -->
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	      <div class="modal-footer">
+	      	<ul class="signup-steps">
+	      		<li class="active">
+	      			<i class="icon"></i>
+	      			account type
+	      		</li>
+	      		<li>
+	      			<i class="icon"></i>
+	      			add account details
+	      		</li>
+	      		<li>
+	      			<i class="icon"></i>
+	      			customize your profile
+	      		</li>
+	      	</ul> <!-- .signup-steps -->
+	      </div> <!-- .modal-footer -->
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

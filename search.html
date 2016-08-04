@@ -1,0 +1,923 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SportXast</title>
+    
+    <link media="all" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Signika:400,300,600,700">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+<body class="loged_in">
+	<header class="theme_black">
+		<div class="header-holder">
+			<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+			<div class="mobile-menu">
+				<i class="icon icon-menu_mobile js-mobile-menu"></i>
+				<ul class="mobile-menu__drop">
+					<li><a href="#">my feed</a></li>
+					<li><a href="#">following</a></li>
+					<li><a href="#">followed</a></li>
+					<li><a href="#">WHO’S VIEWED MY PROFILE</a></li>
+					<li><a href="#">settings</a></li>
+					<li><a href="#">log out</a></li>
+				</ul>
+			</div>
+			<ul class="main-nav" id="nav">
+		  		<li><a href="#">my feed</a></li>
+		  		<li><a href="#">create a highlight reel</a></li>
+		  	</ul> <!-- #nav -->
+		  	<ul class="options hide-when-logged">
+		  		<li><a data-toggle="modal" data-target="#signInModal">sign in</a></li>
+		  		<li><a data-toggle="modal" data-target="#signUpModal">create account</a></li>
+		  	</ul> <!-- .options -->
+		  	<ul class="athlette-settings show-when-logged">
+				<li><a href="#"><i class="icon icon-search_vbig"></i></a></li>
+				<li><a href="#"><i class="icon icon-bell"></i><span class="count">55</span></a></li>
+				<li>
+					<a href="#"><span class="athlette-settings__avatar"><img src="img/player01.jpg" alt=""></span></a>
+					<div class="athlete-settings__dropdown">
+						<ul class="athlete-settings__athlete-types">
+							<li class="active">
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-name">Catie Mcdonald</span>
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball_small"></i> soccer</span>
+								</div>
+							</li>
+							<li>
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-name">Catie Mcdonald</span>
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball2_small"></i> Basketball</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="athlete-settings__settings-list">
+							<li class="active"><a href="#">edit profile</a></li>
+							<li><a href="#">settings</a></li>
+							<li><a href="#">log out</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div> <!-- .header-holder -->
+	</header> <!-- header -->
+	<div id="main">
+		
+		<section class="section-main section-main_bg_grey">
+			
+			<div class="main-holder">
+				<div id="content">
+					<ul class="nav nav-tabs content-tabs">
+						<li class="active"><a href="#athlets" data-toggle="tab">Athletes</a></li>
+						<li><a href="#teams" data-toggle="tab">Teams</a></li>
+						<li><a href="#events" data-toggle="tab">Events</a></li>
+						<li><a href="#reels" data-toggle="tab">Reels</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane active fade in" id="athlets">
+							<ul class="follow-list">
+								<li>
+									<div class="follow-list__visual">
+										<img src="img/player01.jpg" alt="">
+									</div>
+									<div class="follow-list__text-holder">
+										<span class="follow-list__name">Carlos Sendin-Castelao</span>
+										<button class="btn follow-list__btn"><span class="follow-list__btn-text">follow</span> <i class="icon icon-user-add_green"></i></button>
+										<div class="iconed-text iconed-text_pv_0 iconed-text_color_grey h-mb-0">
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-ball_small"></i>
+												</div>
+												<div class="iconed-text__text-holder">Soccer</div>
+											</div>
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-pointer2_small_green"></i>
+												</div>
+												<div class="iconed-text__text-holder">Los Alamos, NM USA</div>
+											</div>
+										</div> <!-- .iconed-text -->
+									</div>
+								</li>
+								<li>
+									<div class="follow-list__visual">
+										<img src="img/player01.jpg" alt="">
+									</div>
+									<div class="follow-list__text-holder">
+										<span class="follow-list__name">Carlos Sendin-Castelao</span>
+										<button class="btn follow-list__btn follow-list__btn_theme_grey"><span class="follow-list__btn-text">unfollow</span> <i class="icon icon-user-remove_grey"></i></button>
+										<div class="iconed-text iconed-text_pv_0 iconed-text_color_grey h-mb-0">
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-ball_small"></i>
+												</div>
+												<div class="iconed-text__text-holder">Soccer</div>
+											</div>
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-pointer2_small_green"></i>
+												</div>
+												<div class="iconed-text__text-holder">Los Alamos, NM USA</div>
+											</div>
+										</div> <!-- .iconed-text -->
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="teams">
+							<ul class="follow-list">
+								<li>
+									<div class="follow-list__visual">
+										<div class="club-logo club-logo_type_no-logo club-logo_color_green club-logo_color_white club-logo_size_63">
+											<span>LV</span>
+										</div>
+									</div>
+									<div class="follow-list__text-holder">
+										<span class="follow-list__name">Carlos Sendin-Castelao</span>
+										<button class="btn follow-list__btn"><span class="follow-list__btn-text">follow</span> <i class="icon icon-user-add_green"></i></button>
+										<div class="iconed-text iconed-text_pv_0 iconed-text_color_grey h-mb-0">
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-ball_small"></i>
+												</div>
+												<div class="iconed-text__text-holder">Soccer</div>
+											</div>
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-pointer2_small_green"></i>
+												</div>
+												<div class="iconed-text__text-holder">Los Alamos, NM USA</div>
+											</div>
+										</div> <!-- .iconed-text -->
+									</div>
+								</li>
+								<li>
+									<div class="follow-list__visual">
+										<div class="club-logo club-logo_size_63">
+											<img src="img/club-logo_small.jpg" alt="">
+										</div>
+									</div>
+									<div class="follow-list__text-holder">
+										<span class="follow-list__name">Carlos Sendin-Castelao</span>
+										<button class="btn follow-list__btn follow-list__btn_theme_grey"><span class="follow-list__btn-text">unfollow</span> <i class="icon icon-user-remove_grey"></i></button>
+										<div class="iconed-text iconed-text_pv_0 iconed-text_color_grey h-mb-0">
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-ball_small"></i>
+												</div>
+												<div class="iconed-text__text-holder">Soccer</div>
+											</div>
+											<div class="iconed-text__row">
+												<div class="iconed-text__icon-holder">
+													<i class="icon icon-pointer2_small_green"></i>
+												</div>
+												<div class="iconed-text__text-holder">Los Alamos, NM USA</div>
+											</div>
+										</div> <!-- .iconed-text -->
+									</div>
+								</li>
+							</ul>
+							<div class="invite-form">
+								<form action="#">
+									<fieldset>
+										<div class="invite-form__holder">
+											<button class="btn"><i class="icon icon-paper-plane"></i></button>
+											<div class="form-group">
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<h5>Invite more people to follow your channel!</h5>
+										<p><i>Your updates go straight to their email.</i></p>
+									</fieldset>
+								</form>
+							</div> <!-- .invite-form -->
+						</div>
+						<div class="tab-pane fade" id="events">
+							<div class="activity-box">
+								<div class="activity-box__header">
+									<div class="clubs-title h-mb-10">
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small club-logo_type_no-logo club-logo_color_white club-logo_color_green">
+												lv
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											ABQ SOL  
+										</div>
+										<div class="clubs-title__item clubs-title__vs clubs-title__vs_theme_grey">VS</div>
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											Sockers FC
+										</div>
+									</div>
+									<ul class="team-short-info team-short-info_type_inline team-short-info_color_dark-grey">
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-clock_small"></i>
+											</span> <!-- .icon-holder -->
+											<i>May 5th, 7.15 PM</i>
+										</li>
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-pointer_grey"></i>
+											</span> <!-- .icon-holder -->
+											<i>LVHS Main Stadium</i>
+										</li>
+									</ul>
+								</div> <!-- .activity-box__header -->
+								<div class="activity-box__visual">
+									<img src="img/img01.jpg" alt="">
+									<span class="activity-box__visual-score">1 - <b>3</b></span>
+								</div> <!-- .activity-box__visual -->
+								<div class="activity-box__footer">
+									<span class="activity-box__body-title h-mb-10">Friendly match!</span>
+									<div class="clubs-title h-mb-10">
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small club-logo_type_no-logo club-logo_color_white club-logo_color_green">
+												lv
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											ABQ SOL  
+										</div>
+										<div class="clubs-title__item clubs-title__vs clubs-title__vs_theme_grey">VS</div>
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											Sockers FC
+										</div>
+									</div>
+									<ul class="team-short-info team-short-info_type_inline  team-short-info_color_dark-grey">
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-clock_small"></i>
+											</span> <!-- .icon-holder -->
+											<i>May 5th, 7.15 PM</i>
+										</li>
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-pointer_grey"></i>
+											</span> <!-- .icon-holder -->
+											<i>LVHS Main Stadium</i>
+										</li>
+									</ul>
+								</div> <!-- .activity-box__footer -->
+							</div> <!-- .activity-box -->
+							<div class="activity-box">
+								<div class="activity-box__header">
+									<div class="clubs-title h-mb-10">
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small club-logo_type_no-logo club-logo_color_white club-logo_color_green">
+												lv
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											ABQ SOL  
+										</div>
+										<div class="clubs-title__item clubs-title__vs clubs-title__vs_theme_grey">VS</div>
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											Sockers FC
+										</div>
+									</div>
+									<ul class="team-short-info team-short-info_type_inline team-short-info_color_dark-grey">
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-clock_small"></i>
+											</span> <!-- .icon-holder -->
+											<i>May 5th, 7.15 PM</i>
+										</li>
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-pointer_grey"></i>
+											</span> <!-- .icon-holder -->
+											<i>LVHS Main Stadium</i>
+										</li>
+									</ul>
+								</div> <!-- .activity-box__header -->
+								<div class="activity-box__visual">
+									<img src="img/img01.jpg" alt="">
+									<span class="activity-box__visual-score">1 - <b>3</b></span>
+								</div> <!-- .activity-box__visual -->
+								<div class="activity-box__footer">
+									<span class="activity-box__body-title h-mb-10">Friendly match!</span>
+									<div class="clubs-title h-mb-10">
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small club-logo_type_no-logo club-logo_color_white club-logo_color_green">
+												lv
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											ABQ SOL  
+										</div>
+										<div class="clubs-title__item clubs-title__vs clubs-title__vs_theme_grey">VS</div>
+										<div class="clubs-title__item">
+											<div class="club-logo club-logo_size_small">
+												<img src="img/club-logo2_small.jpg" alt="">
+											</div>
+										</div>
+										<div class="clubs-title__item clubs-title__name gotham_bold">
+											Sockers FC
+										</div>
+									</div>
+									<ul class="team-short-info team-short-info_type_inline  team-short-info_color_dark-grey">
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-clock_small"></i>
+											</span> <!-- .icon-holder -->
+											<i>May 5th, 7.15 PM</i>
+										</li>
+										<li>
+											<span class="icon-holder text-center">
+												<i class="icon icon-pointer_grey"></i>
+											</span> <!-- .icon-holder -->
+											<i>LVHS Main Stadium</i>
+										</li>
+									</ul>
+								</div> <!-- .activity-box__footer -->
+							</div> <!-- .activity-box -->
+						</div>
+						<div class="tab-pane fade" id="reels">
+							<div class="activity-box">
+								<div class="activity-box__visual">
+									<img src="img/img01.jpg" alt="">
+									<span class="activity-box__visual-play"></span>
+									<div class="activity-box__visual-holder">
+										<i class="icon icon-camera_small h-mb-10"></i>
+										<span class="activity-box__visual-name">passes from my recent stay at the venue</span>
+										<span class="activity-box__visual-date">Fall, 2015</span>
+									</div> <!-- .activity-box__visual-holder -->
+								</div> <!-- .activity-box__visual -->
+							</div> <!-- .activity-box -->
+							<div class="activity-box">
+								<div class="activity-box__visual">
+									<img src="img/img01.jpg" alt="">
+									<span class="activity-box__visual-play"></span>
+									<div class="activity-box__visual-holder">
+										<i class="icon icon-camera_small h-mb-10"></i>
+										<span class="activity-box__visual-name">passes from my recent stay at the venue</span>
+										<span class="activity-box__visual-date">Fall, 2015</span>
+									</div> <!-- .activity-box__visual-holder -->
+								</div> <!-- .activity-box__visual -->
+							</div> <!-- .activity-box -->
+							<div class="activity-box">
+								<div class="activity-box__visual">
+									<img src="img/img01.jpg" alt="">
+									<span class="activity-box__visual-play"></span>
+									<div class="activity-box__visual-holder">
+										<i class="icon icon-camera_small h-mb-10"></i>
+										<span class="activity-box__visual-name">passes from my recent stay at the venue</span>
+										<span class="activity-box__visual-date">Fall, 2015</span>
+									</div> <!-- .activity-box__visual-holder -->
+								</div> <!-- .activity-box__visual -->
+							</div> <!-- .activity-box -->
+						</div>
+					</div>
+				</div> <!-- #content -->
+				<div id="sidebar">
+					<div class="athlete-search athlete-search_width_100 h-mt-35 h-mb-30">
+						<input type="text">
+						<button class="btn-search"></button>
+					</div>
+					
+					<p class="h-mb-20"><i>Showing results for:</i></p>
+					<ul class="tegs tegs_theme_grey h-mb-30">
+						<li class="tegs__item transform-none"><i class="icon icon-search_small_white"></i> #awesomegoal <i class="icon icon-close_white cursor-pointer h-ml-5"></i></li>
+						<li class="tegs__item transform-none">Eddie <i class="icon icon-close_white cursor-pointer h-ml-5"></i></li>
+					</ul>
+					<h4 class="uppercase">Related Tags</h4>
+					<ul class="tegs tegs_size_big">
+						<li class="tegs__item transform-none">#Cartepillar</li>
+						<li class="tegs__item transform-none">#Awesome Game</li>
+					</ul>
+					<h4 class="uppercase">filter</h4>
+					<ul class="filters-list">
+						<li>
+							<i class="icon icon-pointer2_big_grey pull-right"></i>
+							<span class="filters-list__text">Location</span>
+						</li>
+						<li>
+							<i class="icon icon-ball_big_grey2 pull-right"></i>
+							<span class="filters-list__text">Sport</span>
+						</li>
+						<li>
+							<span class="filters-list__text">Graduation Year</span>
+						</li>
+					</ul>
+				</div> <!-- #sidebar -->
+			</div>
+
+		</section> <!-- .section-main -->
+
+	</div> <!-- #main -->
+	<footer>
+		<p class="copy">&copy; SportXast, LLC.</p>
+		<ul class="footer-nav">
+			<li><a href="#">terms of use</a></li>
+			<li><a href="#">privacy policy</a></li>
+			<li><a href="#">send feedback</a></li>
+		</ul> <!-- .footer-nav -->
+		<ul class="social">
+			<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+			<li><a href="#"><i class="icon icon-linked"></i></a></li>
+			<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+		</ul> <!-- .social -->
+	</footer> <!-- footer -->
+
+
+	<div class="modal fade" id="receiveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Never miss updates <br> about albuquerque sol</h4>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="updates-form">
+	        	<form action="#">
+	        		<fieldset>
+	        			<i class="hint-text">You can stay in touch with Albuquerque SOL by text messages or email messages.</i>
+	        			<div class="updates-form__form-holder">
+	        				<div class="form-row">
+	        					<button class="btn btn-sm">Receive texts</button>
+	        					<div class="form-group">
+	        						<div class="form-group-holder">
+	        							<span class="form-group-icon-holder">
+	        								<i class="icon icon-phone"></i>
+	        							</span>
+								    	<input type="email" class="form-control form-control_type_with-icon" placeholder="+4.0771.012.342">
+								    </div>
+								</div>
+	        				</div> <!-- .form-row -->
+	        				<div class="form-row">
+	        					<button class="btn btn-sm">receive emails</button>
+	        					<div class="form-group">
+	        						<div class="form-group-holder">
+	        							<span class="form-group-icon-holder">
+	        								<i class="icon icon-mail2"></i>
+	        							</span>
+								    	<input type="email" class="form-control form-control_type_with-icon" placeholder="example@mail.com">
+								    </div>
+								</div>
+	        				</div> <!-- .form-row -->
+	        			</div> <!-- .updates-form__form-holder -->
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <i class="icon icon-athlete h-mb-10"></i>
+	        <h4 class="modal-title" id="myModalLabel">Hi again!</h4>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-in-form ">
+	        	<form action="#">
+	        		<fieldset>
+	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci</p>
+
+	        			<div class="sign-in-form__holder">
+	        				<div class="h-mb-20">
+		        				<div class="form-group">
+		        					<label>enter your EMAIL</label>
+	        						<div class="form-group-holder">
+								    	<input type="email" class="form-control" placeholder="jane@example.com">
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="form-group">
+		        					<label>your PASSWORD</label>
+	        						<div class="form-group-holder">
+								    	<input type="password" class="form-control" placeholder="password">
+								    </div>
+								</div> <!-- .form-group -->
+							</div>
+							<button class="btn btn_width_100">sign in</button>
+	        			</div>
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+
+	<div class="modal fade modal_size_medium" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">I am:</h4>
+	      </div> <!-- .modal-header -->
+	      <div class="modal-body">
+	        <div class="sign-up-form">
+	        	<form action="#">
+	        		<fieldset>
+	        			<div class="sign-up-form__step1">
+		        			<ul class="user-type-list">
+		        				<li class="active">
+		        					<span class="name">AN Athlete</span>
+		        					<div class="user-type-list__icon-holder">
+		        						<i class="icon icon-athlete_big_grey"></i>
+		        					</div>
+		        					<p>Description of the athlete account</p>
+		        				</li>
+		        				<li>
+		        					<span class="name">A Parent</span>
+		        					<div class="user-type-list__icon-holder">
+		        						<i class="icon icon-parent_big_grey"></i>
+		        					</div>
+		        					<p>Description of the athlete account</p>
+		        				</li>
+		        				<li>
+		        					<span class="name">A Coach</span>
+		        					<div class="user-type-list__icon-holder">
+		        						<i class="icon icon-coach_big_grey"></i>
+		        					</div>
+		        					<p>Description of the athlete account</p>
+		        				</li>
+		        			</ul> <!-- .user-type-list -->
+							<button class="btn btn-centered js-btn-continue">CONTINUE</button>
+						</div> <!-- .sign-up-form__step1 -->
+						<div class="sign-up-form__step2" style="display: none;">
+							<div class="sign-up-form__holder">
+								<div class="h-mb-20">
+			        				<div class="form-group">
+			        					<label>Name</label>
+		        						<div class="form-group-holder">
+									    	<input type="text" class="form-control" placeholder="Jane Doe">
+									    </div>
+									</div> <!-- .form-group -->
+									<div class="form-group">
+			        					<label>Email</label>
+		        						<div class="form-group-holder">
+									    	<input type="email" class="form-control" placeholder="jane@example.com">
+									    </div>
+									</div> <!-- .form-group -->
+									<div class="form-group">
+			        					<label>PASSWORD</label>
+		        						<div class="form-group-holder">
+									    	<input type="password" class="form-control" placeholder="8 characters or more">
+									    </div>
+									</div> <!-- .form-group -->
+									<div class="form-group">
+			        					<label>CONFIRM PASSWORD</label>
+		        						<div class="form-group-holder">
+									    	<input type="password" class="form-control" placeholder="retype your password">
+									    </div>
+									</div> <!-- .form-group -->
+								</div>
+								<button class="btn btn_width_100 js-btn-continue">CONTINUE</button>
+							</div>
+						</div><!-- .sign-up-form__step2 -->
+						<div class="sign-up-form__step3" style="display: none;">
+	        					
+	        				<div class="form-row">
+	        					<div class="form-group">
+	        						<label>gender</label>
+									<div class="form-group-holder">
+								    	<select class="selectpicker" title="Gender">
+								            <option>1</option>
+								            <option>2</option>
+								            <option>3</option>
+								        </select>
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="sign-up-form__cell">
+									<div class="form-group">
+		        						<label>Profile picture</label>
+										<div class="form-group-holder">
+									    	<span class="btn-file">
+									    		<span class="btn btn-sm btn-file__text">choose file</span>
+									    		<span class="btn-file__filename">No file chosen</span>
+								                <input type="file">
+								            </span>
+									    </div>
+									</div> <!-- .form-group -->
+								</div> <!-- .sign-up-form__cell -->
+							</div> <!-- .form-row -->
+
+							<div class="form-row">
+	        					<div class="form-group">
+	        						<label>Sport</label>
+									<div class="form-group-holder">
+								    	<select class="selectpicker">
+								            <option data-icon="icon icon-ball_medium">Soccer</option>
+								            <option data-icon="icon icon-ball_medium">Soccer</option>
+								            <option data-icon="icon icon-ball_medium">Soccer</option>
+								        </select>
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="sign-up-form__cell">
+									<div class="form-group">
+		        						<label>Profile picture</label>
+										<div class="form-group-holder">
+									    	<span class="btn-file btn-file_type_loading">
+									    		<span class="btn btn-sm btn-file__text">choose file</span>
+									    		<span class="btn-file__filename">video.mpeg</span>
+								                <input type="file">
+								            </span>
+									    </div>
+									</div> <!-- .form-group -->
+								</div> <!-- .sign-up-form__cell -->
+							</div> <!-- .form-row -->
+
+							<div class="form-row">
+	        					<div class="form-group">
+	        						<label>School</label>
+									<div class="form-group-holder">
+								    	<div class="form-group-holder">
+									    	<input type="text" class="form-control" placeholder="School">
+									    </div>
+								    </div>
+								</div> <!-- .form-group -->
+							</div> <!-- .form-row -->
+
+							<label>class</label>
+							<div class="form-row h-mb-20">
+	        					<div class="form-group">
+									<div class="form-group-holder">
+								    	<div class="form-group-holder">
+									    	<input type="text" class="form-control" placeholder="2016">
+									    </div>
+								    </div>
+								</div> <!-- .form-group -->
+								<div class="sign-up-form__cell">
+									<p>By signing up you agree with our</p>
+									<p><a href="#">Terms and Conditions.</a></p>
+								</div>
+							</div> <!-- .form-row -->
+
+							<div class="sign-up-form__holder">
+								<button class="btn btn_width_100 js-btn-continue">CONTINUE <i class="glyphicon glyphicon-ok"></i></button>
+							</div>
+							
+						</div> <!-- .sign-up-form__step3 -->
+	        		</fieldset>
+	        	</form>
+	        </div>
+	      </div> <!-- .modal-body -->
+	      <div class="modal-footer">
+	      	<ul class="signup-steps">
+	      		<li class="active">
+	      			<i class="icon"></i>
+	      			account type
+	      		</li>
+	      		<li>
+	      			<i class="icon"></i>
+	      			add account details
+	      		</li>
+	      		<li>
+	      			<i class="icon"></i>
+	      			customize your profile
+	      		</li>
+	      	</ul> <!-- .signup-steps -->
+	      </div> <!-- .modal-footer -->
+	    </div> <!-- .modal-content -->
+	  </div> <!-- .modal-dialog -->
+	</div> <!-- Modal -->
+
+	<div class="video-modal" id="videoModal">
+		<div class="video-modal__aside">
+			<div class="video-modal__aside-title">
+				<a class="video-modal__btn-search">
+					<i class="icon icon-search_white"></i>
+				</a>
+				<h5>RECENT HIGHLIGHTS</h5>
+			</div> <!-- .video-modal__aside-title -->
+			<ul class="video-list">
+				<li class="active">
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+				<li>
+					<img src="img/img10.jpg" alt="">
+					<div class="video-list__overlay">
+						<span class="video-list__date">May 24th, 2015</span>
+						<span class="video-list__btn-play">
+							<i class="icon icon-play_small"></i>
+						</span>
+						<span class="video-list__name">Dribbling</span>
+					</div> <!-- .video-list__overlay -->
+				</li>
+			</ul>
+		</div> <!-- .video-modal__aside -->
+		<div class="video-modal__holder">
+			<img src="img/img11.jpg" alt="">
+			<div class="video-modal__holder-overlay">
+				<span class="video-modal__close">&times;</span>
+				<div class="video-modal__holder-bottom">
+					<div class="player-panel">
+						<div class="player-panel__info">
+							<h5>Extreme goal!</h5>
+							<span class="player-panel__date">May 24th, 2015</span>		
+							<ul class="tegs tegs_size_meduim h-mb-20">
+								<li class="tegs__item">#awesome pass</li>
+								<li class="tegs__item">#catch</li>
+							</ul> <!-- .tegs -->
+							<div class="player-panel__info-line">
+								<ul class="user-list pull-right">
+									<li>
+										<span class="user-list__visual">
+											<img src="img/pic01.jpg" alt="">
+										</span> <!-- .user-list__visual -->
+									</li>
+									<li>
+										<span class="user-list__visual">
+											<img src="img/pic01.jpg" alt="">
+										</span> <!-- .user-list__visual -->
+									</li>
+									<li>
+										<span class="user-list__visual">
+											<img src="img/pic01.jpg" alt="">
+										</span> <!-- .user-list__visual -->
+									</li>
+								</ul> <!-- .user-list -->
+								<div class="player-panel__teams">
+									<span class="club-logo club-logo_size_medium">
+										<img src="img/club-logo_small.jpg" alt="">
+									</span>
+									<span class="h-mr-20">
+										ABQ SOL
+									</span>
+									<span class="h-mr-20">
+										VS
+									</span>
+									<span class="club-logo club-logo_size_medium">
+										<img src="img/club-logo2_small.jpg" alt="">
+									</span>
+									Sockers FC
+								</div> <!-- .player-panel__teams -->
+							</div> <!-- .player-panel__info-line -->
+						</div> <!-- .player-panel__info -->
+						<div class="player-panel__timeline">
+							<span class="player-panel__current-time" style="width: 66%;"></span>
+						</div> <!-- .player-panel__timeline -->
+						<div class="player-panel__buttons-holder">
+							<span class="icon icon-share player-panel__btn-options"></span>
+							<span class="icon icon-favorite player-panel__btn-options"></span>
+							<span class="player-panel__btn-options">Autoplay <a>ON</a></span>
+							<span class="icon-play_vsmall icon player-panel__btn-play"></span>
+						</div> <!-- .player-panel__buttons-holder -->
+					</div> <!-- .player-panel -->
+				</div> <!-- .video-modal__holder-bottom -->
+			</div>
+		</div> <!-- .video-modal__aside -->
+	</div> <!-- .video-modal -->
+
+	<div id="sideSearchBar" class="side-search">
+		<div class="side-search__bg"></div>
+		<div class="side-search__holder">
+			<div class="side-search__form">
+				<form action="#">
+					<fieldset>
+						<button><i class="icon icon-search"></i></button>
+						<div class="side-search__form-input">
+							<input type="text">
+						</div> <!-- .side-search__form-input -->
+					</fieldset>
+				</form>
+			</div> <!-- .side-search__form -->
+			<ul class="side-search__results">
+				<li class="side-search__results-item">
+					<h5>Athletes</h5>
+					<ul class="user-list user-list_type_vertical">
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+					</ul>
+				</li> <!-- .side-search__results-item -->
+				<li class="side-search__results-item">
+					<h5>Teams</h5>
+					<ul class="user-list user-list_type_vertical">
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+						<li>
+							<span class="user-list__visual">
+								<img src="img/pic01.jpg" alt="">
+							</span> <!-- .user-list__visual -->
+							<span class="user-list__name">CATIE Mcdonald</span>
+						</li>
+					</ul>
+				</li> <!-- .side-search__results-item -->
+				<li class="side-search__results-item">
+					<h5>Tags</h5>
+					<ul class="tegs">
+						<li class="tegs__item">#catch</li>
+					</ul> <!-- .tegs -->
+				</li> <!-- .side-search__results-item -->
+			</ul> <!-- .side-search__results -->
+		</div> <!-- .side-search__holder -->
+	</div> <!-- .side-search -->
+	
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
