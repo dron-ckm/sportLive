@@ -102,11 +102,11 @@
 					</div>
 					<div class="athlete-page__content">
 						<div class="athlete-page__content-holder">
-							<ul class="main-nav main-nav_type_no-left-padding" id="nav">
-						  		<li class=""><a href="#Reels">Highlight reels</a></li>
+							<ul class="main-nav main-nav_height_76 main-nav_type_no-left-padding" id="nav">
+						  		<li class=""><a href="#Reels">CREATE HIGHLIGHT REEL</a></li>
 						  		<li><a href="#Clips">Game clips <span class="main-nav__count">55</span></a></li>
 						  		<li><a href="#About">About</a></li>
-						  		<li><a href="#Events">Events</a></li>
+						  		<li class="hidden"><a href="#Events">Events</a></li>
 						  	</ul>
 							<a class="athlete-headline__follow pull-right" href="#">Follow team<i class="icon-follow icon"></i></a>
 						</div>
@@ -131,11 +131,22 @@
 												</div>
 												<div class="form-group">
 													<label>Location</label>
-													<select class="selectpicker _size_40">
-											            <option data-icon="icon icon-ball3">Football</option>
-											            <option data-icon="icon icon-ball">Soccer</option>
-											            <option data-icon="icon icon-ball">Soccer</option>
-											        </select>
+													<div class="row">
+														<div class="col-md-6 col-xs-12">
+															<select class="selectpicker _size_40" title="City">
+													            <option>Football</option>
+													            <option>Soccer</option>
+													            <option>Soccer</option>
+													        </select>
+														</div>
+														<div class="col-md-6 col-xs-12">
+															<select class="selectpicker _size_40" title="State">
+													            <option>Football</option>
+													            <option>Soccer</option>
+													            <option>Soccer</option>
+													        </select>
+														</div>
+													</div>
 												</div>
 												<div class="form-group">
 													<label>Sport</label>
@@ -150,7 +161,11 @@
 											<td class="valing-top">
 												<div class="form-group">
 													<label>Organization</label>
-													<input type="text" class="form-control form-control_size_40" placeholder="">
+													<select class="selectpicker _size_40" data-live-search="true">
+											            <option>one</option>
+											            <option>thow</option>
+											            <option>aa</option>
+											        </select>
 												</div>
 												<div class="form-group">
 													<label>League?</label>
@@ -162,8 +177,16 @@
 														<li style="background: #ff0000;"></li>
 														<li style="background: #1263a1;"></li>
 													</ul>
+													<div class="row">
+														<div class="col-md-6 col-xs-12">
+															<input type="text" class="form-control form-control_size_40" placeholder="Color Name 1">
+														</div>
+														<div class="col-md-6 col-xs-12">
+															<input type="text" class="form-control form-control_size_40" placeholder="Color Name 2">
+														</div>
+													</div>
 													<div class="form-control-holder">
-														<input type="text" class="form-control form-control_size_40" placeholder="Color Names">
+														
 													</div>
 												</div>
 												<div class="form-group">
@@ -456,10 +479,8 @@
 				<div class="athlete-page__content">
 					<section class="section-main">
 						<div class="athlete-page__content-holder">
-							<div class="section-main__title section-main__title-text_ph_0">
+							<div class="athlete-page__about-text section-main__title section-main__title-text_ph_0">
 								<h2 class="section-main__title-text pull-left"><a></a>About albuquerque sol</h2> <!-- .section-main__title-text -->
-								<button class="btn btn-link transform-none btn-h-40 section-main__title-btn">Discard Changes</button>
-								<button class="btn btn-h-40 section-main__title-btn">save</button>
 							</div> <!-- .section-main__title -->
 						</div> <!-- athlete-page__content-holder -->
 					</section> <!-- .section-main -->
@@ -469,8 +490,11 @@
 				<div class="about-box about-box_width_920 h-mb-0 about-box_pt_10">
 					<div class="about-box__visual about-box__visual_width_100">
 						<div class="form-group">
-							<textarea class="form-control" name="" id="" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor massa eu vulputate gravida. Quisque eros nunc, condimentum eget tortor et, ornare consectetur erat. Aliquam volutpat erat quam.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</textarea>
+							<textarea class="form-control h-mb-20" name="" id="" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor massa eu vulputate gravida. Quisque eros nunc, condimentum eget tortor et, ornare consectetur erat. Aliquam volutpat erat quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</textarea>
+							<div class="pull-right">
+								<button class="btn btn-link transform-none btn-h-40 section-main__title-btn h-ml-5">Discard Changes</button>
+								<button class="btn btn-h-40 section-main__title-btn h-ml-5">save</button>
+							</div>
 						</div>
 					</div> <!-- .about-box__visual -->
 				</div> <!-- .about-box -->
@@ -483,10 +507,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						<div class="athlete-add-form pull-right">
 							<form action="#">
 								<fieldset>
-									<button class="btn btn-h-40 pull-right">done</button>
+									<button class="btn btn-h-40 pull-right">Add an Athlete Channel to the Team</button>
+									<!--
 									<div class="athlete-add-form__holder">
 										<input type="text" placeholder="Add athlete to team roster">
-										<div class="athlete-add-form__autocomplite show-when-logged">
+										
+										<div class="athlete-add-form__autocomplite">
 											<ul class="athlete-add-form__autocomplite-list">
 												<li>
 											    	<button class="btn pull-right h-ml-20 btn-h-40">ask to join</button>
@@ -500,7 +526,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 											</ul>
 											<p>Add “Luke Lawrence” to team</p>
 										</div>
+										
 									</div>
+									-->
 								</fieldset>
 							</form>
 						</div>
@@ -1069,6 +1097,29 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 					</div>
 					<button class="btn btn-h-40 btn_width_100">add athlete to  roster</button>
 					<button class="btn btn-h-40 btn-link btn_width_100">discard</button>
+				</fieldset>
+			</form>
+		</div>
+	</div> <!-- player-moda -->
+	<div class="player-modal player-modal_type_add-player" style="display: none;">
+		<span class="close icon-close_grey"></span>
+		<span class="player-modal__logo"></span>
+		<div class="player-modal__holder">
+			<form action="#">
+				<fieldset>
+					<a href="#">http://ch.sportxast.com/athlete/101</a>
+					<h4><b>This new Athlete Channel is assigned to:</b></h4>
+
+					<div class="form-group">
+						<label>Name of Athlete:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Contact Email:</label>
+						<input type="text" class="form-control">
+					</div>
+					
+					<button class="btn btn-h-40 btn_width_100">Send Invite</button>
 				</fieldset>
 			</form>
 		</div>

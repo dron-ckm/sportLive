@@ -8,8 +8,17 @@
 	width: 100%;
 	position: relative;
 	min-height: 60rem;
-	background: @section_color url(../img/icons/icon-ball_vbig_grey.png) 50% 50% no-repeat;
+	background: @section_color url(../img/logo_big.png) 50% 50% no-repeat;
 	overflow: hidden;
+	font-size: 0;
+	text-align: center;
+
+	&:after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		height: 60rem;
+	}
 
 	.promo__bg-change {
 		position: absolute;
@@ -29,7 +38,7 @@
 	}
 
 	img {
-		display: block;
+		vertical-align: middle;
 		max-height: 100%;
 		max-width: 100%;
 		margin: auto;
@@ -552,6 +561,7 @@
 	.subscribe-line__text-frame {
 		overflow: hidden;
 		color: #fff;
+		min-width: 250px;
 	}
 
 	.subscribe-line__headline {
@@ -1147,6 +1157,7 @@
 
 .player-modal {
 	width: 460px;
+	max-width: 100%;
 	position: fixed;
 	z-index: 201;
 	top: 50%;
@@ -1157,6 +1168,28 @@
 	-webkit-box-shadow: 9px 9px 54px 0 rgba(0,0,0,0.18);
 	box-shadow: 9px 9px 54px 0 rgba(0,0,0,0.18);
 	padding: 84px 0 43px;
+
+	&.player-modal_type_add-player {
+		.player-modal__holder {
+			width: 100%;
+			padding: 0 17px;
+		}
+	}
+
+	.close {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		cursor: pointer;
+	}
+
+	.player-modal__logo {
+		background: url(../img/logo.png) 0 0 no-repeat;
+		width: 123px;
+		height: 22px;
+		display: block;
+		margin: -35px auto 35px;
+	}
 
 	.player-modal__holder {
 		width: 264px;
@@ -1209,6 +1242,13 @@
 } // .player-modal
 
 @media screen and (max-width: 768px) {
+	.player-modal {
+		width: 100%;
+		margin: 0;
+		top: 50px;
+		left: 0;
+	} //.player-modal
+
 	.game-preview {
 
 		.game-preview__info {
@@ -1262,9 +1302,8 @@
 		width: 100%;
 		overflow: hidden;
 
-		img {
-			height: 100%;
-			max-width: none;
+		&:after {
+			height: 170px;
 		}
 
 		& + .athlete-headline {
@@ -1487,45 +1526,6 @@
 		
 	} // .video-box
 
-	.games-schedule {
-		margin: 0 -10px 5px 0;
-		width: auto;
-
-		.games-schedule__update-time {
-			font-size: 1.2rem;
-		}
-
-		.games-schedule__holder {
-			width: 9999px;
-		}
-
-		.games-schedule__game {
-			max-width: 278px;
-			float: left;
-			margin-right: 8px;
-			padding: 0 !important;
-
-			&:before {
-				display: none;
-			}
-		}
-
-		.games-schedule__year {display: none;}
-		.games-schedule__date {display: none;}
-
-		&.games-schedule_type_without-timeline {
-			padding: 0 10px;
-			margin: 0;
-
-			.games-schedule__game {
-				margin: 0 0 35px;
-				max-width: 100%;
-			}
-
-
-		}
-	} // .games-schedule
-
 	.players-list {
 		padding: 0 10px;
 		width: 100%;
@@ -1606,6 +1606,83 @@
 	} // .contact-list
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1249px) {
+	#main {
+		overflow: hidden;
+	}
+	.games-schedule {
+		margin: 0 -10px 5px 0;
+		width: auto;
 
+		.games-schedule__update-time {
+			font-size: 1.2rem;
+		}
+
+		.games-schedule__holder {
+			width: 9999px;
+		}
+
+		.games-schedule__game {
+			max-width: 278px;
+			float: left;
+			margin-right: 8px;
+			padding: 0 !important;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		.games-schedule__year {display: none;}
+		.games-schedule__date {display: none;}
+
+		&.games-schedule_type_without-timeline {
+			padding: 0 10px;
+			margin: 0;
+
+			.games-schedule__game {
+				margin: 0 0 35px;
+				max-width: 100%;
+			}
+
+
+		}
+	} // .games-schedule
+}
+
+@media (min-width: 1250px) and (max-width: 1900px) {
+	.games-schedule {
+		margin: 0 -10px 5px 0;
+		width: auto;
+
+		.games-schedule__update-time {
+			font-size: 1.2rem;
+		}
+
+		.games-schedule__game {
+			max-width: 278px;
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 8px;
+			padding: 0 !important;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		.games-schedule__year {display: none;}
+		.games-schedule__date {display: none;}
+
+		&.games-schedule_type_without-timeline {
+			padding: 0 10px;
+			margin: 0;
+
+			.games-schedule__game {
+				margin: 0 0 35px;
+				max-width: 100%;
+			}
+		}
+	} // .games-schedule
 }

@@ -1166,11 +1166,14 @@ p {
 	}
 
 	&.team-short-info_type_inline {
+		text-align: left;
+		white-space: nowrap;
+
 		li {
 			width: auto;
 			display: inline-block;
 			vertical-align: top;
-
+			float: none;
 		}
 	}
 
@@ -1759,11 +1762,11 @@ p {
 }
 
 .h-ml-5 {
-	margin-left: .5rem;
+	margin-left: .5rem !important;
 }
 
 .h-ml-10 {
-	margin-left: 1rem;
+	margin-left: 1rem !important;
 }
 
 .h-ml-20 {
@@ -2079,5 +2082,8 @@ p {
 				display: block;
 			}
 		}
+	}
+	.col-xs-12 + .col-xs-12 {
+		margin-top: 10px;
 	}
 } // MOBILE
