@@ -842,7 +842,7 @@
 } // .games-schedule
 
 .game-preview {
-	max-height: 340px;
+	//max-height: 340px;
 	overflow: hidden;
 
 	&:hover {
@@ -850,20 +850,22 @@
 	}
 
 	&.game-preview_type_text-on-top {
-		padding-top: 71px;
+		padding-top: 95px;
 
 		&:hover {
 			.game-preview__visual-info {display: none;}
 		}
 		.game-preview__title {
 			position: absolute;
-			top: -71px;
+			top: -95px;
 			left: 0;
 			right: 0;
 			background: #fff;
 			color: @text_color;
 			font-size: 1.7rem;
 			padding: .8rem;
+			height: 95px;
+			overflow: hidden;
 		}
 
 		.game-preview__team {

@@ -219,7 +219,7 @@ header .options {
 
 	&.main-nav_type_no-left-padding {
 		li {
-			padding-right: 7.4rem;
+			padding-right: 5.4rem;
 		}
 	}
 
@@ -586,6 +586,22 @@ header .options {
 	}
 } // 768 - 1024
 
+@media (min-width: 768px) and (max-width: 1600px) { 
+	.athlette-settings {
+		height: 3.7rem;
+		> li {
+			a {
+				float: left;
+			}
+			.athlette-settings__avatar {
+				width: 2.9rem;
+				height: 2.9rem;
+			}
+		}
+		
+	}
+}
+
 @media (min-width: 1025px) and (max-width: 1600px) {
 	header {
 		height: 47px;
@@ -646,4 +662,16 @@ header .options {
 		    }
 		}
 	}
-} // 1025 - 1400
+	
+	.athlette-settings {
+		height: 4.7rem;
+		> li {
+			.athlette-settings__avatar {
+				width: 3.4rem;
+				height: 3.4rem;
+			}
+		}
+		
+	}
+	
+} // 1025 - 1600
