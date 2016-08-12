@@ -10171,6 +10171,9 @@ p {
 .tegs.tegs_theme_grey .tegs__item {
   background: #7b8b96;
 }
+.tegs.tegs_theme_light-grey .tegs__item {
+  background: #b9c2c7;
+}
 .tegs.tegs_size_small .tegs__item {
   text-transform: uppercase;
   margin-right: .6rem;

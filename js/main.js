@@ -19,6 +19,17 @@
 $(function () {
   $('[data-toggle="tooltip2"]').tooltip({template: '<div class="tooltip tooltip_type_round" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'})
 })
+
+// Promo height
+
+function calulatePromoheight(){
+	var windowHeight = window.innerHeight - $('header').height();
+	$('.promo').height(windowHeight);
+}
+calulatePromoheight();
+$( window ).resize(function() {
+	calulatePromoheight();
+});
 /*
 (function(){
 	//console.log();
