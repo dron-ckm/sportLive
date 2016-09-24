@@ -8464,6 +8464,12 @@ body.modal-open {
 }
 .bootstrap-select .btn .filter-option {
   line-height: 4.4rem;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
 }
 .bootstrap-select .btn .caret {
   position: absolute;
@@ -8494,17 +8500,28 @@ body.modal-open {
   width: 100%;
   font-size: 1.8rem;
   font-family: latolight, Arial, Helvetica, sans-serif;
+  max-height: 150px !important;
+}
+.bootstrap-select .dropdown-menu .inner li {
+  position: relative;
 }
 .bootstrap-select .dropdown-menu .inner li a {
   cursor: pointer;
   padding: .5rem 2.5rem;
 }
 .bootstrap-select .dropdown-menu .inner li a .text {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .bootstrap-select .dropdown-menu .inner li a .icon {
-  position: static;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.bootstrap-select .dropdown-menu .inner li a .icon + .text {
+  margin-left: 13px;
 }
 .bootstrap-select .dropdown-menu .no-results {
   padding: 5px 10px;
@@ -8987,6 +9004,12 @@ div.checkbox.after-text label:before {
     float: right !important;
     margin: 0 0 5px 10px !important;
     width: auto;
+  }
+  .team-edit-form .team-edit-form__btns {
+    text-align: center;
+  }
+  .team-edit-form .team-edit-form__btns .btn {
+    float: none !important;
   }
 }
 @media (max-width: 1200px) {
@@ -11947,6 +11970,7 @@ p {
 .players-list .players-list__yo {
   float: right;
   font-family: latolight, Arial, Helvetica, sans-serif;
+  display: none;
 }
 .players-list .players-list__grad {
   float: left;
@@ -14226,6 +14250,19 @@ p {
     display: block;
     padding: 0;
   }
+  .about-athlete .about-athlete__contacts .iconed-text .iconed-text__row {
+    display: table-row;
+  }
+  .about-athlete .about-athlete__contacts .iconed-text .iconed-text__icon-holder {
+    padding-right: 10px;
+    text-align: center;
+  }
+  .about-athlete .about-athlete__contacts .iconed-text .iconed-text__text-holder {
+    display: table-cell;
+  }
+  .about-athlete .about-athlete__contacts .iconed-text .iconed-text__text-holder .h-ml-20 {
+    margin: 0 !important;
+  }
   .about-athlete .iconed-text {
     margin-bottom: 15px;
   }
@@ -14235,6 +14272,7 @@ p {
   }
   .about-athlete .iconed-text .iconed-text__icon-holder {
     display: block;
+    width: auto;
   }
   .about-athlete .iconed-text .iconed-text__text-holder {
     display: none;

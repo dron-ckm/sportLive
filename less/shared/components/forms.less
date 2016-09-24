@@ -412,6 +412,12 @@
 
 		.filter-option {
 			line-height: 4.4rem;
+			display: block;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			width: 100%;
+			text-align: left;
 		}
 
 		.caret {
@@ -450,18 +456,33 @@
 			width: 100%;
 			font-size: 1.8rem;
 			.light;
+			max-height: 150px !important;
 
-			li a {
-				cursor: pointer;
-				padding: .5rem 2.5rem;
+			li {
+				position: relative;
 
-				.text {
-					display: inline-block;
-					vertical-align: middle;	
-				}
+				a {
+					cursor: pointer;
+					padding: .5rem 2.5rem;
 
-				.icon {
-					position: static;
+					.text {
+						//display: inline-block;
+						//vertical-align: middle;
+						display: block;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+					}
+
+					.icon {
+						position: absolute;
+						top: 5px;
+						left: 10px;
+					}
+
+					.icon + .text {
+						margin-left: 13px;
+					}
 				}
 			}
 		}
@@ -827,7 +848,6 @@ div.checkbox {
 			margin: 0 22px;
 		}
 	}
-
 } // .team-edit-form
 
 .invite-form {
@@ -1028,6 +1048,16 @@ div.checkbox {
 			}
 		}
 	} // .athlete-add-form
+
+	.team-edit-form {
+		.team-edit-form__btns {
+			text-align: center;
+
+			.btn {
+				float: none !important;
+			}
+		}
+	}
 
 }
 
