@@ -11519,7 +11519,6 @@ p {
 .promo {
   width: 100%;
   position: relative;
-  min-height: 60rem;
   background: #e8edef url(../img/logo_big.png) 50% 50% no-repeat;
   overflow: hidden;
   font-size: 0;
@@ -11529,7 +11528,7 @@ p {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  height: 60rem;
+  height: 100%;
 }
 .promo .promo__bg-change {
   position: absolute;

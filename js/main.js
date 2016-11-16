@@ -21,15 +21,17 @@ $(function () {
 })
 
 // Promo height
-
-function calulatePromoheight(){
-	var windowHeight = window.innerHeight - $('header').height();
-	$('.promo').height(windowHeight);
-}
-calulatePromoheight();
-$( window ).resize(function() {
+$(document).ready(function(){
+	function calulatePromoheight(){
+		var windowHeight = window.innerHeight - $('header').height();
+		$('.promo').height(windowHeight);
+	}
 	calulatePromoheight();
+	$( window ).resize(function() {
+		calulatePromoheight();
+	});
 });
+
 /*
 (function(){
 	//console.log();
