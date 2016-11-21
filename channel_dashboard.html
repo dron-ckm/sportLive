@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SportXast</title>
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon-96x96.png"/>
+    
+    <link media="all" type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:400,300,600,700">
+
+    <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.carousel.js"></script>
+	<script type="text/javascript" src="js/scrollspy.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+</head>
+<body class="channel-dashboard-body">
+	<header class="theme_black">
+		<div class="header-holder">
+			<strong class="logo"><a href="index.html">SportXast</a></strong> <!-- .logo -->
+			<div class="mobile-menu">
+				<i class="icon icon-menu_mobile js-mobile-menu"></i>
+				<ul class="mobile-menu__drop js-mobile-drop">
+					<li><a href="#">my feed</a></li>
+					<li><a href="#">following</a></li>
+					<li><a href="#">followed</a></li>
+					<li><a href="#">WHO’S VIEWED MY PROFILE</a></li>
+					<li><a href="#">settings</a></li>
+					<li><a href="#">log out</a></li>
+				</ul>
+			</div>
+			<ul class="options hide-when-logged options_theme_white options_type_no-border">
+		  		<li><a href="prices.html">Pricing</a></li>
+		  		<li class="active"><a href="#contact-us" class="scrollTo">Create an Account</a></li>
+		  		<li><a href="#contact-us" class="scrollTo">Log In</a></li>
+		  	</ul> <!-- .options -->
+			<ul class="main-nav">
+		  		<li><a href="index.html#overview">Overview</a></li>
+		  		<li><a href="index.html#app">App</a></li>
+		  		<li><a href="index.html#athlete">athlete channel</a></li>
+		  		<li><a href="index.html#team">team channel</a>
+		  		<li><a href="index.html#reels">highlight reels</a></li>
+		  	</ul> <!-- #nav -->
+		  	<a href="https://itunes.apple.com/us/app/sportxast-record-stream-sports/id738768889" class="btn header-btn-download">download</a>
+		  	
+		  	<ul class="athlette-settings show-when-logged">
+				<li><a href="#"><i class="icon icon-search_vbig"></i></a></li>
+				<li><a href="#"><i class="icon icon-bell"></i><span class="count">55</span></a></li>
+				<li>
+					<a href="#"><span class="athlette-settings__avatar"><img src="img/player01.jpg" alt=""></span></a>
+					<div class="athlete-settings__dropdown">
+						<ul class="athlete-settings__athlete-types">
+							<li class="active">
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball_small"></i> soccer</span>
+								</div>
+							</li>
+							<li>
+								<div class="athlete-settings__athlete-types-visual"><img src="img/player01.jpg" alt=""></div>
+								<div class="athlete-settings__athlete-types-holder">
+									<span class="athlete-settings__athlete-types-game"><i class="icon icon-ball2_small"></i> Basketball</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="athlete-settings__settings-list">
+							<li class="active"><a href="#">edit profile</a></li>
+							<li><a href="#">settings</a></li>
+							<li><a href="#">log out</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div> <!-- .header-holder -->
+	</header> <!-- .header -->
+
+	<div id="main" class="height_auto">
+		<section class="section-main section-main_bg_grey">
+			<div class="top-headline">
+				<h2>channel dashboard</h2>
+			</div>
+			<div class="channel-dashboard">
+				<div class="channel-dashboard__info">
+					<h3>ATHLETE CHANNEL(S:)</h3>
+					<ul class="channel-dashboard__info">
+						<li>Tara McDonald</li>
+						<li>Arlington 2005 U12 Girls Red </li>
+						<li><a href="#" class="channel-dashboard__add-remove">Add</a>/<a href="#" class="channel-dashboard__add-remove">Remove Admin</a></li>
+					</ul>
+					<h3>TEAM CHANNEL(S:)</h3>
+					<ul class="channel-dashboard__info">
+						<li>Arlington 2005 U12 Girls Red</li>
+						<li>Arlington 2005 U12 Girls Red </li>
+						<li><a href="#" class="channel-dashboard__add-remove">Add</a>/<a href="#" class="channel-dashboard__add-remove">Remove Admin</a></li>
+					</ul>
+					<a href="#" class="channel-dashboard__add-channel">Add another channel</a>
+				</div>
+			</div>
+		</section>
+		<section class="section-main">
+			<div class="top-headline">
+				<h2>log in</h2>
+			</div>
+			<div class="channel-dashboard-login">
+				<div class="channel-dashboard-login__content">
+					<p class="channel-dashboard-login__heading">New User  <a href="#">CREATE AN ACCOUNT</a></p>
+				</div>
+				<ul class="channel-dashboard-login__list">
+					<li><a href="#" class="facebook">Log in with Facebook <i class="icon icon-facebook_big"></i></a></li>
+					<li>or</li>
+					<li><a href="#" class="google">Log in with Google <i class="icon icon-google_big"></i></a></li>
+					<li>or</li>
+					<li><a href="#">Log in with your username</a></li>
+				</ul>
+				<p class="channel-dashboard-login__agree"><i>By login in you are agree to our <a href="terms.html">terms of service</a> and <a href="privacy.html">privacy policy</a></i></p>
+			</div>
+		</section>
+		<section class="section-main">
+			<div class="top-headline">
+				<h2>Select a basic tempalte channel</h2>
+			</div>
+			<div class="channel-dashboard">
+				<div class="channel-dashboard__search">
+					<h3>NAME OF ATHLETE</h3>
+					<form action="#">
+						<fieldset>
+							<div class="channel-dashboard__search-holder">
+								<div class="row">
+									<label>First Name: </label>
+									<input type="text">
+								</div>
+								<div class="row">
+									<label>Last Name:</label>
+									<input type="text">
+								</div>
+							</div>
+							<input type="submit" class="btn" value="SEARCH">
+						</fieldset>
+					</form>
+				</div>
+				<div class="channel-dashboard__info">
+					<div class="channel-dashboard__info-holder">
+						<h3>BASIC ATHLETE CHANNEL</h3>
+						<p>Capture unlimited highlights with the </p>
+						<p>SportXast app</p>
+						<p>Unlimited game highlights organized in <br> your channel by game</p>
+						<p>20 invites for family, friends, coaches and <br>  fans to follow you.</p>
+						<p>1 free highlight reel (100 mb)</p>
+						<p>Cost: FREE</p>
+					</div>
+					<p>Choose a different type of channel?   <a href="#">Channel List</a></p>
+				</div>
+			</div>
+		</section>
+		<section class="section-main">
+			<div class="top-headline">
+				<h2>set up your channel <span>Get started with a free channel, with no credit card</span></h2>
+			</div>
+			<div class="channel-dashboard-login pull-right">
+				<div class="channel-dashboard-login__content">
+					<p class="channel-dashboard-login__heading">New User  <a href="#">CREATE AN ACCOUNT</a></p>
+				</div>
+				<ul class="channel-dashboard-login__list">
+					<li><a href="#" class="facebook">Log in with Facebook <i class="icon icon-facebook_big"></i></a></li>
+					<li>or</li>
+					<li><a href="#" class="google">Log in with Google <i class="icon icon-google_big"></i></a></li>
+					<li>or</li>
+					<li><a href="#">Log in with your username</a></li>
+				</ul>
+				<p class="channel-dashboard-login__agree"><i>By login in you are agree to our <a href="terms.html">terms of service</a> and <a href="privacy.html">privacy policy</a></i></p>
+			</div>
+			<div class="channel-dashboard channel-dashboard_type_steps">
+				<ul class="channel-dashboard__steps">
+					<li>
+						<h4>Sign up for an account. </h4>
+						<p>Your sign in process should be the same on the app as it is in our website. </p>
+					</li>
+					<li>
+						<h4>Choose a name for your channel. </h4>
+						<p>We look to see if your team or athlete already is in our system and will link it to any highlights already captured.</p>
+					</li>
+					<li>
+						<h4>Capture highlights with the app.</h4>
+						<p>The highlights you capture will copy directly into your Team Channel and when tagged, into your Athlete Channel.</p>
+					</li>
+					<li>
+						<h4>Build highlight reels in minutes. </h4>
+						<p>Use the highlights you capture with the app to build highlight reels and share with friends, family and coaches,</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="section-main">
+			<div class="top-headline">
+				<h2>Select a basic tempalte channel</h2>
+			</div>
+			<div class="channel-dashboard">
+				<div class="channel-dashboard__search channel-dashboard__search_type_select">
+					<h3>SELECT A NAME</h3>
+					<form action="#">
+						<fieldset>
+							<div class="channel-dashboard__search-holder">
+								<table>
+									<tr>
+										<th>Name</th>
+										<th>Team</th>
+										<th>Jersey #</th>
+									</tr>
+									<tr class="line-through">
+										<td class="blue">
+											<span class="checkbox"><input type="checkbox" id="lbl01"><label for="lbl01"></label></span>
+											SimilarNameinDatabase
+										</td>
+										<td class="blue">TeamInTheDatabase</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="checkbox"><input type="checkbox" id="lbl02"><label for="lbl02"></label></span>
+											New_Name_entered
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<input type="submit" class="btn" value="Select">
+						</fieldset>
+					</form>
+				</div>
+				<div class="channel-dashboard__info">
+					<div class="channel-dashboard__info-holder">
+						<h3>BASIC ATHLETE CHANNEL</h3>
+						<p>Capture unlimited highlights with the </p>
+						<p>SportXast app</p>
+						<p>Unlimited game highlights organized in <br> your channel by game</p>
+						<p>20 invites for family, friends, coaches and <br>  fans to follow you.</p>
+						<p>1 free highlight reel (100 mb)</p>
+						<p>Cost: FREE</p>
+					</div>
+					<p>Choose a different type of channel?   <a href="#">Channel List</a></p>
+				</div>
+			</div>
+		</section>
+	</div> <!-- #main -->
+	<footer>
+		<p class="copy">&copy; SportXast, LLC.</p>
+		<ul class="footer-nav">
+			<li><a href="terms.html">terms of use</a></li>
+			<li><a href="privacy.html">privacy policy</a></li>
+			<li><a href="mailto:Contact@sportxast.com">Contact Us</a></li>
+		</ul> <!-- .footer-nav -->
+		<ul class="social">
+			<li><a href="https://www.facebook.com/SportXast/?fref=ts"><i class="icon icon-facebook"></i></a></li>
+			<li><a href="https://www.linkedin.com/company/3003976?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A3003976%2Cidx%3A2-1-4%2CtarId%3A1464278683631%2Ctas%3Asportxast"><i class="icon icon-linked"></i></a></li>
+			<li><a href="https://twitter.com/SportXast"><i class="icon icon-twitter"></i></a></li>
+		</ul> <!-- .social -->
+	</footer>
+</body>
+</html>

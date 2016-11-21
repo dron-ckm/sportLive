@@ -58,4 +58,8 @@ https://dron-ckm.github.io/sportLive/settings.html
 <p>Prices</p>
 https://dron-ckm.github.io/sportLive/prices.html
 </li>
+<li>
+<p>Channel dashboard</p>
+https://dron-ckm.github.io/sportLive/channel_dashboard.html
+</li>
 </ul>
