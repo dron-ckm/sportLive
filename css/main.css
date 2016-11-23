@@ -16821,13 +16821,13 @@ p {
   margin-top: -90px;
 }
 .channel-dashboard {
-  margin: 0 151px;
+  margin: 0 7%;
   font-size: 24px;
   color: #4f4e4e;
   overflow: hidden;
 }
 .channel-dashboard.channel-dashboard_type_steps {
-  padding: 0 83px;
+  padding: 0 5%;
   margin: 0;
 }
 .channel-dashboard .channel-dashboard__steps {
@@ -16895,7 +16895,8 @@ p {
   width: 710px;
   background: #e8edef;
   box-sizing: border-box;
-  padding: 90px 46px;
+  padding: 70px 36px;
+  margin-left: 15px;
 }
 .channel-dashboard .channel-dashboard__search h3 {
   text-align: center;
@@ -16929,7 +16930,8 @@ p {
 }
 .channel-dashboard .channel-dashboard__search.channel-dashboard__search_type_select {
   width: 973px;
-  padding: 65px 160px;
+  max-width: 50%;
+  padding: 65px 10%;
 }
 .channel-dashboard .channel-dashboard__search table {
   width: 100%;
@@ -16971,7 +16973,7 @@ p {
   left: -9999px;
 }
 .channel-dashboard .channel-dashboard__search table .checkbox input:checked + label {
-  background-position: 0 100%;
+  background-position: 0 -39px;
 }
 .channel-dashboard .channel-dashboard__search-holder {
   margin-bottom: 70px;
@@ -16979,17 +16981,22 @@ p {
 .channel-dashboard-login {
   background: #e8edef;
   width: 1050px;
+  max-width: 50%;
   padding: 80px;
   margin: 0 auto;
   font-size: 30px;
   color: #4f4e4e;
 }
+.channel-dashboard-login.pull-right {
+  margin-left: 20px;
+}
 .channel-dashboard-login .channel-dashboard-login__content {
-  padding: 0 90px;
+  padding: 0 10%;
 }
 .channel-dashboard-login .channel-dashboard-login__heading {
   text-align: right;
   margin-bottom: 60px;
+  line-height: normal;
 }
 .channel-dashboard-login .channel-dashboard-login__heading a {
   font-family: latobold, Arial, Helvetica, sans-serif;
@@ -17007,7 +17014,7 @@ p {
 }
 .channel-dashboard-login .channel-dashboard-login__list a {
   display: block;
-  padding-left: 150px;
+  padding-left: 12%;
   height: 112px;
   line-height: 112px;
   font-size: 32px;
@@ -17169,7 +17176,7 @@ p {
     font-size: 21px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .top-headline {
     height: auto;
     padding: 40px 20px;
@@ -17293,5 +17300,14 @@ p {
   }
   .channel-dashboard-login .channel-dashboard-login__agree {
     font-size: 21px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .channel-dashboard .channel-dashboard__search table td {
+    font-size: 18px;
+  }
+  .channel-dashboard .channel-dashboard__search.channel-dashboard__search_type_select {
+    padding-left: 6%;
+    padding-right: 6%;
   }
 }
