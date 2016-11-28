@@ -176,17 +176,8 @@
 			width: 100%;
 			position: relative;
 
-			tr.line-through {
-				td:first-child {
-					&:after {
-						content: "";
-						border-top: 1px solid #858181;
-						position: absolute;
-						left: 0;
-						width: 100%;
-						margin-top: 10px;
-					}
-				}
+			tr:last-child {
+				td {border-bottom: none;}
 			}
 
 			th {
@@ -198,6 +189,7 @@
 			td {
 				font-size: 24px;
 				padding: 20px 0;
+				border-bottom: 1px solid #858181;
 
 				&.blue {
 					color: #6287bf;
